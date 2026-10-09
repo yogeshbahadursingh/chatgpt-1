@@ -1,6 +1,6 @@
 # Installation and production handover
 
-These packages continue the supplied WordPress theme and PPT Core plugin. They are not a replacement CMS. Do not deploy the local test database, runtime directory, test orders, mail interception plugin or local configuration.
+Release 2.3.2 continues the supplied WordPress theme and PPT Core plugin. Production deployment requires explicit human approval. Do not deploy the local test database, runtime directory, test orders, mail interception plugin or local configuration.
 
 ## Clean installation
 
@@ -9,7 +9,7 @@ These packages continue the supplied WordPress theme and PPT Core plugin. They a
 3. In Appearance → Themes → Add New → Upload Theme, upload `people-planet-thrive.zip`, install and activate it.
 4. Open Tools → PPT Site Setup and run Create / Repair Site. It seeds missing editable pages, a static Home, Insights as the posts page, and shared block navigation. Review Settings → Reading if the installation already had a front page; existing choices are preserved.
 5. Install and activate WooCommerce. Run PPT Site Setup again to create its missing Shop, Cart, Checkout and My Account pages. Complete WooCommerce's business, currency, shipping, tax and payment configuration with genuine operator details.
-6. On staging, use Tools → PPT Demo Content → Import. Confirm journals, research, publications, training, events and insights appear. The importer creates 3 journals, 3 issues, 9 articles, 3 fictional author profiles, 3 fictional researcher profiles, 6 areas, 6 projects, 11 editorial publications, 11 products, 6 programmes, 4 future event concepts and 9 insights. It does not invent real team members or partner organisations.
+6. On staging, use Tools → PPT Demo Content → Import. Confirm journals, research, publications, training, events and insights appear. The importer creates 3 journals, 3 issues, 9 articles, 3 fictional author profiles, 3 fictional researcher profiles, 6 areas, 6 projects, 11 editorial publications, 11 products, 6 programmes, 4 future event concepts and 9 insights. It does not invent real team members or partner organisations. Tagged demonstration products are preview-only by default, including zero-price examples. To test their checkout on an isolated staging site, define `WP_ENVIRONMENT_TYPE` as `staging` and `PPT_ALLOW_DEMO_PURCHASES` as boolean `true` in that site's private wp-config.php. The guard refuses this opt-in in the production environment. Never copy these QA definitions to production.
 7. Use Appearance → Editor to edit Home's copy, header, navigation and footer. Upload a genuine site logo. Edit institutional and policy text in Pages. Configure recipient, public contact details, newsletter signup and social URL in Settings → PPT Platform.
 8. Approve the privacy/terms/publishing policies and establish mail delivery before enabling enquiries. The seeded policy text is launch-stage content; it is not a final operator-specific legal policy. Test real mail delivery separately from form acceptance.
 9. Add genuine products, covers and stock. For paid files configure WooCommerce's protected download method and verify direct file requests are denied by the production web server and any CDN. Test payment callbacks, paid and failed orders, refunds, accounts and permitted downloads using the gateway's sandbox.
@@ -19,6 +19,14 @@ These packages continue the supplied WordPress theme and PPT Core plugin. They a
 ## Updating an existing installation
 
 Back up the database, uploads, current theme and plugin. Update PPT Core, then the theme, on staging first. Run Site Setup once. Existing pages, content, front-page selection and custom Site Editor header are preserved. A previously saved block template may override the packaged version; compare it in the Site Editor and selectively merge changes rather than deleting custom content. Existing conflicting `team` or `partners` Pages require manual review because those routes belong to CPT archives; this updater does not delete them automatically.
+
+For ppthrive.com specifically, verify WooCommerce activation and its four system-page assignments; the public audit returned 404 for all four. Run Site Setup again after activating WooCommerce. Configure Settings → PPT Platform with an approved recipient before enabling enquiries. Select one owner for Organization/breadcrumb metadata, configure its real name/logo, and inspect the rendered JSON-LD; the live audit found an additional SEO provider emitting empty organisation details. Uploading theme files alone cannot configure that provider or mail delivery.
+
+## Backup and rollback
+
+Before any approved production work, take a restorable hosting/database backup plus copies of uploads, the active theme and PPT Core. The local `checkpoint/pre-live-audit-20261009` snapshot preserves development source/ZIPs only; it is not a production backup. Verify host restore access first.
+
+If the release fails its immediate smoke checks, restore the previous theme/plugin files and clear caches. If setup, imports or configuration changed the database, restore the matching database snapshot and uploads as one consistent set during the maintenance window. Preserve any new genuine orders/enquiries before restoring a database; do not overwrite post-backup transactions. Review saved Site Editor templates individually. Keep the pre-update backup until the operator accepts the release.
 
 ## URLs and hosting
 

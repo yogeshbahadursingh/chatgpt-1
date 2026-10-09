@@ -14,7 +14,7 @@ $is_tag = is_tag();
 $is_author = is_author();
 ?>
 
-<main class="wp-block-group site-main">
+<main class="wp-block-group site-main ppt-insights-archive">
 	
 	<!-- Archive Header -->
 	<div class="wp-block-group" style="background-color:var(--wp--preset--color--surface-alt);padding:var(--wp--preset--spacing--50) var(--wp--preset--spacing--30)">
@@ -123,7 +123,7 @@ $is_author = is_author();
 							<!-- Author and Date -->
 							<div style="font-size:var(--wp--preset--font-size--13);color:var(--wp--preset--color--text-light);margin-bottom:var(--wp--preset--spacing--15)">
 								<?php esc_html_e( 'By', 'people-planet-thrive' ); ?> 
-								<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" style="color:var(--wp--preset--color--primary);text-decoration:none">
+								<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" style="color:var(--wp--preset--color--primary);text-decoration:underline;text-underline-offset:.15em">
 									<?php the_author(); ?>
 								</a>
 								<span style="margin:0 var(--wp--preset--spacing--10)">·</span>

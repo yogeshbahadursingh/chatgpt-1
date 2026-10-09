@@ -1,0 +1,141 @@
+{
+    "environment": "production",
+    "opt_in": true,
+    "checks": [
+        {
+            "test": "Configured environment has expected demo policy",
+            "status": "PASS",
+            "detail": "production"
+        },
+        {
+            "test": "Genuine simple product remains purchasable",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Genuine variation remains purchasable",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Paid demo follows policy",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Free demo follows policy",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Demo parent protects its unmarked variation",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Individually marked variation follows policy",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Guard preserves native false values",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Classic add-to-cart validation follows policy",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Native cart rejects or accepts demo as configured",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Native cart still accepts genuine products",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Store API rejects or accepts demo add-to-cart",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Store API accepts genuine add-to-cart",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Store API revalidates persisted demo basket",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Classic checkout rejects persisted demo basket",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Store API basket error is explicit",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Classic basket has a demo-specific error",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Test order line retains demo identity",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Classic order creation blocks demo transaction",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Existing demo order-pay receives payment-blocking notice",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Store API existing order-pay blocks before payment",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Saved demo order cannot become genuine by editing its product",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Genuine order is not marked as demo",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Genuine Store API order-pay remains available",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Genuine classic order-pay has no guard error",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Genuine completed order download access remains unchanged",
+            "status": "PASS",
+            "detail": ""
+        },
+        {
+            "test": "Genuine pending order download access remains unchanged",
+            "status": "PASS",
+            "detail": ""
+        }
+    ]
+}

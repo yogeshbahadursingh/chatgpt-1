@@ -1,20 +1,32 @@
 <?php
 /** Bind existing specialist PHP layouts to the block theme without replacing its homepage. */
 defined('ABSPATH') || exit;
+add_action('admin_notices',function(){
+ if(!current_user_can('manage_options')) return;
+ if(!class_exists('PPT_Site_Setup')){
+  echo '<div class="notice notice-warning"><p><strong>People &amp; Planet Thrive setup is incomplete.</strong> Install and activate the matching PPT Core plugin, then open Tools → PPT Site Setup. Activating the theme alone does not create the platform pages or demonstration content.</p></div>';
+ }elseif(!get_option('ppt_setup_version')){
+  echo '<div class="notice notice-warning"><p><strong>People &amp; Planet Thrive setup is incomplete.</strong> <a href="'.esc_url(admin_url('tools.php?page=ppt-site-setup')).'">Run PPT Site Setup</a> to create the Home and Insights pages and configure navigation. Demo content has a separate import action.</p></div>';
+ }elseif(get_option('show_on_front')!=='page'){
+  echo '<div class="notice notice-warning"><p><strong>Your homepage currently shows latest posts.</strong> To show the premium homepage, select Home as the static homepage in <a href="'.esc_url(admin_url('options-reading.php')).'">Settings → Reading</a>. Your existing choice has been preserved.</p></div>';
+ }
+});
 // Core's mobile overlay needs JavaScript. Keep its links available without it.
 add_action('wp_head',function(){
- echo '<noscript><style>.ppt-main-nav{display:flex!important;width:100%}.ppt-premium-header .ppt-header-inner{flex-wrap:wrap!important}.wp-block-navigation__responsive-container:not(.is-menu-open){display:block!important;position:static!important}.wp-block-navigation__responsive-container-open,.wp-block-navigation__responsive-container-close{display:none!important}.wp-block-navigation__container{flex-wrap:wrap!important}</style></noscript>';
+ echo '<noscript><style>.ppt-main-nav{display:flex!important;width:100%}.ppt-premium-header .ppt-header-inner{flex-wrap:wrap!important}.ppt-main-nav .wp-block-navigation__responsive-container:not(.is-menu-open){display:block!important;position:static!important}.wp-block-navigation__responsive-container-open,.wp-block-navigation__responsive-container-close{display:none!important}.wp-block-navigation__container{flex-wrap:wrap!important}</style></noscript>';
 });
 add_filter('template_include',function($template){
  // WooCommerce can render its visibility screen early and intentionally return no template.
  if(!$template) return $template;
  $name='';
  if(function_exists('is_product') && is_product()) return PPT_THEME_DIR.'/woocommerce/single-product.php';
- if(function_exists('is_shop') && (is_shop() || is_product_taxonomy())) return PPT_THEME_DIR.'/woocommerce/archive-product.php';
+ if(ppt_uses_native_store_archive()) return PPT_THEME_DIR.'/woocommerce/archive-product.php';
  if(is_singular() && strpos(get_post_type(),'ppt_')===0) $name='single-'.get_post_type();
+ elseif(is_tax() && strpos(get_queried_object()->taxonomy??'','ppt_')===0) $name='taxonomy';
  elseif(is_post_type_archive()) { $type=get_query_var('post_type'); if(is_string($type) && strpos($type,'ppt_')===0) $name='archive-'.$type; }
  elseif(is_singular('post')) $name='single';
- elseif(is_home()) $name='archive';
+ // front-page.html must keep precedence when a fresh install uses latest posts.
+ elseif(is_home() && !is_front_page()) $name='archive';
  if($name && file_exists(PPT_THEME_DIR.'/templates/'.$name.'.php')) return PPT_THEME_DIR.'/templates/'.$name.'.php';
  return $template;
 },99);
@@ -78,5 +90,13 @@ add_filter('render_block_core/navigation-link',function($html,$block){
 },20,2);
 // These routes deliberately render PHP Woo templates; block-hook substitution would remove their native summary callbacks while rendering our block header.
 add_filter('woocommerce_disable_compatibility_layer',function($disabled){
- return $disabled || (function_exists('is_product') && (is_product() || is_shop() || is_product_taxonomy()));
+ return $disabled || (function_exists('is_product') && (is_product() || ppt_uses_native_store_archive()));
 });
+function ppt_uses_native_store_archive(){
+ if(!function_exists('is_shop')) return false;
+ if(is_shop()) return true;
+ if(!is_tax()) return false;
+ $taxonomy=get_taxonomy(get_queried_object()->taxonomy??'');
+ // Shared knowledge taxonomies contain editorial objects as well as products.
+ return $taxonomy && $taxonomy->object_type && !array_diff($taxonomy->object_type,array('product'));
+}

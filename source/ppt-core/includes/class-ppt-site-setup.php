@@ -40,7 +40,14 @@ class PPT_Site_Setup {
   $defaults=array(1=>array('Hello world!','01a4f5d1bb06f7b58aa738268df2413b42b0aac6c5acf483268836d388d7ebdc'),2=>array('Sample Page','e3d942e7c47632bab32f7c0611d35b73e68a28e9e2a835611f1b9dc996ffca3e'));
   foreach($defaults as $id=>$expected){
    $candidate=get_post($id);
-   if($candidate && $candidate->post_status==='publish' && $candidate->post_title===$expected[0] && $candidate->post_date===$candidate->post_modified && !wp_get_post_revisions($id) && hash_equals($expected[1],hash('sha256',str_replace(admin_url(),'{{admin_url}}',$candidate->post_content)))) wp_update_post(array('ID'=>$id,'post_status'=>'draft'));
+   if(!$candidate) continue;
+   $exact_default=hash_equals($expected[1],hash('sha256',str_replace(admin_url(),'{{admin_url}}',$candidate->post_content)));
+   // Core versions ship this exact English starter as either plain text or blocks.
+   if($id===1 && $candidate->post_type==='post' && $candidate->post_name==='hello-world'){
+    $plain=trim(preg_replace('/\s+/u',' ',wp_strip_all_tags($candidate->post_content)));
+    $exact_default=$exact_default || $plain==='Welcome to WordPress. This is your first post. Edit or delete it, then start writing!';
+   }
+   if($candidate->post_status==='publish' && $candidate->post_title===$expected[0] && $candidate->post_date===$candidate->post_modified && !wp_get_post_revisions($id) && $exact_default) wp_update_post(array('ID'=>$id,'post_status'=>'draft'));
   }
   $links=array('Home'=>array('page',$ids['home']),'Journals'=>array('archive','ppt_journal'),'Publications'=>array('archive','ppt_publication'),'Research'=>array('page',$ids['research']),'Training'=>array('archive','ppt_training'),'Insights'=>array('page',$ids['insights']),'About'=>array('page',$ids['about']));
   $blocks='';
@@ -69,7 +76,7 @@ class PPT_Site_Setup {
    }
   }
   if(class_exists('WC_Install')) WC_Install::create_pages();
-  flush_rewrite_rules(false); update_option('ppt_setup_version','2.3.0'); return $ids;
+  flush_rewrite_rules(false); update_option('ppt_setup_version','2.3.2'); return $ids;
  }
 }
 new PPT_Site_Setup();

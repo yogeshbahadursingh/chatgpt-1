@@ -1,0 +1,112 @@
+[
+    {
+        "test": "Unconfigured organization omits nonexistent logo",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Configured logo uses actual attachment URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "ppt_subject_area term breadcrumb uses term name and canonical URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "ppt_publication_type term breadcrumb uses term name and canonical URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "category term breadcrumb uses term name and canonical URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "ppt_publication archive breadcrumb has name and URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "ppt_journal archive breadcrumb has name and URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "ppt_research_project archive breadcrumb has name and URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Insights posts page breadcrumb uses configured page",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Search breadcrumb has descriptive label and URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "books publication emits Book",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "e-books publication emits Book",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "research-reports publication emits Report",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "policy-briefs publication emits CreativeWork",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "free-resources publication emits CreativeWork",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Author archive breadcrumb has display name and canonical URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Year archive breadcrumb has date label and canonical URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Compact date archive resolves the correct month URL",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Book ISBN reads the publication editor field",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "External SEO owner suppresses only standard theme schema",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "ScholarlyArticle and standard output remain when theme owns schema",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "JSON-LD escapes script delimiters and preserves decoded value",
+        "pass": true,
+        "detail": ""
+    }
+]

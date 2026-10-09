@@ -1,0 +1,195 @@
+{
+  "checks": [
+    {
+      "name": "ppt_subject_area store page 1 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area store page 1 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area store page 2 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area store page 2 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area store page 3 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area store page 3 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area store exact membership and no repeats",
+      "status": "PASS",
+      "actual": 14,
+      "expected": 14
+    },
+    {
+      "name": "ppt_subject_area store hides catalog-hidden product",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area live page 1 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area live page 1 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area live page 2 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area live page 2 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area live page 3 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area live page 3 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area live exact membership and no repeats",
+      "status": "PASS",
+      "actual": 15,
+      "expected": 15
+    },
+    {
+      "name": "ppt_subject_area live hides catalog-hidden product",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_subject_area whole-site remains gated",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type store page 1 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type store page 1 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type store page 2 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type store page 2 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type store page 3 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type store page 3 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type store exact membership and no repeats",
+      "status": "PASS",
+      "actual": 14,
+      "expected": 14
+    },
+    {
+      "name": "ppt_publication_type store hides catalog-hidden product",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type live page 1 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type live page 1 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type live page 2 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type live page 2 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type live page 3 stays editorial-accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type live page 3 query counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type live exact membership and no repeats",
+      "status": "PASS",
+      "actual": 15,
+      "expected": 15
+    },
+    {
+      "name": "ppt_publication_type live hides catalog-hidden product",
+      "status": "PASS"
+    },
+    {
+      "name": "ppt_publication_type whole-site remains gated",
+      "status": "PASS"
+    },
+    {
+      "name": "/shop/ native store stays gated",
+      "status": "PASS"
+    },
+    {
+      "name": "/product/ppt-qa-store-9070d7e9c112eddb6e94b56d-product-visible/ native store stays gated",
+      "status": "PASS"
+    },
+    {
+      "name": "editorial single remains accessible in store-only mode",
+      "status": "PASS"
+    },
+    {
+      "name": "Publications uses editorial cards during store prelaunch",
+      "status": "PASS"
+    },
+    {
+      "name": "whole-site mode protects homepage",
+      "status": "PASS"
+    },
+    {
+      "name": "manager visitor may preview store",
+      "status": "PASS"
+    },
+    {
+      "name": "preview visitor may preview store",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid preview token does not reveal products",
+      "status": "PASS"
+    },
+    {
+      "name": "owned visibility fixtures removed",
+      "status": "PASS",
+      "deleted": 16
+    },
+    {
+      "name": "global store settings unchanged",
+      "status": "PASS"
+    }
+  ],
+  "cleanup": {
+    "deleted": 16,
+    "remaining": 0,
+    "terms_removed": true,
+    "request_override_removed": true
+  }
+}

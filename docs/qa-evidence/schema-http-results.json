@@ -1,0 +1,119 @@
+[
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-building-resilient-communities/",
+    "label": "books",
+    "type": "Book",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList",
+      "Book"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-research-for-real-world-impact/",
+    "label": "e-books",
+    "type": "Book",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList",
+      "Book"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-inclusive-knowledge-systems/",
+    "label": "research-reports",
+    "type": "Report",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList",
+      "Report"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "label": "policy-briefs",
+    "type": "CreativeWork",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList",
+      "CreativeWork"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-a-practical-question-setting-workbook/",
+    "label": "free-resources",
+    "type": "CreativeWork",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList",
+      "CreativeWork"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/subject-area/climate-sustainability/",
+    "label": "Climate &amp; Sustainability",
+    "type": "BreadcrumbList",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/publication-type/books/",
+    "label": "Books",
+    "type": "BreadcrumbList",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "label": "Commentary",
+    "type": "BreadcrumbList",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-human-wellbeing-as-a-shared-research-question/",
+    "label": "Article",
+    "type": "ScholarlyArticle",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList",
+      "ScholarlyArticle"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-global-health-human-development-review/",
+    "label": "Journal",
+    "type": "Periodical",
+    "status": 200,
+    "pass": true,
+    "emittedTypes": [
+      "Organization",
+      "BreadcrumbList",
+      "Periodical"
+    ]
+  }
+]

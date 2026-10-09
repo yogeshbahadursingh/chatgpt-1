@@ -1,0 +1,72 @@
+[
+    {
+        "test": "Repeated demo import creates no duplicate posts",
+        "status": "PASS",
+        "detail": "74 \/ 74"
+    },
+    {
+        "test": "Setup repeats without duplicate pages",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Setup preserves edited page content",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Removal preserves edited demo record",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Removal preserves real page",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Removal trashes unchanged demo records",
+        "status": "PASS",
+        "detail": "{\"trashed\":73,\"preserved\":1}"
+    },
+    {
+        "test": "Physical inventory and shipping",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Ebook is virtual\/downloadable with actual file",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Free resource uses zero price",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Unpaid order has no download permission",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Completed test order grants Woo download permission",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Order reduces physical stock by quantity",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Stock restores when released",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Core page content is nonempty",
+        "status": "PASS",
+        "detail": ""
+    }
+]

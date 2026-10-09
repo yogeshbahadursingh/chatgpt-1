@@ -1,0 +1,121 @@
+{
+  "checks": [
+    {
+      "name": "store directory exact visible membership",
+      "status": "PASS",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "name": "store products exact visible membership",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "name": "store auto exact visible membership",
+      "status": "PASS",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "name": "store explicit exact visible membership",
+      "status": "PASS",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "name": "store main search exact visible membership",
+      "status": "PASS",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "name": "store search count excludes invisible products",
+      "status": "PASS"
+    },
+    {
+      "name": "live-hide-stock directory exact visible membership",
+      "status": "PASS",
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "name": "live-hide-stock products exact visible membership",
+      "status": "PASS",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "name": "live-hide-stock auto exact visible membership",
+      "status": "PASS",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "live-hide-stock explicit exact visible membership",
+      "status": "PASS",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "live-hide-stock main search exact visible membership",
+      "status": "PASS",
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "name": "live-hide-stock search count excludes invisible products",
+      "status": "PASS"
+    },
+    {
+      "name": "live-show-stock directory exact visible membership",
+      "status": "PASS",
+      "expected": 5,
+      "actual": 5
+    },
+    {
+      "name": "live-show-stock products exact visible membership",
+      "status": "PASS",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "live-show-stock auto exact visible membership",
+      "status": "PASS",
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "name": "live-show-stock explicit exact visible membership",
+      "status": "PASS",
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "name": "live-show-stock main search exact visible membership",
+      "status": "PASS",
+      "expected": 5,
+      "actual": 5
+    },
+    {
+      "name": "live-show-stock search count excludes invisible products",
+      "status": "PASS"
+    },
+    {
+      "name": "all owned collection fixtures removed",
+      "status": "PASS",
+      "deleted": 7
+    },
+    {
+      "name": "global store settings unchanged",
+      "status": "PASS"
+    }
+  ],
+  "cleanup": {
+    "deleted": 7,
+    "remaining": 0,
+    "term_removed": true,
+    "request_override_removed": true
+  }
+}

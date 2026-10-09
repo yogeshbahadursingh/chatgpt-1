@@ -1,0 +1,32 @@
+[
+  {
+    "test": "Demo product remains viewable",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Demo product explains purchase restriction",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Demo product has no purchase form",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Store API advertises demo as not purchasable",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Direct add-to-cart URL leaves basket empty",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Store API add-item rejects demo",
+    "status": "PASS",
+    "detail": "400 woocommerce_rest_product_not_purchasable"
+  }
+]

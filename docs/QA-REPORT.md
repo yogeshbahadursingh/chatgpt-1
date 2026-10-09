@@ -1,60 +1,69 @@
-# QA report — 2.3.0, 9 October 2026
+# QA report — 2.3.2, 9 October 2026
 
-This report records observed local checks, not production certification. The final packages were installed through WP-CLI ZIP installation on a fresh database. The last theme-only change underlined article breadcrumbs and was repackaged, reinstalled and accessibility-retested. No production database or site was modified.
+**Local acceptance passed; production is unchanged and awaits explicit human approval.** The previous report’s 112-route crawl omitted shared taxonomies and did not establish complete journeys. This release adds those routes and targeted regressions. LIVE-AUDIT.md separately records live store 404s, disabled enquiries and external schema configuration issues.
 
-Environment: WordPress 7.1.2, WooCommerce 11.1.2, PHP 8.0.30, Apache 2.4.58, MariaDB 10.4.32, Playwright Chromium and axe-core. These are recorded test versions, not a hosting recommendation. Mail and outbound WordPress HTTP were intercepted. Browser scans blocked remote origins where specified by their scripts.
+The final ZIPs were installed onto a newly extracted WordPress 7.1.2 core and an empty `ppt_acceptance_232` database, using WooCommerce 11.1.2, PHP 8.0.30, Apache 2.4.58, MariaDB 10.4.32 and Playwright Chromium. The publicly observed site runs WordPress 7.1.3; that exact hosting/plugin combination was not reproduced. Setup created 21 editable pages before Woo activation and was repeated afterwards. All 149 source files match installed package files by SHA-256.
 
-| Area | Status | Evidence and boundary |
+Mail and outbound WordPress HTTP were intercepted. Demo purchase protection was tested first with default production behavior. Local-only configuration then enabled sample checkout for commerce tests; it is excluded from packages. No real charge or external message was sent. Focused fixture suites ran against the same final source, with exact owned-record cleanup; the complete package then passed the clean-install acceptance matrix.
+
+| Area | Result | Evidence and boundary |
 |---|---|---|
-| Clean ZIP installation | PASS | New local database; plugin/theme ZIP installation and activation. Setup returned 21 page IDs without WooCommerce; repeated after Woo activation. Final source matched installed package files. |
-| Setup and demo lifecycle | PASS | 14/14 integration checks: repeat import 74/74, repeat setup, edited-page preservation, demo removal, stock and download permissions. |
-| Homepage | PASS | Dynamic collections, retained original composition/orb/intro; browser rendering and responsive matrix. |
-| Navigation | PASS | 34 distinct header/homepage/footer destinations fetched; mobile keyboard Enter/Escape and no-JavaScript links checked. No submenu was configured. |
-| Core Pages | PASS | Nonempty editable setup content and successful routes. Team/Partners remain intentional empty archives. Policy accuracy still requires operator review. |
-| Journals and articles | PASS, limited | Demo metadata/relationships inspected; all generated single/archive routes rendered. Representative article included in axe scan. No real scholarly identifiers or editorial approval inferred. |
-| Research | PASS, limited | Areas/projects/researchers queried and linked; demo relationships inspected; routes and representative landing-page layout tested. Findings are explicitly demonstration concepts. |
-| Publications | PASS | Dynamic product/topic/author/catalogue sections rendered; responsive and axe checks. Catalogue entries and products are edited separately. |
-| Physical books | PASS | Native stock/shipping flags, quantity-two browser basket, £48 subtotal, stock decrement/restoration. No paid gateway order. |
-| E-books/free resources | PASS | Virtual/downloadable flags and actual PDFs; unpaid permissions absent, manually completed order permissions granted; free browser checkout and authorized PDF response. |
-| WooCommerce | PASS, local scope | 6/6 browser commerce/form/404 checks. Direct sample URL denied with HTTP 403. Shop/product/account routes rendered. Native transaction templates retained. |
-| Store visibility | PASS | Earlier explicit coming-soon test hid products; live visibility enabled only in local QA to exercise commerce. |
-| Training and events | PASS, limited | Six programmes and four future concepts inspected; all generated routes and representative Training layout tested. Enrolment uses configured URLs/contextual enquiries, not an LMS. |
-| Insights | PASS, limited | Nine editable posts, archive and singles rendered; categories and related content use WordPress records. |
-| Search/filter foundations | PASS, limited | Browser search returned relevant content; shared topics and archive query wiring reviewed. Exhaustive combinations and relevance ranking are not certified. |
-| Demo content | PASS | 74 records inspected for nonempty original prose, topics, relationship targets, future events and absence of invented identifiers; zero findings. |
-| Public routes | PASS | 112 HTTP responses; no PHP error markers or raw PPT shortcodes. Actual templates listed in ROUTE-AUDIT.md. HTTP checks do not certify all interactions. |
-| Responsive | PASS | 56 page/width checks across Home, Publications, Research, Training, Contact, Shop and Product; eight widths 320, 375, 430, 768, 1024, 1280, 1440, 1920. Populated cart/checkout checked at the same widths. No visible control clipping or horizontal overflow in those checks. |
-| Keyboard and animation | PASS | 23/23 checks including mobile menu, session intro, reduced motion, no-JavaScript content/navigation, basket and checkout layouts. |
-| Automated accessibility | PASS, scoped | 6 representative routes; 0 reported WCAG-tagged axe violations. Contrast on gradients/images has incomplete items requiring human review. This is not a WCAG conformance claim. |
-| 404 | PASS | Missing route retained HTTP 404 and branded recovery message. |
-| PHP and packaging | PASS | 97 PHP files linted. ZIP roots are people-planet-thrive/ and ppt-core/; 127 and 21 entries respectively; no runtime, credentials, caches or backups packaged. |
+| Setup/content/commerce lifecycle | PASS 14/14 | Idempotence, edited-content preservation, demo removal, stock and native download permissions. [Results](qa-evidence/integration-results.json) |
+| Starter handling | PASS 3/3 | Exact plain/block defaults drafted; genuine copy preserved. [Results](qa-evidence/setup-repair-results.json) |
+| Demo guard: production-default | PASS 27/27 | Product/variation, cart, classic/Store API checkout and order-payment guard assertions; temporary fixtures cleaned. [Results](qa-evidence/demo-commerce-production-default.json) |
+| Demo guard: production-opt-in | PASS 27/27 | Product/variation, cart, classic/Store API checkout and order-payment guard assertions; temporary fixtures cleaned. [Results](qa-evidence/demo-commerce-production-opt-in.json) |
+| Demo guard: staging-opt-in | PASS 27/27 | Product/variation, cart, classic/Store API checkout and order-payment guard assertions; temporary fixtures cleaned. [Results](qa-evidence/demo-commerce-staging-opt-in.json) |
+| Demo guard HTTP | PASS 6/6 | No demo purchase form; direct basket and Store API additions rejected. [Results](qa-evidence/demo-commerce-browser-results.json) |
+| Pagination and no-Woo catalogue | PASS 19/19 | Two pages with exact membership and persistent topic/status; five correct editorial format groups. [Results](qa-evidence/archive-journey-results.json) |
+| Shared-taxonomy store visibility | PASS 44/44 | Store-only vs whole-site, hidden catalogue items, pagination, private preview and unchanged options. [Results](qa-evidence/store-visibility-results.json) |
+| Secondary product visibility | PASS 20/20 | Related content, directories and search respect launch and Woo visibility settings. [Results](qa-evidence/collection-visibility-results.json) |
+| Editorial product journeys | PASS 24/24 | Paid, free, preview, unavailable, private, hidden and missing linked products. [Results](qa-evidence/publication-cta-results.json) |
+| Research filters | PASS 9/9 | Status aliases, empty results and combined topic/status. [Results](qa-evidence/research-filter-results.json) |
+| Research editor | PASS 6/6 | Stored status displayed correctly without data rewrite. [Results](qa-evidence/research-editor-results.json) |
+| Schema behavior | PASS 22/22 | Configured logo, breadcrumbs, format types, ISBN, schema ownership and safe JSON encoding. [Results](qa-evidence/schema-results.json) |
+| Rendered JSON-LD | PASS 10/10 | Actual HTTP pages parse and emit expected types and nonempty breadcrumb destinations. [Results](qa-evidence/schema-http-results.json) |
+| Mixed terms and journal submission | PASS 3/3 | HTTP 200/no PHP marker; term content and actual submission link/policies. [Results](qa-evidence/journey-repair-results.json) |
+| Homepage precedence | PASS 4/4 | Latest-posts configuration retains hero; Insights and keyboard overlay work. [Results](qa-evidence/frontpage-repair-results.json) |
+| Premium navigation | PASS 16/16 | Seven widths, keyboard/Escape/focus restore, sticky/simulated admin-bar offsets, no-JS and reduced motion. [Results](qa-evidence/navigation-premium-results.json) |
+| Navigation/search/sitemap | PASS 38/38 | Observed internal links, native mini-cart, search and XML sitemap. [Results](qa-evidence/navigation-results.json) |
+| Interactions and basket layouts | PASS 23/23 | Native keyboard, intro behavior, quantity-two basket and populated Cart/Checkout widths. [Results](qa-evidence/interaction-results.json) |
+| Commerce/form HTTP | PASS 6/6 | Free checkout and authorized PDF; direct file 403; intercepted enquiry, invalid nonce and expected 404. [Results](qa-evidence/browser-commerce-results.json) |
+| Anonymous actions/REST | PASS 3/3 | Setup/import denial and no paid-file URL in editorial publication REST. [Results](qa-evidence/security-results.json) |
+| Demonstration content | PASS 74/74 | Nonempty records, topics, relationship targets, future events and no invented academic identifiers. [Results](qa-evidence/content-results.json) |
+| Public routes | PASS 140/140 | Includes populated public taxonomies; response markers and observed template evidence. 138 distinct URLs; repeat entries verify page/archive aliases. [Results](qa-evidence/route-results.json) |
+| Responsive page matrix | PASS 64/64 | Eight page types at eight widths 320–1920. [Results](qa-evidence/responsive-results.json) |
+| Home/Insights visual regression | PASS 14/14 | Fourteen width observations; visible heading scale and no horizontal overflow, with desktop/mobile screenshot review. [Results](qa-evidence/screenshot-repair-results.json) |
+| Automated accessibility | PASS 7/7 | Seven representative routes; WCAG-tagged axe checks only. Gradient/image contrast includes manual-review items. [Results](qa-evidence/accessibility-results.json) |
+| PHP/package integrity | PASS | 101 PHP files linted; correct ZIP roots, source/package file counts and no runtime/configuration/secrets paths. [Integrity](qa-evidence/package-results.json) |
 
-## Performance and SEO observations
+## Performance and visual review
 
-Local resource inventory: Home 40 resources / 633,189 transferred bytes; Publications 43 / 647,889; physical Product 42 / 639,715. External browser origins were blocked in this measurement. No broken images were observed on those three pages. Custom homepage/orb/intro and specialist styles are conditionally loaded; no new animation framework was added. WooCommerce mini-cart/account integration contributes global assets. These figures are diagnostic payload observations, not Core Web Vitals or production speed scores; global commerce payload and real-device performance should be monitored after launch.
+Desktop at 1366px and mobile at 375px header screenshots were inspected. The approved hero/orb, intro and footer composition remain. The menu overlay fills the viewport; the desktop menu stays on one row and the mobile header retains search/account/cart. Responsive assertions cover geometry and control clipping, not all aspects of visual quality.
 
-All three pages had a nonempty title and one H1; JSON-LD parsed successfully. Home and Product had native canonical links, Product included WooCommerce Product schema, and the core XML sitemap responded successfully in the navigation test. The Publications archive relies on normal WordPress/SEO-plugin canonical handling; no custom canonical was emitted there. Open Graph and SEO-plugin combinations were not tested. Gradient/image contrast remains a manual review item.
+- /: 38 observed resources, 620,102 transferred bytes; 1 H1; 0 broken images.
+- /publications/: 37 observed resources, 632,587 transferred bytes; 1 H1; 0 broken images.
+- /product/demo-product-people-planet-progress/: 37 observed resources, 624,713 transferred bytes; 1 H1; 0 broken images.
 
-## Security and safe operation
+Home and Product expose native canonical links. The local Publications archive has no custom canonical tag; the chosen SEO provider must supply/verify archive canonicals and social metadata where required. No full SEO-plugin combination or search-indexing certification is claimed.
 
-Anonymous setup and demo-import requests both returned HTTP 400; a publication REST response contained no protected download URL. Custom-code review checked capability/nonce gates, sanitization/escaping, specific-object REST authorization, JSON encoding, file metadata and keyed demo ownership. Form invalid-nonce rejection, order download permissions and Apache direct-file denial were tested. This is a focused application review, not a penetration test. Production upload protection, HTTPS, CDN caching and real authentication policies remain NOT TESTABLE here.
+These are isolated resource observations with remote origins blocked, not Core Web Vitals or production speed scores. No full load test, field performance or all-browser certification was performed.
 
-Demo removal preserves records whose editorial fingerprint changed. A local URL correction changed 19 fingerprints and conservatively retained those records; the test-only baseline was re-established before rerunning the removal test, which then trashed 73 unchanged demos and retained the intentionally edited record. Do not reset fingerprints on real content to force deletion. Existing database backups and originals remain local.
+## Remaining approval and hosting checks
 
-## NOT TESTABLE / operator checks
+- **Live repair application:** activate/configure WooCommerce, repair its four page assignments, verify Reading/Site Editor overrides and purge page/hosting/CDN caches only after approval.
+- **Mail:** configure an approved recipient and transport; verify actual receipt. Local form acceptance is not delivery proof.
+- **Real commerce:** gateway sandbox paid/failed/cancelled/refunded orders, callbacks, real shipping/tax rules, customer emails and account recovery remain NOT TESTABLE without operator configuration. Local unpaid/completed order permissions are narrower evidence.
+- **Downloads:** verify direct denial and authorized delivery on the real web server/CDN, HTTPS, expiry and exhausted links. Local Apache 403 does not configure Nginx/CDN.
+- **Editorial/SEO:** replace or remove fictional demos, approve organisation/policies/product rights and files, configure the external SEO provider’s real Organization details and verify one intended metadata owner.
+- **Accessibility:** manual screen readers, physical mobile devices, non-Chromium browsers and incomplete image/gradient contrast require human review. Zero automated violations is not WCAG conformance.
 
-- External payment authorization, gateway callbacks, paid/failed/refunded order flows and gateway email integration: no credentials used.
-- Real enquiry/newsletter delivery: accepted mail was deliberately intercepted; newsletter points to the operator's configured service.
-- Production server/CDN download denial, caching, HTTPS, shipping/tax configuration and field performance: no production deployment/access exercised.
-- Manual screen-reader review, physical mobile devices, non-Chromium browser matrix and complete WCAG 2.2 AA conformance: not covered by these automated local checks.
-- Genuine operator policies, staff/partners, academic identifiers, product files/prices and editorial accuracy: require supplied/approved information.
-- Common SEO-plugin combinations, variable-product combinations, every optional filter and full load testing: not exhaustively exercised.
+## Package hashes
 
-## Known limitations
+- people-planet-thrive.zip: SHA-256 `87ca66b1e7b39ecd7a6b99e6cff80bab37d78f2e6cb92d366de969e9cfdeeefc` (127 files; 170148 bytes).
+- ppt-core.zip: SHA-256 `28f6ba74dbe4e6d48adbf92afb95cb0be09a03e68009956376f33a51745bbeef` (22 files; 46590 bytes).
 
-Editorial Publications and WooCommerce Products are linked but separately maintained. Demonstration files, profiles, covers, dates and prices must be reviewed/removed before live trading. Saved Site Editor templates override packaged templates and need selective review during upgrades. Legacy named page templates now render editable content; inactive PHP chrome fragments remain for compatibility. No real team/partner claims were seeded. The final human/operator review gate is still required before launch.
+The machine-readable evidence and timestamps are in [qa-evidence/manifest.json](qa-evidence/manifest.json). Runtime databases, test orders, logs, configuration and preview credentials remain local. See INSTALLATION.md for backup, application and rollback.
 
-## Package integrity
+The first concurrent browser acceptance attempt exhausted local test-host capacity and produced timeouts/partial results. Those runs were not accepted; remaining suites were rerun with one test browser at a time. Final results above are the completed reruns. No product-code changes or relaxed assertions were used to make those timeouts pass.
 
-- people-planet-thrive.zip — SHA-256 `e0b68d2b0610a1ae72963f713ca5f01835626a398130dd397f1a50d290cfe9dc`
-- ppt-core.zip — SHA-256 `50626b25747c2aef34248391cb73465ea0d3d0f13bc62bcc039586f97bda6652`
+The sequential accessibility run independently found an Insights author-link defect. Its [pre-fix results](qa-evidence/accessibility-before-byline-fix.json) are retained. The byline links were underlined, all seven axe routes passed, and the theme was repackaged/reinstalled with 149/149 source-file hashes matching. The final change was limited to that link decoration; Insights width/screenshots were rechecked in the final screenshot matrix. Earlier clean-install commerce/routing/responsive evidence remains applicable to the unchanged code paths.

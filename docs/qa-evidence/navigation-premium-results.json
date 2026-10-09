@@ -1,0 +1,87 @@
+[
+  {
+    "test": "Premium navigation stylesheet loads",
+    "pass": true
+  },
+  {
+    "test": "Header fits 320px",
+    "pass": true,
+    "overflow": false,
+    "clipped": [],
+    "height": 123
+  },
+  {
+    "test": "Header fits 375px",
+    "pass": true,
+    "overflow": false,
+    "clipped": [],
+    "height": 123
+  },
+  {
+    "test": "Header fits 768px",
+    "pass": true,
+    "overflow": false,
+    "clipped": [],
+    "height": 121
+  },
+  {
+    "test": "Header fits 1280px",
+    "pass": true,
+    "overflow": false,
+    "clipped": [],
+    "height": 93
+  },
+  {
+    "test": "Header fits 1366px",
+    "pass": true,
+    "overflow": false,
+    "clipped": [],
+    "height": 100
+  },
+  {
+    "test": "Header fits 1440px",
+    "pass": true,
+    "overflow": false,
+    "clipped": [],
+    "height": 93
+  },
+  {
+    "test": "Header fits 1920px",
+    "pass": true,
+    "overflow": false,
+    "clipped": [],
+    "height": 93
+  },
+  {
+    "test": "Mobile menu opens with keyboard",
+    "pass": true
+  },
+  {
+    "test": "Mobile menu covers viewport and all links fit",
+    "pass": true
+  },
+  {
+    "test": "Escape closes menu and restores focus",
+    "pass": true
+  },
+  {
+    "test": "Header stays visible on scroll",
+    "pass": true
+  },
+  {
+    "test": "Desktop admin-bar offset is applied once",
+    "pass": true
+  },
+  {
+    "test": "Mobile header has no stale admin-bar offset after scrolling",
+    "pass": true
+  },
+  {
+    "test": "No-JavaScript mobile menu stays accessible",
+    "pass": true
+  },
+  {
+    "test": "Reduced motion disables header transitions",
+    "pass": true
+  }
+]

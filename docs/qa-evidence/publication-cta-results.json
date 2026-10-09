@@ -1,0 +1,122 @@
+[
+  {
+    "test": "paid: editorial route renders",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "paid: accurate product destination and CTA",
+    "status": "PASS",
+    "detail": "[{\"text\":\"Purchase\",\"url\":\"http://127.0.0.1:8877/product/qa-temporary-paid/\"}]"
+  },
+  {
+    "test": "paid: stale editorial price is not displayed",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paid product uses Woo sale price and currency",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "free: editorial route renders",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "free: accurate product destination and CTA",
+    "status": "PASS",
+    "detail": "[{\"text\":\"Get free resource\",\"url\":\"http://127.0.0.1:8877/product/qa-temporary-free/\"}]"
+  },
+  {
+    "test": "free: stale editorial price is not displayed",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Free product uses Woo zero price",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "demo: editorial route renders",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "demo: accurate product destination and CTA",
+    "status": "PASS",
+    "detail": "[{\"text\":\"Preview demonstration\",\"url\":\"http://127.0.0.1:8877/product/qa-temporary-demo/\"}]"
+  },
+  {
+    "test": "demo: stale editorial price is not displayed",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Demo destination is a preview with checkout unavailable",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "private: editorial route renders",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "private: accurate product destination and CTA",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "test": "private: stale editorial price is not displayed",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "hidden: editorial route renders",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "hidden: accurate product destination and CTA",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "test": "hidden: stale editorial price is not displayed",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "unavailable: editorial route renders",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "unavailable: accurate product destination and CTA",
+    "status": "PASS",
+    "detail": "[{\"text\":\"View product details\",\"url\":\"http://127.0.0.1:8877/product/qa-temporary-unavailable/\"}]"
+  },
+  {
+    "test": "unavailable: stale editorial price is not displayed",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "missing: editorial route renders",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "missing: accurate product destination and CTA",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "test": "missing: stale editorial price is not displayed",
+    "status": "PASS",
+    "detail": ""
+  }
+]

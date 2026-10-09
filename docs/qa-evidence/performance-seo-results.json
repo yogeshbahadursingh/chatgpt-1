@@ -1,0 +1,601 @@
+[
+  {
+    "route": "/",
+    "title": "PEOPLE & PLANET THRIVE – KNOWLEDGE FOR PEOPLE. PROGRESS FOR PLANET.",
+    "h1": 1,
+    "canonical": "http://127.0.0.1:8877/",
+    "jsonld": [
+      "Organization"
+    ],
+    "assets": [
+      {
+        "path": "/wp-includes/blocks/navigation/style.min.css",
+        "kind": "link",
+        "bytes": 21076
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css",
+        "kind": "link",
+        "bytes": 14390
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/mini-cart-contents.css",
+        "kind": "link",
+        "bytes": 74041
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/packages-style.css",
+        "kind": "link",
+        "bytes": 47814
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-blocktheme.css",
+        "kind": "link",
+        "bytes": 10236
+      },
+      {
+        "path": "/wp-content/plugins/ppt-core/assets/css/public.css",
+        "kind": "link",
+        "bytes": 1763
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css",
+        "kind": "link",
+        "bytes": 20454
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce.css",
+        "kind": "link",
+        "bytes": 92425
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/design-system.css",
+        "kind": "link",
+        "bytes": 25313
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/chrome.css",
+        "kind": "link",
+        "bytes": 15226
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/homepage.css",
+        "kind": "link",
+        "bytes": 7384
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/rescue.css",
+        "kind": "link",
+        "bytes": 21826
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/custom-blocks.css",
+        "kind": "link",
+        "bytes": 9088
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/completion.css",
+        "kind": "link",
+        "bytes": 9053
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/navigation-premium.css",
+        "kind": "link",
+        "bytes": 6371
+      },
+      {
+        "path": "/wp-includes/js/jquery/jquery.min.js",
+        "kind": "script",
+        "bytes": 87853
+      },
+      {
+        "path": "/wp-includes/js/jquery/jquery-migrate.min.js",
+        "kind": "script",
+        "bytes": 13877
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js",
+        "kind": "script",
+        "bytes": 9936
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js",
+        "kind": "script",
+        "bytes": 4650
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js",
+        "kind": "script",
+        "bytes": 2020
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js",
+        "kind": "script",
+        "bytes": 4581
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/customer-account.js",
+        "kind": "script",
+        "bytes": 2178
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/mini-cart.js",
+        "kind": "script",
+        "bytes": 14023
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/store-notices.js",
+        "kind": "other",
+        "bytes": 2589
+      },
+      {
+        "path": "/wp-includes/js/dist/script-modules/interactivity/index.min.js",
+        "kind": "other",
+        "bytes": 40406
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/woocommerce/products.js",
+        "kind": "other",
+        "bytes": 1687
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/woocommerce/cart.js",
+        "kind": "other",
+        "bytes": 11170
+      },
+      {
+        "path": "/wp-content/plugins/ppt-core/assets/js/public.js",
+        "kind": "script",
+        "bytes": 762
+      },
+      {
+        "path": "/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js",
+        "kind": "script",
+        "bytes": 3333
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/header.js",
+        "kind": "script",
+        "bytes": 9128
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/hero-orb.js",
+        "kind": "script",
+        "bytes": 1602
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/brand-intro.js",
+        "kind": "script",
+        "bytes": 1496
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/navigation.js",
+        "kind": "script",
+        "bytes": 2912
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/skip-link.js",
+        "kind": "script",
+        "bytes": 1074
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js",
+        "kind": "script",
+        "bytes": 15615
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js",
+        "kind": "script",
+        "bytes": 2739
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/navigation-premium.js",
+        "kind": "script",
+        "bytes": 1056
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css",
+        "kind": "link",
+        "bytes": 8955
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "route": "/publications/",
+    "title": "Publications – PEOPLE & PLANET THRIVE",
+    "h1": 1,
+    "canonical": null,
+    "jsonld": [
+      "Organization",
+      "BreadcrumbList"
+    ],
+    "assets": [
+      {
+        "path": "/wp-includes/blocks/navigation/style.min.css",
+        "kind": "link",
+        "bytes": 21076
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css",
+        "kind": "link",
+        "bytes": 14390
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/mini-cart-contents.css",
+        "kind": "link",
+        "bytes": 74041
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/packages-style.css",
+        "kind": "link",
+        "bytes": 47814
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-blocktheme.css",
+        "kind": "link",
+        "bytes": 10236
+      },
+      {
+        "path": "/wp-content/plugins/ppt-core/assets/css/public.css",
+        "kind": "link",
+        "bytes": 1763
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css",
+        "kind": "link",
+        "bytes": 20454
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce.css",
+        "kind": "link",
+        "bytes": 92425
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/design-system.css",
+        "kind": "link",
+        "bytes": 25313
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/chrome.css",
+        "kind": "link",
+        "bytes": 15226
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/publications.css",
+        "kind": "link",
+        "bytes": 11843
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/editorial.css",
+        "kind": "link",
+        "bytes": 11124
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/rescue.css",
+        "kind": "link",
+        "bytes": 21826
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/custom-blocks.css",
+        "kind": "link",
+        "bytes": 9088
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/completion.css",
+        "kind": "link",
+        "bytes": 9053
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/navigation-premium.css",
+        "kind": "link",
+        "bytes": 6371
+      },
+      {
+        "path": "/wp-includes/js/jquery/jquery.min.js",
+        "kind": "script",
+        "bytes": 87853
+      },
+      {
+        "path": "/wp-includes/js/jquery/jquery-migrate.min.js",
+        "kind": "script",
+        "bytes": 13877
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js",
+        "kind": "script",
+        "bytes": 9936
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js",
+        "kind": "script",
+        "bytes": 4650
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js",
+        "kind": "script",
+        "bytes": 2020
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js",
+        "kind": "script",
+        "bytes": 4581
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/customer-account.js",
+        "kind": "script",
+        "bytes": 2178
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/mini-cart.js",
+        "kind": "script",
+        "bytes": 14023
+      },
+      {
+        "path": "/wp-includes/js/dist/script-modules/interactivity/index.min.js",
+        "kind": "other",
+        "bytes": 40406
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/store-notices.js",
+        "kind": "other",
+        "bytes": 2589
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/woocommerce/products.js",
+        "kind": "other",
+        "bytes": 1687
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/woocommerce/cart.js",
+        "kind": "other",
+        "bytes": 11170
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css",
+        "kind": "link",
+        "bytes": 8955
+      },
+      {
+        "path": "/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js",
+        "kind": "script",
+        "bytes": 3333
+      },
+      {
+        "path": "/wp-content/plugins/ppt-core/assets/js/public.js",
+        "kind": "script",
+        "bytes": 762
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/header.js",
+        "kind": "script",
+        "bytes": 9128
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/navigation.js",
+        "kind": "script",
+        "bytes": 2912
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/skip-link.js",
+        "kind": "script",
+        "bytes": 1074
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js",
+        "kind": "script",
+        "bytes": 15615
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js",
+        "kind": "script",
+        "bytes": 2739
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/navigation-premium.js",
+        "kind": "script",
+        "bytes": 1056
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "route": "/product/demo-product-people-planet-progress/",
+    "title": "People, Planet & Progress — Demo – PEOPLE & PLANET THRIVE",
+    "h1": 1,
+    "canonical": "http://127.0.0.1:8877/product/demo-product-people-planet-progress/",
+    "jsonld": [
+      "Organization",
+      "BreadcrumbList",
+      "Product"
+    ],
+    "assets": [
+      {
+        "path": "/wp-includes/blocks/navigation/style.min.css",
+        "kind": "link",
+        "bytes": 21076
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css",
+        "kind": "link",
+        "bytes": 14390
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/mini-cart-contents.css",
+        "kind": "link",
+        "bytes": 74041
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/packages-style.css",
+        "kind": "link",
+        "bytes": 47814
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-blocktheme.css",
+        "kind": "link",
+        "bytes": 10236
+      },
+      {
+        "path": "/wp-content/plugins/ppt-core/assets/css/public.css",
+        "kind": "link",
+        "bytes": 1763
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css",
+        "kind": "link",
+        "bytes": 20454
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce.css",
+        "kind": "link",
+        "bytes": 92425
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/design-system.css",
+        "kind": "link",
+        "bytes": 25313
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/chrome.css",
+        "kind": "link",
+        "bytes": 15226
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/publications.css",
+        "kind": "link",
+        "bytes": 11843
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/rescue.css",
+        "kind": "link",
+        "bytes": 21826
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/custom-blocks.css",
+        "kind": "link",
+        "bytes": 9088
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/completion.css",
+        "kind": "link",
+        "bytes": 9053
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/css/navigation-premium.css",
+        "kind": "link",
+        "bytes": 6371
+      },
+      {
+        "path": "/wp-includes/js/jquery/jquery.min.js",
+        "kind": "script",
+        "bytes": 87853
+      },
+      {
+        "path": "/wp-includes/js/jquery/jquery-migrate.min.js",
+        "kind": "script",
+        "bytes": 13877
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js",
+        "kind": "script",
+        "bytes": 9936
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js",
+        "kind": "script",
+        "bytes": 4650
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js",
+        "kind": "script",
+        "bytes": 2020
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js",
+        "kind": "script",
+        "bytes": 4581
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/customer-account.js",
+        "kind": "script",
+        "bytes": 2178
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/mini-cart.js",
+        "kind": "script",
+        "bytes": 14023
+      },
+      {
+        "path": "/wp-includes/js/dist/script-modules/interactivity/index.min.js",
+        "kind": "other",
+        "bytes": 40406
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/store-notices.js",
+        "kind": "other",
+        "bytes": 2589
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/woocommerce/products.js",
+        "kind": "other",
+        "bytes": 1687
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/woocommerce/cart.js",
+        "kind": "other",
+        "bytes": 11170
+      },
+      {
+        "path": "/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js",
+        "kind": "script",
+        "bytes": 3333
+      },
+      {
+        "path": "/wp-content/plugins/ppt-core/assets/js/public.js",
+        "kind": "script",
+        "bytes": 762
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/header.js",
+        "kind": "script",
+        "bytes": 9128
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/navigation.js",
+        "kind": "script",
+        "bytes": 2912
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/skip-link.js",
+        "kind": "script",
+        "bytes": 1074
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js",
+        "kind": "script",
+        "bytes": 15615
+      },
+      {
+        "path": "/wp-includes/js/comment-reply.min.js",
+        "kind": "script",
+        "bytes": 3250
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js",
+        "kind": "script",
+        "bytes": 2739
+      },
+      {
+        "path": "/wp-content/themes/people-planet-thrive/assets/js/navigation-premium.js",
+        "kind": "script",
+        "bytes": 1056
+      },
+      {
+        "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css",
+        "kind": "link",
+        "bytes": 8955
+      }
+    ],
+    "brokenImages": []
+  }
+]

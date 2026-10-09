@@ -1,0 +1,166 @@
+{
+  "release": "2.3.2",
+  "generated": "2026-10-09T09:28:06.396Z",
+  "files": [
+    {
+      "file": "integration-results.json",
+      "recorded": "2026-10-09T08:58:13.700Z",
+      "sha256": "9eece0eb9283935c87cc2f1ec3487786a81171bd226cceb02a327e501384c4c5"
+    },
+    {
+      "file": "setup-repair-results.json",
+      "recorded": "2026-10-09T08:58:17.258Z",
+      "sha256": "b20ca3c33f6b849d305715c083c0f0a79846a3d0b83d8413b524af2460fbc1cb"
+    },
+    {
+      "file": "demo-commerce-production-default.json",
+      "recorded": "2026-10-09T08:56:55.926Z",
+      "sha256": "f03481546f705d8f5e869f641c6a8713cb49f3afbd39098b58b690c45ec62e59"
+    },
+    {
+      "file": "demo-commerce-production-opt-in.json",
+      "recorded": "2026-10-09T08:57:00.539Z",
+      "sha256": "1813cb7854905907df31ca001be9807308a033b1f83d320d28d65c46a805f762"
+    },
+    {
+      "file": "demo-commerce-staging-opt-in.json",
+      "recorded": "2026-10-09T08:57:05.085Z",
+      "sha256": "28aa36ae9ad8af61f69f6f22abfa7cc448bcea81ebdbd4d2fad8a0b2795abf5f"
+    },
+    {
+      "file": "demo-commerce-browser-results.json",
+      "recorded": "2026-10-09T08:57:42.313Z",
+      "sha256": "e93849a71e83af0a90f93a19a9c4d91bd76006114b42463b6fa283ce1b70b85d"
+    },
+    {
+      "file": "archive-journey-results.json",
+      "recorded": "2026-10-09T08:55:46.098Z",
+      "sha256": "4cd77256832bc9b865698d92f583957206d0971754c617734496ea44f9d8fd45"
+    },
+    {
+      "file": "store-visibility-results.json",
+      "recorded": "2026-10-09T08:55:33.394Z",
+      "sha256": "5daf906829db7dd194c6347a0f2b8269f711b135c68edfddc501173e3072da42"
+    },
+    {
+      "file": "collection-visibility-results.json",
+      "recorded": "2026-10-09T08:54:04.835Z",
+      "sha256": "c76a80aff5a90cc5474b164bfdbf9ca6e841a11d1ac2cbdcdc8de214c09ecb13"
+    },
+    {
+      "file": "publication-cta-results.json",
+      "recorded": "2026-10-09T08:42:36.302Z",
+      "sha256": "d04da3b20dec4d612e59dd1079062b493b021726f52b60357933f1e988c42b77"
+    },
+    {
+      "file": "research-filter-results.json",
+      "recorded": "2026-10-09T08:27:57.698Z",
+      "sha256": "adae1c32079c299a858916d37a333c9d3e66f8e8cc9c26fb2ce73dcffc87c1e3"
+    },
+    {
+      "file": "research-editor-results.json",
+      "recorded": "2026-10-09T08:28:41.827Z",
+      "sha256": "a24555e48f6cf188263217f3389d81323c6cbd507c9e77bd6cc28ddb29754d77"
+    },
+    {
+      "file": "schema-results.json",
+      "recorded": "2026-10-09T08:59:07.271Z",
+      "sha256": "f2aa527b0288c5dc6e64d63c094460befb480d56414a61db54b618a08d209a41"
+    },
+    {
+      "file": "schema-http-results.json",
+      "recorded": "2026-10-09T08:59:58.256Z",
+      "sha256": "f2a0eb07abf07c5943c1372234407773e40286607e18ea4ac31514f59292f45d"
+    },
+    {
+      "file": "journey-repair-results.json",
+      "recorded": "2026-10-09T09:02:23.393Z",
+      "sha256": "7f93709e8a51b6cb00ac7a48a6895659e0c0a7afc4d0f324e28d19ebd7fc1d79"
+    },
+    {
+      "file": "frontpage-repair-results.json",
+      "recorded": "2026-10-09T09:05:00.592Z",
+      "sha256": "b8861e3a88b9fcbf7c9fd8342de83a8b07cf7a0626a4fe119f27a0b0759612a9"
+    },
+    {
+      "file": "navigation-premium-results.json",
+      "recorded": "2026-10-09T09:23:07.466Z",
+      "sha256": "d4c757bd88ee97743a2153d3214cb3ecff325ee0a7d2b1bafc8112ad4afd9534"
+    },
+    {
+      "file": "navigation-results.json",
+      "recorded": "2026-10-09T09:27:16.299Z",
+      "sha256": "62fd8eed17b0d1f58156e82c873caadf0656347f399492c90877805a805f7765"
+    },
+    {
+      "file": "interaction-results.json",
+      "recorded": "2026-10-09T09:10:42.080Z",
+      "sha256": "f445cb379b1b8b0bd2660167e5315034882f924d3ada4fd1f09836f63c70f3a7"
+    },
+    {
+      "file": "browser-commerce-results.json",
+      "recorded": "2026-10-09T09:08:47.044Z",
+      "sha256": "e76f90672779cb22f48278c8580d1dceda2064ef6ddb5d13f4a817125ec67247"
+    },
+    {
+      "file": "security-results.json",
+      "recorded": "2026-10-09T09:06:54.879Z",
+      "sha256": "bd64d39813789d97b700f059f815beee4d1b170331d214b1870c9bef03878b57"
+    },
+    {
+      "file": "content-results.json",
+      "recorded": "2026-10-09T08:58:20.500Z",
+      "sha256": "dc4e09017ae03a6028776ba9a956125380bdfcb53a285dcc8b55e586863689d3"
+    },
+    {
+      "file": "route-results.json",
+      "recorded": "2026-10-09T09:06:46.831Z",
+      "sha256": "5254358fada063851f829ce8cd5ebd0c4c17913c02a67f472cf04bf6e9642757"
+    },
+    {
+      "file": "responsive-results.json",
+      "recorded": "2026-10-09T09:12:43.295Z",
+      "sha256": "87435c7589a42ee03f44db5f09f4bffb862d57a33b2ec0407fd073f13fbd8f03"
+    },
+    {
+      "file": "screenshot-repair-results.json",
+      "recorded": "2026-10-09T09:24:18.799Z",
+      "sha256": "e1684ef7d309982c5586709809b8e2000a055ea8f1d8b5757c42aa59982d6186"
+    },
+    {
+      "file": "accessibility-results.json",
+      "recorded": "2026-10-09T09:21:31.808Z",
+      "sha256": "af42653e2c78d56a5e337f4d43bfd343197acd177bfa87f196d91fb8518ec37b"
+    },
+    {
+      "file": "package-results.json",
+      "recorded": "2026-10-09T09:21:56.270Z",
+      "sha256": "be2ed1182918ea70508f13fa7783081c84834de36bc7953ef3d57c4ac0e9cdb1"
+    },
+    {
+      "file": "installed-source-results.json",
+      "recorded": "2026-10-09T09:22:01.266Z",
+      "sha256": "bb3fb86e91c8bc6127afe0528082851b408189e218b77b4359c45c8a454e7d30"
+    },
+    {
+      "file": "live-route-results.json",
+      "recorded": "2026-10-09T08:25:10.308Z",
+      "sha256": "4074f24e9119a6265bcd1ce85a3e9b5a4c55a47e603b91dccc5b7eb2715fa7b1"
+    },
+    {
+      "file": "live-system-results.json",
+      "recorded": "2026-10-09T08:26:58.744Z",
+      "sha256": "da38fc7b500d9ea9c7668c3ada974e4e745996ffd2e0cdf16f81a0a40e87037d"
+    },
+    {
+      "file": "performance-seo-results.json",
+      "recorded": "2026-10-09T09:25:04.203Z",
+      "sha256": "cd83339bb0da54662710abcab0400af33eff1fe31490cd99d0a8828eda071072"
+    },
+    {
+      "file": "accessibility-before-byline-fix.json",
+      "recorded": "2026-10-09T09:14:33.450Z",
+      "sha256": "c86e37bfe39e879036f8fceafe8604316eb2fb5a443040e262a5f5656f6c6178"
+    }
+  ]
+}

@@ -8,6 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 global $product;
+if(!$product instanceof WC_Product || !$product->is_visible()) return;
 
 // Check if product is a publication (linked to ppt_publication)
 $publication_id = get_post_meta( $product->get_id(), '_ppt_publication_id', true );

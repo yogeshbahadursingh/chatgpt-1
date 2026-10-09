@@ -19,6 +19,24 @@ $price      = get_post_meta( get_the_ID(), '_ppt_publication_price', true );
 $is_free    = get_post_meta( get_the_ID(), '_ppt_publication_is_free', true );
 $file_url   = get_post_meta( get_the_ID(), '_ppt_publication_file_url', true );
 $product_id = get_post_meta( get_the_ID(), '_ppt_publication_product_id', true );
+$linked_product = $product_id && function_exists( 'wc_get_product' ) ? wc_get_product( $product_id ) : false;
+// An editorial record must never send readers to a deleted, private or hidden product.
+if ( $linked_product && ( 'publish' !== $linked_product->get_status() || ! $linked_product->is_visible()
+	|| ( function_exists( 'ppt_store_prelaunch_for_visitor' ) && ppt_store_prelaunch_for_visitor() ) ) ) {
+	$linked_product = false;
+}
+$product_cta = __( 'View product details', 'people-planet-thrive' );
+if ( $linked_product ) {
+	if ( function_exists( 'ppt_is_demo_product' ) && ppt_is_demo_product( $linked_product ) ) {
+		$product_cta = __( 'Preview demonstration', 'people-planet-thrive' );
+	} elseif ( $linked_product->is_purchasable() && $linked_product->is_in_stock() ) {
+		$product_cta = $linked_product->is_type( 'variable' )
+			? __( 'Choose format', 'people-planet-thrive' )
+			: ( 0.0 === (float) $linked_product->get_price()
+				? __( 'Get free resource', 'people-planet-thrive' )
+				: __( 'Purchase', 'people-planet-thrive' ) );
+	}
+}
 
 // Format date
 $formatted_date = '';
@@ -105,12 +123,17 @@ $pub_types = get_the_terms( get_the_ID(), 'ppt_publication_type' );
 						</div>
 					<?php endif; ?>
 
-					<?php if ( $is_free === '1' ) : ?>
+					<?php if ( $linked_product ) : ?>
+						<div>
+							<strong style="display:block;font-size:var(--wp--preset--font-size--12);text-transform:uppercase;letter-spacing:0.05em;color:var(--wp--preset--color--text-light);margin-bottom:var(--wp--preset--spacing--10)"><?php esc_html_e( 'Price', 'people-planet-thrive' ); ?></strong>
+							<span style="font-size:var(--wp--preset--font-size--16);font-weight:600;color:var(--wp--preset--color--primary)"><?php echo wp_kses_post( $linked_product->get_price_html() ); ?></span>
+						</div>
+					<?php elseif ( ! $product_id && $is_free === '1' ) : ?>
 						<div>
 							<strong style="display:block;font-size:var(--wp--preset--font-size--12);text-transform:uppercase;letter-spacing:0.05em;color:var(--wp--preset--color--text-light);margin-bottom:var(--wp--preset--spacing--10)"><?php esc_html_e( 'Price', 'people-planet-thrive' ); ?></strong>
 							<span style="font-size:var(--wp--preset--font-size--16);font-weight:600;color:var(--wp--preset--color--success)"><?php esc_html_e( 'Free', 'people-planet-thrive' ); ?></span>
 						</div>
-					<?php elseif ( $price ) : ?>
+					<?php elseif ( ! $product_id && $price ) : ?>
 						<div>
 							<strong style="display:block;font-size:var(--wp--preset--font-size--12);text-transform:uppercase;letter-spacing:0.05em;color:var(--wp--preset--color--text-light);margin-bottom:var(--wp--preset--spacing--10)"><?php esc_html_e( 'Price', 'people-planet-thrive' ); ?></strong>
 							<span style="font-size:var(--wp--preset--font-size--16);font-weight:600;color:var(--wp--preset--color--primary)">$<?php echo esc_html( $price ); ?></span>
@@ -130,8 +153,8 @@ $pub_types = get_the_terms( get_the_ID(), 'ppt_publication_type' );
 				<div class="wp-block-group" style="display:flex;flex-wrap:wrap;gap:var(--wp--preset--spacing--15)">
 					<?php if ( $is_free === '1' && $file_url ) : ?>
 						<a href="<?php echo esc_url( $file_url ); ?>" class="wp-block-button__link wp-element-button" download><?php esc_html_e( 'Download Free', 'people-planet-thrive' ); ?></a>
-					<?php elseif ( $product_id && class_exists( 'WooCommerce' ) ) : ?>
-						<a href="<?php echo esc_url( get_permalink( $product_id ) ); ?>" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Purchase', 'people-planet-thrive' ); ?></a>
+					<?php elseif ( $linked_product ) : ?>
+						<a href="<?php echo esc_url( $linked_product->get_permalink() ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html( $product_cta ); ?></a>
 					<?php elseif ( $price ) : ?>
 						<span class="wp-block-button__link wp-element-button" style="opacity:0.6;cursor:not-allowed"><?php esc_html_e( 'Coming Soon', 'people-planet-thrive' ); ?></span>
 					<?php endif; ?>

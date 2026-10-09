@@ -1,0 +1,52 @@
+[
+  {
+    "route": "/publication-type/books/",
+    "status": 200,
+    "fatal": false,
+    "h1": "Books",
+    "types": [
+      "Explore connected knowledge",
+      "Publication",
+      "Product",
+      "Publication",
+      "Product",
+      "Publication",
+      "Product"
+    ],
+    "items": 6
+  },
+  {
+    "route": "/subject-area/climate-sustainability/",
+    "status": 200,
+    "fatal": false,
+    "h1": "Climate & Sustainability",
+    "types": [
+      "Explore connected knowledge",
+      "Research Area",
+      "Research Project",
+      "Publication",
+      "Product",
+      "Article",
+      "Author",
+      "Researcher",
+      "Article",
+      "Event",
+      "Journal",
+      "Journal Issue",
+      "Publication",
+      "Product",
+      "Training",
+      "Post",
+      "Post"
+    ],
+    "items": 16
+  },
+  {
+    "route": "/journals/demo-people-planet-review/",
+    "status": 200,
+    "fatal": false,
+    "h1": "People & Planet Review",
+    "policies": true,
+    "submission": "http://127.0.0.1:8877/submit-manuscript/?enquiry=Publishing"
+  }
+]

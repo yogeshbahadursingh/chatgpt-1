@@ -1,0 +1,152 @@
+/* Ivory, forest and heritage gold; native menu markup remains editor-managed. */
+.ppt-premium-header {
+	background: #fcfaf5;
+	border-bottom: 1px solid #c7b58a;
+	box-shadow: 0 1px 0 #fff inset;
+	transition: background-color .2s ease, box-shadow .2s ease;
+	/* A filter would trap Core's fixed menu inside this header. */
+	backdrop-filter: none;
+}
+.ppt-premium-header.is-scrolled {
+	background: #fcfaf5;
+	box-shadow: 0 8px 30px #062e2b12;
+}
+.ppt-navigation-shell {
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+}
+.ppt-navigation-shell .ppt-premium-header { position: relative; top: 0; }
+body.admin-bar .ppt-navigation-shell { top: 32px; }
+body.admin-bar .ppt-navigation-shell .ppt-premium-header { top: 0; }
+.ppt-premium-header .ppt-header-inner { gap: 18px; }
+.ppt-premium-header .ppt-brand-lockup { padding-left: 15px; border-left: 2px solid #9b7836; }
+.ppt-premium-header .ppt-brand-title a { letter-spacing: -.025em; }
+.ppt-premium-header .ppt-brand-tagline { color: #53655f; font-size: 9px !important; letter-spacing: .1em; }
+.ppt-premium-header .ppt-main-nav { font-size: 13px; }
+.ppt-main-nav .wp-block-navigation__container { gap: 18px; }
+.ppt-main-nav .wp-block-navigation-item__content {
+	position: relative;
+	padding-block: 12px;
+	text-underline-offset: 6px;
+}
+.ppt-main-nav .wp-block-navigation-item__content::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 4px;
+	height: 1px;
+	background: #94702d;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .2s ease;
+}
+.ppt-main-nav .wp-block-navigation-item__content:hover::after,
+.ppt-main-nav .wp-block-navigation-item__content:focus-visible::after,
+.ppt-main-nav .current-menu-item > .wp-block-navigation-item__content::after,
+.ppt-main-nav .current-menu-ancestor > .wp-block-navigation-item__content::after,
+.ppt-main-nav .current-menu-parent > .wp-block-navigation-item__content::after,
+.ppt-main-nav .wp-block-navigation-item__content[aria-current="page"]::after { transform: scaleX(1); }
+.ppt-premium-header .ppt-header-search {
+	flex-basis: 140px;
+	width: 140px;
+}
+.ppt-header-search .wp-block-search__inside-wrapper {
+	border: 1px solid #84958c;
+	border-radius: 999px;
+	background: #fffdf9;
+	padding: 3px;
+}
+.ppt-header-search .wp-block-search__input {
+	border: 0;
+	border-radius: 999px;
+	padding: 6px 10px;
+	font-size: 12px;
+	background: transparent;
+}
+.ppt-header-search .wp-block-search__button {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	padding: 6px !important;
+	margin-left: 0;
+	flex-shrink: 0;
+	background: #062e2b;
+	color: #fff;
+}
+.ppt-header-search:focus-within .wp-block-search__inside-wrapper { border-color: #80601f; box-shadow: 0 0 0 2px #c69a4533; }
+.ppt-premium-header .ppt-header-cta .wp-block-button__link {
+	border: 1px solid #062e2b;
+	font-size: 10px !important;
+	letter-spacing: .08em;
+	padding: 14px 18px !important;
+	box-shadow: 0 2px 5px #062e2b10;
+	transition: background-color .2s ease, box-shadow .2s ease;
+}
+.ppt-premium-header .ppt-header-cta .wp-block-button__link:hover {
+	background: #144b40 !important;
+	box-shadow: 0 4px 12px #062e2b24;
+}
+.ppt-main-nav .wp-block-navigation__responsive-container-open,
+.ppt-main-nav .wp-block-navigation__responsive-container-close {
+	width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #9baaa0;
+	border-radius: 50%;
+	color: #062e2b;
+	background: #fcfaf5;
+}
+.ppt-main-nav .wp-block-navigation__responsive-container-open:hover,
+.ppt-main-nav .wp-block-navigation__responsive-container-close:hover { background: #efe8d9; }
+.ppt-main-nav .wp-block-navigation__submenu-container {
+	background: #fcfaf5 !important;
+	color: #062e2b !important;
+	border: 1px solid #d7c6a0 !important;
+	box-shadow: 0 18px 40px #062e2b12;
+}
+@media (max-width: 1350px) {
+	.ppt-main-nav .wp-block-navigation__responsive-container.is-menu-open {
+		padding: clamp(24px,5vw,64px);
+		background: #fcfaf5 !important;
+		color: #062e2b !important;
+		border-top: 3px solid #94702d;
+	}
+	.ppt-main-nav .is-menu-open .wp-block-navigation__responsive-container-content { padding-top: 72px; align-items: stretch; }
+	.ppt-main-nav .is-menu-open .wp-block-navigation__container { width: 100%; gap: 0; }
+	.ppt-main-nav .is-menu-open .wp-block-navigation-item { width: 100%; align-items: flex-start; }
+	.ppt-main-nav .is-menu-open .wp-block-navigation-item__content {
+		width: 100%;
+		box-sizing: border-box;
+		border-bottom: 1px solid #d9d8cb;
+		padding: 13px 0;
+		font-family: var(--ppt-font-serif, Georgia, serif);
+		font-size: clamp(24px,4vw,38px);
+		line-height: 1.25;
+		font-weight: 500;
+	}
+	.ppt-main-nav .is-menu-open .wp-block-navigation-item__content::after { display: none; }
+	.ppt-main-nav .is-menu-open .wp-block-navigation-item__content:hover,
+	.ppt-main-nav .is-menu-open .current-menu-item > .wp-block-navigation-item__content { color: #80601f !important; }
+	.ppt-main-nav .is-menu-open .wp-block-navigation__submenu-container { box-shadow: none; border: 0 !important; padding-inline: 1rem !important; }
+	.ppt-main-nav .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content { font-size: 20px; }
+}
+@media (max-width: 782px) {
+	body.admin-bar .ppt-navigation-shell { top: 46px; }
+	.ppt-premium-header .ppt-header-inner { flex-wrap: wrap !important; gap: 12px; width: 100%; }
+	.ppt-premium-header .ppt-brand-lockup { flex: 1 1 calc(100% - 60px); box-sizing: border-box; }
+	.ppt-premium-header .ppt-brand-title a { font-size: 19px; }
+	.ppt-premium-header .ppt-header-search { flex: 1 1 140px; width: auto; max-width: none; }
+	.ppt-premium-header .wp-block-woocommerce-customer-account,
+	.ppt-premium-header .wc-block-mini-cart { flex: 0 0 32px; }
+	.ppt-premium-header .ppt-header-cta { display: none; }
+}
+/* The WordPress admin bar scrolls away below 601px. */
+@media (max-width: 600px) { body.admin-bar .ppt-navigation-shell { top: 0; } }
+@media (prefers-reduced-motion: reduce) {
+	.ppt-premium-header,
+	.ppt-main-nav .wp-block-navigation-item__content::after,
+	.ppt-premium-header .ppt-header-cta .wp-block-button__link { transition: none; }
+}

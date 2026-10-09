@@ -1,0 +1,105 @@
+{
+  "checks": [
+    {
+      "name": "all topic page 1 exact membership",
+      "status": "PASS",
+      "expected": 12,
+      "actual": 12
+    },
+    {
+      "name": "all page 1 preserves filters",
+      "status": "PASS"
+    },
+    {
+      "name": "all topic page 2 exact membership",
+      "status": "PASS",
+      "expected": 8,
+      "actual": 8
+    },
+    {
+      "name": "all page 2 preserves filters",
+      "status": "PASS"
+    },
+    {
+      "name": "all pages complete with no repeated projects",
+      "status": "PASS"
+    },
+    {
+      "name": "planning topic page 1 exact membership",
+      "status": "PASS",
+      "expected": 12,
+      "actual": 12
+    },
+    {
+      "name": "planning page 1 preserves filters",
+      "status": "PASS"
+    },
+    {
+      "name": "planning topic page 2 exact membership",
+      "status": "PASS",
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "name": "planning page 2 preserves filters",
+      "status": "PASS"
+    },
+    {
+      "name": "planning pages complete with no repeated projects",
+      "status": "PASS"
+    },
+    {
+      "name": "publications without WooCommerce renders",
+      "status": "PASS"
+    },
+    {
+      "name": "no-Woo Books contains its editorial type",
+      "status": "PASS",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "no-Woo E-books contains its editorial type",
+      "status": "PASS",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "no-Woo Research Reports contains its editorial type",
+      "status": "PASS",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "name": "no-Woo Policy Briefs contains its editorial type",
+      "status": "PASS",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "name": "no-Woo Free Resources contains its editorial type",
+      "status": "PASS",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "name": "no-Woo format sections do not repeat the same cards",
+      "status": "PASS"
+    },
+    {
+      "name": "ordinary requests still use WooCommerce",
+      "status": "PASS"
+    },
+    {
+      "name": "temporary fixtures removed",
+      "status": "PASS",
+      "deleted": 20
+    }
+  ],
+  "cleanup": {
+    "deleted": 20,
+    "remaining": 0,
+    "term_removed": true,
+    "request_override_removed": true
+  }
+}

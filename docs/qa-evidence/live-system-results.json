@@ -1,0 +1,72 @@
+[
+  {
+    "route": "/shop/",
+    "status": 404,
+    "finalUrl": "https://ppthrive.com/shop/",
+    "title": "404 - Page not found - PEOPLE &amp; PLANET THRIVE",
+    "fatal": false,
+    "shortcode": false,
+    "sitemap": false
+  },
+  {
+    "route": "/cart/",
+    "status": 404,
+    "finalUrl": "https://ppthrive.com/cart/",
+    "title": "404 - Page not found - PEOPLE &amp; PLANET THRIVE",
+    "fatal": false,
+    "shortcode": false,
+    "sitemap": false
+  },
+  {
+    "route": "/checkout/",
+    "status": 404,
+    "finalUrl": "https://ppthrive.com/checkout/",
+    "title": "404 - Page not found - PEOPLE &amp; PLANET THRIVE",
+    "fatal": false,
+    "shortcode": false,
+    "sitemap": false
+  },
+  {
+    "route": "/my-account/",
+    "status": 404,
+    "finalUrl": "https://ppthrive.com/my-account/",
+    "title": "404 - Page not found - PEOPLE &amp; PLANET THRIVE",
+    "fatal": false,
+    "shortcode": false,
+    "sitemap": false
+  },
+  {
+    "route": "/wp-sitemap.xml",
+    "status": 200,
+    "finalUrl": "https://ppthrive.com/sitemaps.xml",
+    "fatal": false,
+    "shortcode": false,
+    "sitemap": true
+  },
+  {
+    "route": "/robots.txt",
+    "status": 200,
+    "finalUrl": "https://ppthrive.com/robots.txt",
+    "fatal": false,
+    "shortcode": false,
+    "sitemap": false
+  },
+  {
+    "route": "/?s=climate",
+    "status": 200,
+    "finalUrl": "https://ppthrive.com/?s=climate",
+    "title": "climate - PEOPLE &amp; PLANET THRIVE",
+    "fatal": false,
+    "shortcode": false,
+    "sitemap": false
+  },
+  {
+    "route": "/qa-no-such-route/",
+    "status": 404,
+    "finalUrl": "https://ppthrive.com/qa-no-such-route/",
+    "title": "404 - Page not found - PEOPLE &amp; PLANET THRIVE",
+    "fatal": false,
+    "shortcode": false,
+    "sitemap": false
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/journals/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/publications/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/research/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/training/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/insights/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/about/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/my-account/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/work-with-us/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/contact/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/research-projects/demo-community-climate-resilience-pathways/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/publications/demo-building-resilient-communities/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/publications/demo-sustainable-futures/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/publications/demo-people-planet-progress/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/training/demo-responsible-ai-for-research/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/training/demo-community-research-engagement/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/training/demo-evidence-based-policy-development/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/demo-knowledge-as-infrastructure-for-change/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/demo-making-research-accessible/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/demo-why-interdisciplinary-research-matters/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/articles/demo-human-wellbeing-as-a-shared-research-question/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/articles/demo-responsible-technology-in-community-decision-making/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/articles/demo-digital-inclusion-beyond-access-to-devices/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/research-areas/demo-policy-governance/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/research-areas/demo-technology-responsible-innovation/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/research-areas/demo-communities-society/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/events/demo-knowledge-into-practice-forum/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/events/demo-community-research-exchange/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/events/demo-sustainable-learning-roundtable/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/events/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/careers/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/privacy-policy/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/terms/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "route": "/accessibility/",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "test": "Mini-cart opens and remains visible",
+    "pass": true
+  },
+  {
+    "test": "Mini-cart hides when closed",
+    "pass": true
+  },
+  {
+    "test": "Global search includes tagged content",
+    "pass": true
+  },
+  {
+    "test": "WordPress XML sitemap",
+    "pass": true
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "test": "Free-resource browser checkout",
+    "status": "PASS",
+    "url": "http://127.0.0.1:8877/checkout/order-received/214/"
+  },
+  {
+    "test": "Purchased sample download",
+    "status": "PASS",
+    "http": 200
+  },
+  {
+    "test": "Direct download file denied",
+    "status": "PASS",
+    "http": 403
+  },
+  {
+    "test": "Valid enquiry accepted by intercepted mail transport",
+    "status": "PASS"
+  },
+  {
+    "test": "Invalid enquiry nonce rejected",
+    "status": "PASS"
+  },
+  {
+    "test": "Branded 404 retains HTTP 404",
+    "status": "PASS"
+  }
+]

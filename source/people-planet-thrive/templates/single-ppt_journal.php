@@ -92,7 +92,7 @@ $issues = get_posts( array(
 					<?php if ( $current_issue ) : ?>
 						<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( get_permalink( $current_issue->ID ) ); ?>"><?php esc_html_e( 'Current Issue', 'people-planet-thrive' ); ?></a></div>
 					<?php endif; ?>
-					<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#submit"><?php esc_html_e( 'Submit Manuscript', 'people-planet-thrive' ); ?></a></div>
+					<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url(add_query_arg('enquiry','Publishing',home_url('/submit-manuscript/'))); ?>"><?php esc_html_e( 'Submit Manuscript', 'people-planet-thrive' ); ?></a></div>
 				</div>
 			</div>
 
@@ -203,6 +203,10 @@ $issues = get_posts( array(
 		</div>
 	<?php endif; ?>
 
+<?php $ppt_policies=get_post_meta(get_the_ID(),'_ppt_policies',true); if($ppt_policies): ?>
+<section class="ppt-journal-policies" style="max-width:var(--wp--style--global--wide-size);margin:auto;padding:3rem 2rem"><h2>Journal policies</h2><?php echo wp_kses_post(wpautop($ppt_policies)); ?></section>
+<?php endif; ?>
+<p style="max-width:var(--wp--style--global--wide-size);margin:2rem auto;padding:0 2rem"><a href="<?php echo esc_url(home_url('/for-authors/')); ?>">For Authors</a> · <a href="<?php echo esc_url(home_url('/editorial-policies/')); ?>">Editorial Policies</a> · <a href="<?php echo esc_url(add_query_arg('enquiry','Publishing',home_url('/contact/'))); ?>">Publishing enquiry</a></p>
 </main>
 
 <?php

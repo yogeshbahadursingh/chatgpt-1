@@ -1,0 +1,94 @@
+[
+  {
+    "test": "Mobile menu opens with keyboard",
+    "pass": true
+  },
+  {
+    "test": "Mobile menu closes with Escape",
+    "pass": true
+  },
+  {
+    "test": "Intro shown once per browser session",
+    "pass": true
+  },
+  {
+    "test": "Reduced-motion intro hidden",
+    "pass": true
+  },
+  {
+    "test": "No-JavaScript page stays usable after intro",
+    "pass": true
+  },
+  {
+    "test": "Physical book add-to-cart and basket",
+    "pass": true
+  },
+  {
+    "test": "/cart/ usable at 320",
+    "pass": true
+  },
+  {
+    "test": "/cart/ usable at 375",
+    "pass": true
+  },
+  {
+    "test": "/cart/ usable at 430",
+    "pass": true
+  },
+  {
+    "test": "/cart/ usable at 768",
+    "pass": true
+  },
+  {
+    "test": "/cart/ usable at 1024",
+    "pass": true
+  },
+  {
+    "test": "/cart/ usable at 1280",
+    "pass": true
+  },
+  {
+    "test": "/cart/ usable at 1440",
+    "pass": true
+  },
+  {
+    "test": "/cart/ usable at 1920",
+    "pass": true
+  },
+  {
+    "test": "/checkout/ usable at 320",
+    "pass": true
+  },
+  {
+    "test": "/checkout/ usable at 375",
+    "pass": true
+  },
+  {
+    "test": "/checkout/ usable at 430",
+    "pass": true
+  },
+  {
+    "test": "/checkout/ usable at 768",
+    "pass": true
+  },
+  {
+    "test": "/checkout/ usable at 1024",
+    "pass": true
+  },
+  {
+    "test": "/checkout/ usable at 1280",
+    "pass": true
+  },
+  {
+    "test": "/checkout/ usable at 1440",
+    "pass": true
+  },
+  {
+    "test": "/checkout/ usable at 1920",
+    "pass": true
+  },
+  {
+    "test": "No-JavaScript mobile navigation links available",
+    "pass": true
+  }
+]

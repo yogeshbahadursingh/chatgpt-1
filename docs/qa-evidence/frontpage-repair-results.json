@@ -1,0 +1,20 @@
+[
+  {
+    "route": "/?ppt_qa_latest=1",
+    "h1": "Knowledge for People.\nProgress for Planet.",
+    "pass": true
+  },
+  {
+    "route": "/insights/",
+    "h1": "Insights",
+    "pass": true
+  },
+  {
+    "test": "Collapsed desktop menu opens with keyboard",
+    "pass": true
+  },
+  {
+    "test": "Collapsed desktop menu closes with Escape",
+    "pass": true
+  }
+]

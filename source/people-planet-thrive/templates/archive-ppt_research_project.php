@@ -6,6 +6,11 @@
  */
 
 get_header();
+$status_filter = function_exists( 'ppt_research_status_filter' ) ? ppt_research_status_filter() : '';
+$filter_url = get_post_type_archive_link( 'ppt_research_project' );
+if ( ! empty( $_GET['ppt_topic'] ) && is_scalar( $_GET['ppt_topic'] ) ) {
+	$filter_url = add_query_arg( 'ppt_topic', absint( $_GET['ppt_topic'] ), $filter_url );
+}
 ?>
 
 <main class="wp-block-group site-main">
@@ -19,39 +24,17 @@ get_header();
 		<div class="wp-block-group" style="border-top:1px solid var(--wp--preset--color--border);border-bottom:1px solid var(--wp--preset--color--border);margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--40);padding:var(--wp--preset--spacing--20) 0">
 			<p style="font-size:var(--wp--preset--font-size--14);font-weight:600;margin-bottom:var(--wp--preset--spacing--10)"><?php esc_html_e( 'Filter by status:', 'people-planet-thrive' ); ?></p>
 			<div style="display:flex;flex-wrap:wrap;gap:var(--wp--preset--spacing--20)">
-				<a href="<?php echo esc_url( get_post_type_archive_link( 'ppt_research_project' ) ); ?>" style="font-size:var(--wp--preset--font-size--14)"><?php esc_html_e( 'All', 'people-planet-thrive' ); ?></a>
-				<a href="<?php echo esc_url( add_query_arg( 'status', 'active', get_post_type_archive_link( 'ppt_research_project' ) ) ); ?>" style="font-size:var(--wp--preset--font-size--14)"><?php esc_html_e( 'Active', 'people-planet-thrive' ); ?></a>
-				<a href="<?php echo esc_url( add_query_arg( 'status', 'completed', get_post_type_archive_link( 'ppt_research_project' ) ) ); ?>" style="font-size:var(--wp--preset--font-size--14)"><?php esc_html_e( 'Completed', 'people-planet-thrive' ); ?></a>
-				<a href="<?php echo esc_url( add_query_arg( 'status', 'planning', get_post_type_archive_link( 'ppt_research_project' ) ) ); ?>" style="font-size:var(--wp--preset--font-size--14)"><?php esc_html_e( 'Planning', 'people-planet-thrive' ); ?></a>
+				<?php foreach ( array( '' => __( 'All', 'people-planet-thrive' ), 'active' => __( 'Active', 'people-planet-thrive' ), 'completed' => __( 'Completed', 'people-planet-thrive' ), 'planning' => __( 'Planning', 'people-planet-thrive' ), 'on-hold' => __( 'On hold', 'people-planet-thrive' ) ) as $value => $label ) : ?>
+					<a href="<?php echo esc_url( $value ? add_query_arg( 'status', $value, $filter_url ) : $filter_url ); ?>"<?php if ( $status_filter === $value ) { echo ' aria-current="page"'; } ?> style="font-size:var(--wp--preset--font-size--14)"><?php echo esc_html( $label ); ?></a>
+				<?php endforeach; ?>
 			</div>
 		</div>
 
-		<?php
-		// Handle status filter
-		$status_filter = isset( $_GET['status'] ) ? sanitize_text_field( wp_unslash( $_GET['status'] ) ) : '';
-		
-		$args = array(
-			'post_type'      => 'ppt_research_project',
-			'posts_per_page' => 12,
-			'paged'          => get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1,
-		);
-
-		if ( $status_filter ) {
-			$args['meta_query'] = array(
-				array(
-					'key'   => '_ppt_project_status',
-					'value' => $status_filter,
-				),
-			);
-		}
-
-		$projects = new WP_Query( $args );
-		?>
-
-		<?php if ( $projects->have_posts() ) : ?>
+		<?php if ( have_posts() ) : ?>
 			<div style="display:flex;flex-direction:column;gap:var(--wp--preset--spacing--30)">
-				<?php while ( $projects->have_posts() ) : $projects->the_post();
+				<?php while ( have_posts() ) : the_post();
 					$status = get_post_meta( get_the_ID(), '_ppt_project_status', true );
+					if ( 'planned' === $status ) { $status = 'planning'; }
 					$area_id = get_post_meta( get_the_ID(), '_ppt_project_area_id', true );
 					$lead_id = get_post_meta( get_the_ID(), '_ppt_project_lead_id', true );
 					$start_date = get_post_meta( get_the_ID(), '_ppt_project_start_date', true );
@@ -143,16 +126,13 @@ get_header();
 			<!-- Pagination -->
 			<div style="margin-top:var(--wp--preset--spacing--50)">
 				<?php
-				echo paginate_links( array(
-					'total'   => $projects->max_num_pages,
-					'current' => max( 1, get_query_var( 'paged' ) ),
+				the_posts_pagination( array(
+					'mid_size' => 2,
 					'prev_text' => __( '← Previous', 'people-planet-thrive' ),
 					'next_text' => __( 'Next →', 'people-planet-thrive' ),
 				) );
 				?>
 			</div>
-
-			<?php wp_reset_postdata(); ?>
 
 		<?php else : ?>
 			<p style="font-size:var(--wp--preset--font-size--18);text-align:center;padding:var(--wp--preset--spacing--50) 0"><?php esc_html_e( 'New work is being prepared for this programme.', 'people-planet-thrive' ); ?></p>

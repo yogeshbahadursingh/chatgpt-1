@@ -1,0 +1,50 @@
+[
+  {
+    "url": "/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 26
+  },
+  {
+    "url": "/contact/",
+    "violations": [],
+    "incomplete": [],
+    "passes": 28
+  },
+  {
+    "url": "/publications/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 27
+  },
+  {
+    "url": "/?s=climate",
+    "violations": [],
+    "incomplete": [],
+    "passes": 26
+  },
+  {
+    "url": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "violations": [],
+    "incomplete": [],
+    "passes": 27
+  },
+  {
+    "url": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 35
+  },
+  {
+    "url": "/insights/",
+    "violations": [],
+    "incomplete": [],
+    "passes": 27
+  }
+]

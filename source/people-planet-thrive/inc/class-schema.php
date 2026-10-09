@@ -42,7 +42,7 @@ class PPT_Schema {
 			$schema[] = $this->get_breadcrumb_schema();
 		}
 
-		// Custom scholarly schema (always output — SEO plugins don't handle these).
+		// Keep specialist schema independent of ownership of standard site schema.
 		if ( is_singular( 'ppt_article' ) ) {
 			$schema[] = $this->get_scholarly_article_schema();
 		}
@@ -74,25 +74,21 @@ class PPT_Schema {
 	}
 
 	/**
-	 * Check if an SEO plugin is active.
+	 * Check known SEO integrations, with an explicit standard-schema owner override.
 	 *
-	 * @return bool True if SEO plugin is detected.
+	 * An external SEO integration can suppress the theme Organization/BreadcrumbList
+	 * with add_filter( 'ppt_standard_schema_owned_by_seo', '__return_true' ).
+	 * This does not suppress ScholarlyArticle, Periodical or publication output.
+	 * Detection cannot establish whether every plugin configuration emits schema;
+	 * administrators must verify the resulting page and choose one standard owner.
+	 *
+	 * @return bool True when standard site schema belongs to another integration.
 	 */
 	private function is_seo_plugin_active() {
-		// Check for common SEO plugins.
-		if ( defined( 'RANK_MATH_FILE' ) ) {
-			return true;
-		}
-		if ( defined( 'WPSEO_VERSION' ) ) {
-			return true;
-		}
-		if ( class_exists( 'All_in_One_SEO_Pack' ) ) {
-			return true;
-		}
-		if ( defined( 'SEOPRESS_VERSION' ) ) {
-			return true;
-		}
-		return false;
+		$detected = defined( 'RANK_MATH_FILE' ) || defined( 'WPSEO_VERSION' )
+			|| class_exists( 'All_in_One_SEO_Pack' ) || function_exists( 'aioseo' )
+			|| defined( 'SEOPRESS_VERSION' );
+		return (bool) apply_filters( 'ppt_standard_schema_owned_by_seo', $detected );
 	}
 
 	/**
@@ -101,18 +97,20 @@ class PPT_Schema {
 	 * @return array Organization schema data.
 	 */
 	private function get_organization_schema() {
-		return array(
+		$schema = array(
 			'@context'    => 'https://schema.org',
 			'@type'       => 'Organization',
 			'name'        => get_bloginfo( 'name' ),
 			'description' => get_bloginfo( 'description' ),
 			'url'         => home_url( '/' ),
-			'logo'        => array(
-				'@type'  => 'ImageObject',
-				'url'    => PPT_THEME_URI . '/assets/images/logo.png',
-			),
 			'sameAs'      => $this->get_social_urls(),
 		);
+		$logo_id  = (int) get_theme_mod( 'custom_logo' );
+		$logo_url = $logo_id ? wp_get_attachment_image_url( $logo_id, 'full' ) : false;
+		if ( $logo_url ) {
+			$schema['logo'] = array( '@type' => 'ImageObject', 'url' => $logo_url );
+		}
+		return $schema;
 	}
 
 	/**
@@ -132,20 +130,64 @@ class PPT_Schema {
 			'item'     => home_url( '/' ),
 		);
 
-		// Current page.
+		// Use the queried object, rather than a loop changed by a header block.
+		$name = '';
+		$url  = '';
 		if ( is_singular() ) {
+			$name = get_the_title( get_queried_object_id() );
+			$url  = get_permalink( get_queried_object_id() );
+		} elseif ( is_category() || is_tag() || is_tax() ) {
+			$term = get_queried_object();
+			if ( $term instanceof WP_Term ) {
+				$name = $term->name;
+				$url  = get_term_link( $term );
+			}
+		} elseif ( is_post_type_archive() && ! is_author() && ! is_date() ) {
+			$type = get_queried_object();
+			if ( $type instanceof WP_Post_Type ) {
+				$name = $type->labels->name;
+				$url  = get_post_type_archive_link( $type->name );
+			}
+		} elseif ( is_author() ) {
+			$name = get_the_author_meta( 'display_name', get_queried_object_id() );
+			$url  = get_author_posts_url( get_queried_object_id() );
+		} elseif ( is_date() ) {
+			$name = wp_strip_all_tags( get_the_archive_title() );
+			$year = (int) get_query_var( 'year' );
+			$month = (int) get_query_var( 'monthnum' );
+			$day = (int) get_query_var( 'day' );
+			$compact_date = (string) get_query_var( 'm' );
+			if ( $compact_date ) {
+				$year = (int) substr( $compact_date, 0, 4 );
+				$month = (int) substr( $compact_date, 4, 2 );
+				$day = (int) substr( $compact_date, 6, 2 );
+			}
+			if ( is_day() ) {
+				$url = get_day_link( $year, $month, $day );
+			} elseif ( is_month() ) {
+				$url = get_month_link( $year, $month );
+			} else {
+				$url = get_year_link( $year );
+			}
+		} elseif ( is_home() ) {
+			$posts_page = (int) get_option( 'page_for_posts' );
+			$name = $posts_page ? get_the_title( $posts_page ) : __( 'Insights', 'people-planet-thrive' );
+			$url = $posts_page ? get_permalink( $posts_page ) : home_url( '/' );
+		} elseif ( is_search() ) {
+			$name = sprintf( __( 'Search results for: %s', 'people-planet-thrive' ), get_search_query( false ) );
+			$url = get_search_link();
+		}
+		if ( $name && $url && ! is_wp_error( $url ) ) {
 			$items[] = array(
 				'@type'    => 'ListItem',
 				'position' => $position,
-				'name'     => get_the_title(),
-				'item'     => get_permalink(),
+				'name'     => wp_strip_all_tags( $name ),
+				'item'     => $url,
 			);
-		} elseif ( is_archive() ) {
-			$items[] = array(
-				'@type'    => 'ListItem',
-				'position' => $position,
-				'name'     => post_type_archive_title( '', false ),
-			);
+		}
+		// Do not emit an incomplete one-item breadcrumb on errors/unknown routes.
+		if ( count( $items ) < 2 ) {
+			return array();
 		}
 
 		return array(
@@ -227,16 +269,32 @@ class PPT_Schema {
 	}
 
 	/**
-	 * Get Book schema.
+	 * Get publication schema, using the editor's classification.
 	 *
 	 * @return array Book schema data.
 	 */
 	private function get_book_schema() {
 		$post_id = get_the_ID();
+		$terms = wp_get_object_terms( $post_id, 'ppt_publication_type', array( 'fields' => 'slugs' ) );
+		$terms = is_wp_error( $terms ) ? array() : $terms;
+		$type = 'CreativeWork';
+		if ( array_intersect( array( 'books', 'e-books' ), $terms ) ) {
+			$type = 'Book';
+		} elseif ( in_array( 'research-reports', $terms, true ) ) {
+			$type = 'Report';
+		} elseif ( empty( $terms ) ) {
+			// Older content may have a format but no publication-type term.
+			$format = get_post_meta( $post_id, '_ppt_publication_format', true );
+			if ( in_array( $format, array( 'book', 'ebook', 'monograph', 'paperback', 'hardback' ), true ) ) {
+				$type = 'Book';
+			} elseif ( 'report' === $format ) {
+				$type = 'Report';
+			}
+		}
 
 		$schema = array(
 			'@context'  => 'https://schema.org',
-			'@type'     => 'Book',
+			'@type'     => $type,
 			'name'      => get_the_title(),
 			'description' => get_the_excerpt(),
 			'url'       => get_permalink(),
@@ -246,9 +304,9 @@ class PPT_Schema {
 			),
 		);
 
-		// Add ISBN if available.
-		$isbn = get_post_meta( $post_id, '_ppt_isbn', true );
-		if ( $isbn ) {
+		// ISBN belongs to Books, using the same field as the publication editor.
+		$isbn = get_post_meta( $post_id, '_ppt_publication_isbn', true );
+		if ( 'Book' === $type && $isbn ) {
 			$schema['isbn'] = $isbn;
 		}
 

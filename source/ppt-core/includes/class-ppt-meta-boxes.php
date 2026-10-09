@@ -947,6 +947,9 @@ class PPT_Meta_Boxes {
 		wp_nonce_field( 'ppt_research_project_meta_box', 'ppt_research_project_meta_box_nonce' );
 
 		$status        = get_post_meta( $post->ID, '_ppt_project_status', true );
+		if ( 'planned' === $status ) {
+			$status = 'planning';
+		}
 		$start_date    = get_post_meta( $post->ID, '_ppt_project_start_date', true );
 		$end_date      = get_post_meta( $post->ID, '_ppt_project_end_date', true );
 		$lead_id       = get_post_meta( $post->ID, '_ppt_project_lead_id', true );

@@ -1,4 +1,4 @@
-# Administrator guide — People & Planet Thrive 2.3
+# Administrator guide — People & Planet Thrive 2.3.2
 
 ## First installation
 Follow INSTALLATION.md. Pages and template parts are editable WordPress records; commercial products, orders and download permissions belong to WooCommerce.
@@ -45,7 +45,13 @@ Configure a recipient in Settings → PPT Platform, approve privacy information,
 ## Demo content
 Tools → PPT Demo Content offers Import and Remove. Stable internal keys make reimport idempotent. Demo content is visibly labelled and internally tagged `_ppt_demo_content=1`. Prices, profiles, events, publications and PDFs are demonstrations, not commercial or academic claims.
 
+Tagged demo products cannot be bought in production, including through direct basket URLs, Store API, saved baskets or order-payment routes. They remain readable previews. The opt-in described in INSTALLATION.md permits isolated QA commerce only; genuine products retain WooCommerce behavior. Adopt a demo as genuine content only after replacing its fictional text, sample files, cover, pricing and rights information with approved material.
+
 Removal moves unchanged importer-owned records to Trash. Edited content and adopted records are preserved. To retain a demo record as genuine work, update it accurately and select “Keep this record as genuine content”. Reimport will not overwrite or duplicate it. Records in Trash are not silently restored; use WordPress Trash → Restore when desired. Download files are retained to avoid destroying permissions or files associated with retained orders. Remove obsolete sample files manually only after checking orders and retention needs.
+
+## Structured data ownership
+
+Set a genuine site logo; when none exists, the theme omits its schema logo. Books/e-books emit Book, research reports emit Report, and other publication formats emit CreativeWork. The editor's ISBN field is used only for books. Known SEO integrations suppress the theme's Organization/BreadcrumbList. For another provider, an administrator's integration plugin can use `add_filter('ppt_standard_schema_owned_by_seo', '__return_true');`. This leaves specialist scholarly/publication schema in place; the existing `ppt_schema_output` filter can coordinate that separately. Inspect the rendered JSON-LD after configuring the provider. The live audit's external empty Organization entry requires correction in its actual owner, which could not be identified through authenticated settings in this audit.
 
 ## Safe maintenance
 Back up database, uploads, theme and plugin before updates. Site Setup never overwrites existing editorial pages (except the exact untouched WordPress draft privacy starter). Exact unedited English Hello World and Sample Page defaults are moved to Draft, not deleted; other locales or modified starters require administrator review. Existing custom templates can override packaged block layouts; review them in the Site Editor during upgrades. Test plugin/theme updates on staging before production.
