@@ -20,9 +20,9 @@ let browser;
         const r = img.getBoundingClientRect();
         return { alt: img.alt, loaded: img.complete && img.naturalWidth > 0, width: r.width, height: r.height, fits: r.left >= -1 && r.right <= innerWidth + 1, href: img.closest('a')?.href, source: img.currentSrc };
       }),
-      duplicateTitleHidden: getComputedStyle(document.querySelector('.ppt-brand-lockup > .wp-block-group')).display === 'none'
+      brandTitleVisible: getComputedStyle(document.querySelector('.ppt-brand-lockup > .wp-block-group')).display !== 'none' && document.querySelector('.ppt-brand-title').getBoundingClientRect().width > 0
     }));
-    results.push({ test: `Complete logo layout at ${width}px`, pass: !geometry.overflow && geometry.duplicateTitleHidden && geometry.logos.length === 3 && geometry.logos.every(i => i.loaded && i.alt === 'People & Planet Thrive' && i.fits && Math.abs(i.width / i.height - 1.5) < .035 && i.href === origin + '/'), ...geometry });
+    results.push({ test: `Compact logo and visible name at ${width}px`, pass: !geometry.overflow && geometry.brandTitleVisible && geometry.logos.length === 3 && geometry.logos[0].width <= (width <= 782 ? 48 : 64) && geometry.logos.every(i => i.loaded && i.alt === 'People & Planet Thrive' && i.fits && Math.abs(i.width / i.height - 1.5) < .035 && i.href === origin + '/'), ...geometry });
     if ([375, 1366].includes(width)) {
       await page.screenshot({ path: `${out}/logo-home-${width}.png` });
       await page.locator('.ppt-premium-footer').scrollIntoViewIfNeeded();

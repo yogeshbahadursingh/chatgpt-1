@@ -1,6 +1,8 @@
 # QA report — 2.3.2, 9 October 2026
 
-**Current packages: 2.3.3.** The report below remains the recorded 2.3.2 audit baseline. The subsequent logo-only release, package hashes and focused retest evidence are documented in [LOGO-UPDATE.md](LOGO-UPDATE.md); do not attribute this entire baseline matrix to a second run on 2.3.3.
+**Latest theme: 2.3.4, with PPT Core 2.3.3.** The small-logo/navbar-name follow-up is recorded in [COMPACT-NAVBAR.md](COMPACT-NAVBAR.md).
+
+**Logo release baseline: 2.3.3.** The report below remains the recorded 2.3.2 audit baseline. The subsequent logo-only release, package hashes and focused retest evidence are documented in [LOGO-UPDATE.md](LOGO-UPDATE.md); do not attribute this entire baseline matrix to a second run on 2.3.3.
 
 **Local acceptance passed; production is unchanged and awaits explicit human approval.** The previous report’s 112-route crawl omitted shared taxonomies and did not establish complete journeys. This release adds those routes and targeted regressions. LIVE-AUDIT.md separately records live store 404s, disabled enquiries and external schema configuration issues.
 

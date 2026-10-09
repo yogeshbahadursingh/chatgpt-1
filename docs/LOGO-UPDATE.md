@@ -1,5 +1,7 @@
 # Logo update — 2.3.3, 9 October 2026
 
+**Follow-up:** theme 2.3.4 makes the navbar logo smaller and shows the site name beside it. See [COMPACT-NAVBAR.md](COMPACT-NAVBAR.md) for current sizing and focused verification. This document retains the original 2.3.3 evidence.
+
 The owner's supplied People & Planet Thrive logo is now included in the installable theme and uses WordPress's native Site Logo in the header, existing homepage hero position and footer. Production has not been changed. This is the logo follow-up to the 2.3.2 route, architecture and commerce repair baseline, not a claim of a new full-site acceptance run.
 
 ## Artwork and placement

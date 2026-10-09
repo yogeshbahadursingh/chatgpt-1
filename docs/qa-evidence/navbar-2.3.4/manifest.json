@@ -1,0 +1,24 @@
+{
+  "theme": "2.3.4",
+  "plugin": "2.3.3",
+  "recorded_at": "2026-10-09T10:22:43.698Z",
+  "production_changed": false,
+  "evidence": [
+    {
+      "name": "package-results.json",
+      "sha256": "bb5967940f52551e899193cbd2cdc6391399ff2dffdc758afa56b7fadbd8c3d5"
+    },
+    {
+      "name": "installed-source-results.json",
+      "sha256": "9b2e0271c2d8632f3c301ade6b6f39aec679c2985e288e9e223597b4f74aee72"
+    },
+    {
+      "name": "navigation-premium-results.json",
+      "sha256": "fa70c54f993484dd74ae8a2912455cccbdad01d0216d6880d1d030baa5f0647f"
+    },
+    {
+      "name": "logo-browser-results.json",
+      "sha256": "5a771a46dad2c37392467266bd89ee0c43b44cf27bf935ce9183b2d5be7ff8c1"
+    }
+  ]
+}

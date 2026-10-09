@@ -1,5 +1,7 @@
 # Fix log — release 2.3.2, 9 October 2026
 
+**Theme 2.3.4 follow-up:** smaller navbar logo (64px desktop / 48px mobile) with the editable site name beside it, per owner feedback. See [COMPACT-NAVBAR.md](COMPACT-NAVBAR.md). PPT Core remains 2.3.3.
+
 **2.3.3 follow-up:** supplied logo integrated through native Site Logo blocks in the header, existing hero position and footer. Setup imports once, preserves existing logo selections, and surfaces branding errors without blocking page/commerce repair. See [LOGO-UPDATE.md](LOGO-UPDATE.md) for current release verification and [PLUGIN-GUIDE.md](PLUGIN-GUIDE.md) for the requested plugin list.
 
 All changes below are local source/package changes. Production remains at the approval gate. This log supersedes the older 2.3.0 completion claims where the live audit exposed missing coverage.

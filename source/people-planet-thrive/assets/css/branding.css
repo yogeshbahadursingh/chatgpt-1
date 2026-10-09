@@ -8,17 +8,20 @@
 .wp-custom-logo .ppt-premium-header .ppt-brand-lockup {
 	padding-left: 0;
 	border-left: 0;
-	gap: 0;
+	gap: 12px;
 }
-.wp-custom-logo .ppt-brand-lockup > .wp-block-group { display: none; }
+.wp-custom-logo .ppt-brand-lockup > .wp-block-group { display: block; }
+.wp-custom-logo .ppt-premium-header .ppt-brand-title a { font-size: 17px; line-height: 1.2; }
+.wp-custom-logo .ppt-brand-lockup .ppt-brand-tagline { display: none; }
 .ppt-brand-lockup .wp-block-site-logo { margin: 0; flex: 0 0 auto; }
+.ppt-brand-lockup .wp-block-site-logo a { display: flex; align-items: center; min-height: 44px; }
 .ppt-brand-lockup .wp-block-site-logo img {
-	width: 156px;
+	width: 64px;
 	height: auto;
 	max-width: 100%;
 	display: block;
-	border: 1px solid #b4995c;
-	border-radius: 6px;
+	border: 0;
+	border-radius: 0;
 	box-sizing: border-box;
 }
 .ppt-planet-orb .wp-block-site-logo img {
@@ -42,5 +45,7 @@
 .wp-custom-logo .ppt-footer-brand > .wp-block-site-title,
 .wp-custom-logo .ppt-footer-brand > .ppt-footer-tagline { display: none; }
 @media (max-width: 782px) {
-	.ppt-brand-lockup .wp-block-site-logo img { width: 132px; }
+	.ppt-brand-lockup .wp-block-site-logo img { width: 48px; }
+	.wp-custom-logo .ppt-premium-header .ppt-brand-lockup { gap: 10px; }
+	.wp-custom-logo .ppt-premium-header .ppt-brand-title a { font-size: 14px; }
 }

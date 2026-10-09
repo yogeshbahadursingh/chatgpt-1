@@ -1,0 +1,272 @@
+[
+  {
+    "test": "Compact logo and visible name at 320px",
+    "pass": true,
+    "overflow": false,
+    "logos": [
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 48,
+        "height": 32,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 190,
+        "height": 127.328125,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 232,
+        "height": 155.328125,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      }
+    ],
+    "brandTitleVisible": true
+  },
+  {
+    "test": "Compact logo and visible name at 375px",
+    "pass": true,
+    "overflow": false,
+    "logos": [
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 48,
+        "height": 32,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 190,
+        "height": 127.328125,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 240,
+        "height": 160.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      }
+    ],
+    "brandTitleVisible": true
+  },
+  {
+    "test": "Compact logo and visible name at 768px",
+    "pass": true,
+    "overflow": false,
+    "logos": [
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 48,
+        "height": 32,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 280,
+        "height": 187.328125,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 240,
+        "height": 160.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      }
+    ],
+    "brandTitleVisible": true
+  },
+  {
+    "test": "Compact logo and visible name at 1280px",
+    "pass": true,
+    "overflow": false,
+    "logos": [
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 64,
+        "height": 42.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 280,
+        "height": 187.328125,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 240,
+        "height": 160.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      }
+    ],
+    "brandTitleVisible": true
+  },
+  {
+    "test": "Compact logo and visible name at 1366px",
+    "pass": true,
+    "overflow": false,
+    "logos": [
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 64,
+        "height": 42.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 280,
+        "height": 187.328125,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 240,
+        "height": 160.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      }
+    ],
+    "brandTitleVisible": true
+  },
+  {
+    "test": "Compact logo and visible name at 1440px",
+    "pass": true,
+    "overflow": false,
+    "logos": [
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 64,
+        "height": 42.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 280,
+        "height": 187.328125,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 240,
+        "height": 160.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      }
+    ],
+    "brandTitleVisible": true
+  },
+  {
+    "test": "Compact logo and visible name at 1920px",
+    "pass": true,
+    "overflow": false,
+    "logos": [
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 64,
+        "height": 42.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 280,
+        "height": 187.328125,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      },
+      {
+        "alt": "People & Planet Thrive",
+        "loaded": true,
+        "width": 240,
+        "height": 160.65625,
+        "fits": true,
+        "href": "http://127.0.0.1:8877/",
+        "source": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo-300x200.png"
+      }
+    ],
+    "brandTitleVisible": true
+  },
+  {
+    "test": "Accessibility /",
+    "pass": true,
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "test": "Accessibility /insights/",
+    "pass": true,
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "test": "Organization logo resolves to the configured artwork",
+    "pass": true,
+    "logoURL": "http://127.0.0.1:8877/wp-content/uploads/2026/10/people-planet-thrive-logo.png"
+  },
+  {
+    "test": "HTTP original image is byte-for-byte the supplied artwork",
+    "pass": true,
+    "servedHash": "8045f234b21f024c04a6781dd34d2b2a30c453757dec1050f625064ab06b89a5",
+    "sourceHash": "8045f234b21f024c04a6781dd34d2b2a30c453757dec1050f625064ab06b89a5"
+  }
+]

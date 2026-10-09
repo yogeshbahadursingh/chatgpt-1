@@ -1,6 +1,6 @@
 # Installation and production handover
 
-Release 2.3.3 adds the supplied logo to the repaired WordPress theme and PPT Core plugin. Production deployment requires explicit human approval. Do not deploy the local test database, runtime directory, test orders, mail interception plugin or local configuration. See [LOGO-UPDATE.md](LOGO-UPDATE.md) for focused verification and [PLUGIN-GUIDE.md](PLUGIN-GUIDE.md) for plugin requirements.
+Theme 2.3.4 with PPT Core 2.3.3 includes the supplied logo, with compact navbar sizing and the site name alongside it. See COMPACT-NAVBAR.md for this follow-up. Production deployment requires explicit human approval. Do not deploy the local test database, runtime directory, test orders, mail interception plugin or local configuration. See [LOGO-UPDATE.md](LOGO-UPDATE.md) for focused verification and [PLUGIN-GUIDE.md](PLUGIN-GUIDE.md) for plugin requirements.
 
 ## Clean installation
 
