@@ -1,4 +1,4 @@
-# Administrator guide — People & Planet Thrive 2.3.2
+# Administrator guide — People & Planet Thrive 2.3.3
 
 ## First installation
 Follow INSTALLATION.md. Pages and template parts are editable WordPress records; commercial products, orders and download permissions belong to WooCommerce.
@@ -35,6 +35,8 @@ Use Posts with categories, featured image, excerpt and content. The Insights pag
 Use Subject Areas consistently across content types. The PPT featuring and related content panel accepts explicit comma-separated IDs; these take priority over automatic topic matches. Public related lists show published records only. Use the existing specialised relationship fields for journal/issue, author, lead researcher and product connections.
 
 ## Pages, navigation and footer
+The supplied logo uses native Site Logo blocks. Tools → PPT Site Setup imports it only when there is no valid logo already selected. In Appearance → Editor, select a Site Logo block to change it across the site. Keep cropping disabled to preserve the complete artwork. The packaged header uses 156px, the homepage hero 280px and footer 240px; responsive CSS adapts the header on mobile. Existing custom template parts are preserved: merge the logo block into a saved footer if required and set an older header logo block to 156px. Site Icon is a separate setting and is not changed. See LOGO-UPDATE.md and PLUGIN-GUIDE.md.
+
 Edit institutional and policy copy in Pages. Home's approved composition, shared header and footer are in Appearance → Editor. Edit the PPT Primary navigation record through the header Navigation block. Site Setup creates the referenced header only when no custom header exists, preserving later edits. The theme resolves navigation object links at render time.
 
 Footer text and link groups are editable in the Site Editor. Settings → PPT Platform provides public contact address, newsletter signup URL and social profile URL. The newsletter link connects to your chosen service; this package does not operate a mailing-list backend.

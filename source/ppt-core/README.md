@@ -2,7 +2,7 @@
 
 **Plugin Name:** PPT Core
 **Plugin URI:** https://ppthrive.com
-**Version:** 2.3.2
+**Version:** 2.3.3
 **Requires WordPress:** 6.4+
 **Requires PHP:** 8.0+
 

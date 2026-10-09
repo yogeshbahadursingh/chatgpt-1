@@ -1,0 +1,28 @@
+{
+  "release": "2.3.3",
+  "recorded_at": "2026-10-09T10:12:47.341Z",
+  "production_changed": false,
+  "source_files": 152,
+  "evidence": [
+    {
+      "name": "logo-setup-results.json",
+      "sha256": "92640de2790620b524c1d57fd1dcec160848da850a02a5b7718e192003ae9731"
+    },
+    {
+      "name": "logo-browser-results.json",
+      "sha256": "2ebd148e3cbf407d95b281ddf99d54604394755f47cffe45c1a67a1e755d0291"
+    },
+    {
+      "name": "navigation-premium-results.json",
+      "sha256": "0f724735b23cf80bb6996305839e0038f1ff0eeb2c41293d7078ef2f8b6161da"
+    },
+    {
+      "name": "installed-source-results.json",
+      "sha256": "a5508e512fc77f69a9acb8fc5554aa2b5f8de6c16eabacefee2d92693275cc32"
+    },
+    {
+      "name": "package-results.json",
+      "sha256": "67d69e2604420cd4a4984647d10aab9a52706ad053aeeae7acc9a0ea4b01b0d7"
+    }
+  ]
+}

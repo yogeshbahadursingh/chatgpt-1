@@ -7,6 +7,8 @@ class PPT_Site_Setup {
   if(!current_user_can('manage_options')) return;
   echo '<div class="wrap"><h1>PPT Site Setup</h1><p>Create missing pages and navigation. Existing content is preserved. Run again after activating WooCommerce to create its system pages.</p>';
   if(isset($_GET['ppt_repaired'])) echo '<div class="notice notice-success"><p>Setup completed.</p></div>';
+  $logo_warning=get_option('ppt_logo_setup_warning');
+  if($logo_warning) echo '<div class="notice notice-warning"><p>Site pages were repaired, but the logo needs attention: '.esc_html($logo_warning).' Upload or select it in Appearance → Editor, then use the Site Logo block.</p></div>';
   echo '<form method="post" action="'.esc_url(admin_url('admin-post.php')).'">'; wp_nonce_field('ppt_repair_site');
   echo '<input type="hidden" name="action" value="ppt_repair_site">'; submit_button('Create / Repair Site');
   echo '</form><p><a href="'.esc_url(admin_url('tools.php?page=ppt-demo-importer')).'">Import or remove demo content</a></p><p>Edit pages in Pages, shared navigation and footer in Appearance → Editor, and contact settings in Settings → PPT Platform.</p></div>';
@@ -76,7 +78,14 @@ class PPT_Site_Setup {
    }
   }
   if(class_exists('WC_Install')) WC_Install::create_pages();
-  flush_rewrite_rules(false); update_option('ppt_setup_version','2.3.2'); return $ids;
+  flush_rewrite_rules(false); update_option('ppt_setup_version','2.3.3');
+  // Optional artwork must not prevent page, commerce or permalink repair.
+  if(function_exists('ppt_install_brand_logo')) {
+   $logo=ppt_install_brand_logo();
+   if(is_wp_error($logo)) update_option('ppt_logo_setup_warning',$logo->get_error_message(),false);
+   else delete_option('ppt_logo_setup_warning');
+  }
+  return $ids;
  }
 }
 new PPT_Site_Setup();

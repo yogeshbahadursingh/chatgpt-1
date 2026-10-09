@@ -1,5 +1,7 @@
 # Live website audit — 9 October 2026
 
+Subsequent local release 2.3.3 adds the owner-supplied logo; see [LOGO-UPDATE.md](LOGO-UPDATE.md). This public audit remains unchanged and does not establish that the new packages are deployed.
+
 Target: https://ppthrive.com/. This was a public, read-only audit. No administrator login, production files/database, settings, payments or messages were changed. Local source repairs are release 2.3.2; the live pages inspected still served PPT 2.3.0 assets. Local PASS results do not mean the live site is repaired.
 
 The homepage link crawl fetched 127 discovered public paths: all returned HTTP 200, with no detected PHP fatal markers, raw PPT shortcodes or local development URLs. A separate system-route check found four critical 404s. Discovery-only crawling had missed those absent destinations, so it was not sufficient evidence of completion.

@@ -3,7 +3,7 @@
  * Plugin Name:       PPT Core
  * Plugin URI:        https://ppthrive.com
  * Description:       Core functionality for People & Planet Thrive — custom post types, taxonomies, meta fields, and organisation-specific data models for scholarly publishing, research, training, and events.
- * Version:           2.3.2
+ * Version:           2.3.3
  * Author:            People & Planet Thrive Initiative Pvt. Ltd.
  * Author URI:        https://ppthrive.com
  * License:           GPL-2.0-or-later
@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Plugin constants.
  */
-define( 'PPT_CORE_VERSION', '2.3.2' );
+define( 'PPT_CORE_VERSION', '2.3.3' );
 define( 'PPT_CORE_FILE', __FILE__ );
 define( 'PPT_CORE_PATH', plugin_dir_path( __FILE__ ) );
 define( 'PPT_CORE_URL', plugin_dir_url( __FILE__ ) );

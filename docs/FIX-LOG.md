@@ -1,5 +1,7 @@
 # Fix log — release 2.3.2, 9 October 2026
 
+**2.3.3 follow-up:** supplied logo integrated through native Site Logo blocks in the header, existing hero position and footer. Setup imports once, preserves existing logo selections, and surfaces branding errors without blocking page/commerce repair. See [LOGO-UPDATE.md](LOGO-UPDATE.md) for current release verification and [PLUGIN-GUIDE.md](PLUGIN-GUIDE.md) for the requested plugin list.
+
 All changes below are local source/package changes. Production remains at the approval gate. This log supersedes the older 2.3.0 completion claims where the live audit exposed missing coverage.
 
 | Priority | Defect and root cause | Change | Regression evidence |

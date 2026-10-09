@@ -1,0 +1,46 @@
+/* Preserve the supplied artwork's complete 3:2 composition; no cropping or recolouring. */
+.ppt-brand-lockup .wp-block-site-logo img,
+.ppt-planet-orb .wp-block-site-logo img,
+.ppt-footer-brand .wp-block-site-logo img {
+	/* Ivory keeps the artwork's dark lettering legible through its transparent pixels. */
+	background: #fbfaf5;
+}
+.wp-custom-logo .ppt-premium-header .ppt-brand-lockup {
+	padding-left: 0;
+	border-left: 0;
+	gap: 0;
+}
+.wp-custom-logo .ppt-brand-lockup > .wp-block-group { display: none; }
+.ppt-brand-lockup .wp-block-site-logo { margin: 0; flex: 0 0 auto; }
+.ppt-brand-lockup .wp-block-site-logo img {
+	width: 156px;
+	height: auto;
+	max-width: 100%;
+	display: block;
+	border: 1px solid #b4995c;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+.ppt-planet-orb .wp-block-site-logo img {
+	display: block;
+	height: auto;
+	border: 1px solid #b4995c;
+	border-radius: 10px;
+	box-shadow: 0 18px 50px #0005;
+	box-sizing: border-box;
+}
+.ppt-footer-brand .wp-block-site-logo { margin: 0 0 22px; }
+.ppt-footer-brand .wp-block-site-logo img {
+	display: block;
+	width: 240px;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #b4995c88;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+.wp-custom-logo .ppt-footer-brand > .wp-block-site-title,
+.wp-custom-logo .ppt-footer-brand > .ppt-footer-tagline { display: none; }
+@media (max-width: 782px) {
+	.ppt-brand-lockup .wp-block-site-logo img { width: 132px; }
+}

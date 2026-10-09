@@ -1,5 +1,7 @@
 # Route audit — 9 October 2026
 
+This is the 2.3.2 route baseline. The 2.3.3 logo follow-up changes no route architecture; its focused retest is recorded in [LOGO-UPDATE.md](LOGO-UPDATE.md).
+
 Observed on the isolated clean database after ZIP installation. Routes are shown relative to the local site origin. Object IDs are local fixture IDs, not production IDs. Template names were captured using a QA-only response header. PASS below means HTTP 200 after redirects, with no PHP error marker or raw PPT shortcode. It does not imply every interaction on that page was tested. Functional commerce, keyboard and form results are recorded separately in QA-REPORT.md. Checkout redirects to Cart when the basket is empty; a populated browser checkout was also tested. Team/Partners have intentional empty states because no genuine records were supplied.
 
 | Route | Content Type | WordPress Object | Template | HTTP/Functional Status | Notes |

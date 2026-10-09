@@ -1,0 +1,97 @@
+[
+    {
+        "test": "Anonymous logo setup is denied without mutation",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Upload capability is required",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Initial setup creates a native image attachment",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Uploaded original artwork is byte-identical",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Asset hash and native alternate text are stored",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Native site_logo is synchronized",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Native Site Logo block renders image and alt",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Repeated setup preserves ID with no new upload",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Cleared setting reuses hashed media without duplicate",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Existing Site Editor logo wins and remains untouched",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Theme logo selection synchronizes the native site option",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Upload error is returned without a logo or attachment",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Logo failure does not block site\/commerce\/rewrite setup",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Optional logo failure is recorded for administrator review",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Setup screen surfaces an escaped warning",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Attachment insertion failure removes its newly uploaded file",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Successful repeat clears the prior optional warning",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Original logo and setup warning\/version options restored",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "test": "Owned attachment records and files removed",
+        "status": "PASS",
+        "detail": ""
+    }
+]

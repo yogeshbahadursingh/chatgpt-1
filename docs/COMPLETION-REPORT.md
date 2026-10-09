@@ -1,5 +1,7 @@
 # Review handover — 2.3.2, 9 October 2026
 
+**Current deliverables are 2.3.3:** see [LOGO-UPDATE.md](LOGO-UPDATE.md) for the owner-supplied artwork, focused retest and current package hashes, plus [PLUGIN-GUIDE.md](PLUGIN-GUIDE.md). The audit history and remaining production approval requirements below still apply.
+
 The audit resumed from actual code and public live responses. It found defects outside the earlier test matrix and repaired them locally. **Production remains unchanged.** This release is prepared for human review and approved staging application; live launch still needs the environment-specific checks below.
 
 ## What changed

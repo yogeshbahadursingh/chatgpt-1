@@ -1,5 +1,7 @@
 # QA report — 2.3.2, 9 October 2026
 
+**Current packages: 2.3.3.** The report below remains the recorded 2.3.2 audit baseline. The subsequent logo-only release, package hashes and focused retest evidence are documented in [LOGO-UPDATE.md](LOGO-UPDATE.md); do not attribute this entire baseline matrix to a second run on 2.3.3.
+
 **Local acceptance passed; production is unchanged and awaits explicit human approval.** The previous report’s 112-route crawl omitted shared taxonomies and did not establish complete journeys. This release adds those routes and targeted regressions. LIVE-AUDIT.md separately records live store 404s, disabled enquiries and external schema configuration issues.
 
 The final ZIPs were installed onto a newly extracted WordPress 7.1.2 core and an empty `ppt_acceptance_232` database, using WooCommerce 11.1.2, PHP 8.0.30, Apache 2.4.58, MariaDB 10.4.32 and Playwright Chromium. The publicly observed site runs WordPress 7.1.3; that exact hosting/plugin combination was not reproduced. Setup created 21 editable pages before Woo activation and was repeated afterwards. All 149 source files match installed package files by SHA-256.
