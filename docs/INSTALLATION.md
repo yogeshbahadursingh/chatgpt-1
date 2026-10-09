@@ -29,3 +29,7 @@ Paid-download security depends on the real server configuration. Apache `.htacce
 ## What not to upload
 
 Upload only the two release ZIPs. The `checkpoint`, `runtime` and `tests` directories are local development/QA materials. Runtime contains local database files, configuration and test data and must not be included in hosting uploads. Documentation can be retained separately by the administrator.
+
+## Final launch sequence
+
+After the staging checks above, back up production, upload PPT Core then the theme, run Site Setup once, verify Settings → Reading and the shared navigation, and clear page/CDN caches. Recheck enquiries, account access, one physical-product gateway sandbox order and one digital-product sandbox order. Confirm shipping/tax totals, paid/failed order behaviour, download authorization and direct-file denial. Approve all institutional/policy text and replace demonstration covers and records with genuine material. In WooCommerce → Settings → Site visibility, enable the live store only after the operator approves these checks. No production deployment has been performed as part of this delivery.

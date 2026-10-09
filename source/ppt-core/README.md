@@ -2,7 +2,7 @@
 
 **Plugin Name:** PPT Core
 **Plugin URI:** https://ppthrive.com
-**Version:** 1.0.0
+**Version:** 2.3.0
 **Requires WordPress:** 6.4+
 **Requires PHP:** 8.0+
 
@@ -117,3 +117,7 @@ GNU General Public License v2 or later.
 ## Credits
 
 Developed by People & Planet Thrive Initiative Pvt. Ltd.
+
+## Version 2.3.0 handover
+
+This release continues the supplied premium design. Use PPT Core with the theme and run Tools → PPT Site Setup once. WooCommerce remains responsible for products, checkout, orders and protected downloads. See the repository docs/INSTALLATION.md, ADMIN-GUIDE.md and QA-REPORT.md for setup, evidence and production prerequisites. No live payment or production mail delivery is certified by local QA. Legacy named page templates now render editable page content.

@@ -1,7 +1,13 @@
 <?php
 /** Bind existing specialist PHP layouts to the block theme without replacing its homepage. */
 defined('ABSPATH') || exit;
+// Core's mobile overlay needs JavaScript. Keep its links available without it.
+add_action('wp_head',function(){
+ echo '<noscript><style>.ppt-main-nav{display:flex!important;width:100%}.ppt-premium-header .ppt-header-inner{flex-wrap:wrap!important}.wp-block-navigation__responsive-container:not(.is-menu-open){display:block!important;position:static!important}.wp-block-navigation__responsive-container-open,.wp-block-navigation__responsive-container-close{display:none!important}.wp-block-navigation__container{flex-wrap:wrap!important}</style></noscript>';
+});
 add_filter('template_include',function($template){
+ // WooCommerce can render its visibility screen early and intentionally return no template.
+ if(!$template) return $template;
  $name='';
  if(function_exists('is_product') && is_product()) return PPT_THEME_DIR.'/woocommerce/single-product.php';
  if(function_exists('is_shop') && (is_shop() || is_product_taxonomy())) return PPT_THEME_DIR.'/woocommerce/archive-product.php';

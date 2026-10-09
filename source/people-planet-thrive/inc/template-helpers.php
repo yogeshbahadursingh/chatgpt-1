@@ -115,7 +115,7 @@ function ppt_get_footer_newsletter_description() {
  * @return string Copyright organization name.
  */
 function ppt_get_copyright_org_name() {
-	return get_theme_mod( 'ppt_copyright_org_name', esc_html__( 'People & Planet Thrive Initiative Pvt. Ltd.', 'people-planet-thrive' ) );
+	return get_theme_mod( 'ppt_copyright_org_name', esc_html__( 'People & Planet Thrive', 'people-planet-thrive' ) );
 }
 
 /**

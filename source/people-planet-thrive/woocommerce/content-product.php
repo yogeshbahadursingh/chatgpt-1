@@ -25,7 +25,7 @@ if ( $publication ) {
 }
 ?>
 
-<div class="wp-block-group ppt-product-card" style="border:1px solid var(--wp--preset--color--border);border-radius:4px;overflow:hidden;background-color:var(--wp--preset--color--white);transition:transform 0.2s ease,box-shadow 0.2s ease">
+<li class="wp-block-group ppt-product-card product" style="border:1px solid var(--wp--preset--color--border);border-radius:4px;overflow:hidden;background-color:var(--wp--preset--color--white);transition:transform 0.2s ease,box-shadow 0.2s ease">
 
 	<div style="position:relative">
 		<a href="<?php echo esc_url( get_permalink() ); ?>">
@@ -79,4 +79,4 @@ if ( $publication ) {
 
 	</div>
 
-</div>
+</li>
