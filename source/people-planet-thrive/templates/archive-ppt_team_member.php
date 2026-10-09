@@ -1,0 +1,1 @@
+<?php defined('ABSPATH') || exit; get_header(); ?><main class="site-main ppt-section"><div class="alignwide"><h1><?php post_type_archive_title(); ?></h1><p>Profiles are published when information and permission to share it are confirmed.</p><?php echo function_exists('ppt_directory')?ppt_directory(array('type'=>'ppt_team_member')):''; ?></div></main><?php get_footer(); ?>

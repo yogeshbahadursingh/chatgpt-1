@@ -1,0 +1,1 @@
+<?php defined('ABSPATH') || exit; ?></div><?php echo $GLOBALS['ppt_rendered_footer'] ?? do_blocks('<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->'); ?></div><?php wp_footer(); ?></body></html>

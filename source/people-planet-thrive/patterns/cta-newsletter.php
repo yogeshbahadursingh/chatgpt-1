@@ -1,0 +1,2 @@
+<?php defined("ABSPATH") || exit; ?>
+<!-- wp:group {"className":"ppt-section"} --><div class="wp-block-group ppt-section"><!-- wp:heading --><h2 class="wp-block-heading">Stay connected</h2><!-- /wp:heading --><!-- wp:shortcode -->[ppt_footer_connect]<!-- /wp:shortcode --></div><!-- /wp:group -->

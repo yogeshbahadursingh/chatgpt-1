@@ -1,0 +1,48 @@
+
+<!-- wp:template-part {"slug":"header","area":"header","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"className":"site-main"} -->
+<main class="wp-block-group site-main">
+	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
+		<!-- wp:heading {"level":1} -->
+		<h1>Search Results</h1>
+		<!-- /wp:heading -->
+
+		<!-- wp:search {"label":"Search","buttonText":"Search","style":{"border":{"radius":"0px"}}} /-->
+
+		<!-- wp:separator {"style":{"color":{"background":"#C69A45"}}} -->
+		<hr class="wp-block-separator has-text-color has-background" style="background-color:#C69A45;color:#C69A45"/>
+		<!-- /wp:separator -->
+
+		<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"relevance","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+		<div class="wp-block-query">
+			<!-- wp:post-template -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small","padding":{"bottom":"var:preset|spacing|medium"}},"border":{"bottom":{"color":"#F8F5EE","width":"1px"}}}} -->
+				<div class="wp-block-group" style="border-bottom-color:#F8F5EE;border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--medium)">
+					<!-- wp:post-title {"isLink":true,"level":2} /-->
+					<!-- wp:post-date {"style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->
+					<!-- wp:post-excerpt {"excerptLength":30} /-->
+				</div>
+				<!-- /wp:group -->
+			<!-- /wp:post-template -->
+
+			<!-- wp:query-pagination -->
+				<!-- wp:query-pagination-previous /-->
+				<!-- wp:query-pagination-numbers /-->
+				<!-- wp:query-pagination-next /-->
+			<!-- /wp:query-pagination -->
+
+			<!-- wp:query-no-results -->
+				<!-- wp:paragraph {"align":"center"} -->
+				<p class="has-text-align-center">Your next discovery may need a different phrase. Try a topic, title or programme name.</p>
+				<!-- /wp:paragraph -->
+			<!-- /wp:query-no-results -->
+		</div>
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer","tagName":"footer","className":"site-footer"} /-->

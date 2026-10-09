@@ -1,0 +1,151 @@
+/**
+ * Research Platform Styles
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   RESEARCH AREA CARDS
+   ========================================================================== */
+
+.ppt-research-area-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ppt-research-area-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   RESEARCHER CARDS
+   ========================================================================== */
+
+.ppt-researcher-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ppt-researcher-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   PROJECT CARDS
+   ========================================================================== */
+
+.ppt-project-card {
+	transition: box-shadow 0.2s ease;
+}
+
+.ppt-project-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   STATUS BADGES
+   ========================================================================== */
+
+.ppt-status-badge {
+	display: inline-block;
+	padding: 0.3em 0.8em;
+	border-radius: 20px;
+	font-size: var(--wp--preset--font-size--12);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.ppt-status-badge--active {
+	background-color: #126B52;
+	color: white;
+}
+
+.ppt-status-badge--completed {
+	background-color: #6B7280;
+	color: white;
+}
+
+.ppt-status-badge--planning {
+	background-color: #C69A45;
+	color: white;
+}
+
+.ppt-status-badge--on-hold {
+	background-color: #B91C1C;
+	color: white;
+}
+
+/* ==========================================================================
+   METADATA DISPLAY
+   ========================================================================== */
+
+.ppt-metadata-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: var(--wp--preset--spacing--20);
+	padding: var(--wp--preset--spacing--20);
+	background-color: var(--wp--preset--color--surface-alt);
+	border-radius: 4px;
+}
+
+.ppt-metadata-item {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--10);
+}
+
+.ppt-metadata-label {
+	font-size: var(--wp--preset--font-size--12);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--wp--preset--color--text-light);
+	font-weight: 600;
+}
+
+.ppt-metadata-value {
+	font-size: var(--wp--preset--font-size--16);
+	color: var(--wp--preset--color--text);
+}
+
+/* ==========================================================================
+   KEYWORD TAGS
+   ========================================================================== */
+
+.ppt-keyword-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--wp--preset--spacing--10);
+}
+
+.ppt-keyword-tag {
+	display: inline-block;
+	padding: 0.2em 0.6em;
+	background-color: var(--wp--preset--color--surface-alt);
+	border-radius: 20px;
+	font-size: var(--wp--preset--font-size--12);
+	color: var(--wp--preset--color--text);
+}
+
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+	.ppt-metadata-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+	.ppt-research-area-card,
+	.ppt-researcher-card,
+	.ppt-project-card {
+		break-inside: avoid;
+	}
+}

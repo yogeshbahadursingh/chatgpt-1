@@ -1,0 +1,430 @@
+/**
+ * Editorial Experience Styles
+ *
+ * Optimized for long-form reading and editorial content
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   ARTICLE TYPOGRAPHY
+   ========================================================================== */
+
+/* Optimal reading width: 65-75 characters per line */
+.ppt-article-content {
+	max-width: 720px;
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: var(--wp--preset--font-size--18);
+	line-height: 1.7;
+	color: var(--wp--preset--color--text);
+}
+
+/* Headings in article content */
+.ppt-article-content h2 {
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: var(--wp--preset--font-size--32);
+	font-weight: 700;
+	line-height: 1.3;
+	margin-top: var(--wp--preset--spacing--40);
+	margin-bottom: var(--wp--preset--spacing--20);
+	color: var(--wp--preset--color--heading);
+}
+
+.ppt-article-content h3 {
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: var(--wp--preset--font-size--24);
+	font-weight: 600;
+	line-height: 1.4;
+	margin-top: var(--wp--preset--spacing--30);
+	margin-bottom: var(--wp--preset--spacing--15);
+	color: var(--wp--preset--color--heading);
+}
+
+.ppt-article-content h4 {
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: var(--wp--preset--font-size--20);
+	font-weight: 600;
+	line-height: 1.4;
+	margin-top: var(--wp--preset--spacing--25);
+	margin-bottom: var(--wp--preset--spacing--10);
+	color: var(--wp--preset--color--heading);
+}
+
+/* Paragraphs */
+.ppt-article-content p {
+	margin-bottom: var(--wp--preset--spacing--20);
+	text-align: left;
+}
+
+/* First paragraph after heading - no indent */
+.ppt-article-content h2 + p,
+.ppt-article-content h3 + p,
+.ppt-article-content h4 + p {
+	text-indent: 0;
+}
+
+/* Links */
+.ppt-article-content a {
+	color: var(--wp--preset--color--primary);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+	transition: color 0.2s ease;
+}
+
+.ppt-article-content a:hover {
+	color: var(--wp--preset--color--primary-dark);
+	text-decoration-thickness: 2px;
+}
+
+/* Lists */
+.ppt-article-content ul,
+.ppt-article-content ol {
+	margin-bottom: var(--wp--preset--spacing--20);
+	padding-left: var(--wp--preset--spacing--30);
+}
+
+.ppt-article-content li {
+	margin-bottom: var(--wp--preset--spacing--10);
+	line-height: 1.6;
+}
+
+/* ==========================================================================
+   FIGURES AND IMAGES
+   ========================================================================== */
+
+.ppt-article-content figure {
+	margin: var(--wp--preset--spacing--30) 0;
+	text-align: center;
+}
+
+.ppt-article-content figure img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+.ppt-article-content figcaption {
+	margin-top: var(--wp--preset--spacing--10);
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: var(--wp--preset--font-size--14);
+	color: var(--wp--preset--color--text-light);
+	font-style: italic;
+	line-height: 1.5;
+}
+
+/* Wide images */
+.ppt-article-content figure.alignwide {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Full-width images */
+.ppt-article-content figure.alignfull {
+	max-width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+}
+
+/* ==========================================================================
+   BLOCKQUOTES
+   ========================================================================== */
+
+.ppt-article-content blockquote {
+	margin: var(--wp--preset--spacing--30) 0;
+	padding: var(--wp--preset--spacing--25) var(--wp--preset--spacing--30);
+	border-left: 4px solid var(--wp--preset--color--heritage-gold);
+	background-color: var(--wp--preset--color--surface-alt);
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: var(--wp--preset--font-size--20);
+	font-style: italic;
+	line-height: 1.6;
+	color: var(--wp--preset--color--heading);
+}
+
+.ppt-article-content blockquote p {
+	margin-bottom: 0;
+}
+
+.ppt-article-content blockquote cite {
+	display: block;
+	margin-top: var(--wp--preset--spacing--15);
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: var(--wp--preset--font-size--14);
+	font-style: normal;
+	font-weight: 600;
+	color: var(--wp--preset--color--text-light);
+}
+
+/* ==========================================================================
+   TABLES
+   ========================================================================== */
+
+.ppt-article-content table {
+	width: 100%;
+	margin: var(--wp--preset--spacing--30) 0;
+	border-collapse: collapse;
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: var(--wp--preset--font-size--16);
+	line-height: 1.5;
+}
+
+.ppt-article-content table thead {
+	background-color: var(--wp--preset--color--surface-alt);
+	border-bottom: 2px solid var(--wp--preset--color--border);
+}
+
+.ppt-article-content table th {
+	padding: var(--wp--preset--spacing--15) var(--wp--preset--spacing--20);
+	text-align: left;
+	font-weight: 600;
+	color: var(--wp--preset--color--heading);
+}
+
+.ppt-article-content table td {
+	padding: var(--wp--preset--spacing--15) var(--wp--preset--spacing--20);
+	border-bottom: 1px solid var(--wp--preset--color--border);
+}
+
+.ppt-article-content table tbody tr:hover {
+	background-color: var(--wp--preset--color--surface-alt);
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+	.ppt-article-content table {
+		display: block;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+	.ppt-article-content table thead {
+		display: table-header-group;
+	}
+	
+	.ppt-article-content table tbody {
+		display: table-row-group;
+	}
+	
+	.ppt-article-content table th,
+	.ppt-article-content table td {
+		padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--15);
+		font-size: var(--wp--preset--font-size--14);
+		white-space: nowrap;
+	}
+}
+
+/* ==========================================================================
+   CODE BLOCKS
+   ========================================================================== */
+
+.ppt-article-content pre {
+	margin: var(--wp--preset--spacing--30) 0;
+	padding: var(--wp--preset--spacing--20);
+	background-color: var(--wp--preset--color--surface-alt);
+	border-radius: 4px;
+	overflow-x: auto;
+	font-family: var(--wp--preset--font-family--mono);
+	font-size: var(--wp--preset--font-size--14);
+	line-height: 1.6;
+}
+
+.ppt-article-content code {
+	font-family: var(--wp--preset--font-family--mono);
+	font-size: 0.9em;
+	padding: 0.2em 0.4em;
+	background-color: var(--wp--preset--color--surface-alt);
+	border-radius: 3px;
+}
+
+/* ==========================================================================
+   SHARE TOOLS
+   ========================================================================== */
+
+.ppt-share-tools a:hover {
+	background-color: var(--wp--preset--color--border) !important;
+}
+
+/* ==========================================================================
+   TABLE OF CONTENTS
+   ========================================================================== */
+
+.ppt-toc {
+	font-family: var(--wp--preset--font-family--sans);
+}
+
+.ppt-toc ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ppt-toc li {
+	margin-bottom: var(--wp--preset--spacing--10);
+}
+
+.ppt-toc a {
+	color: var(--wp--preset--color--text);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--14);
+	line-height: 1.5;
+	transition: color 0.2s ease;
+}
+
+.ppt-toc a:hover {
+	color: var(--wp--preset--color--primary);
+}
+
+.ppt-toc .toc-h3 {
+	padding-left: var(--wp--preset--spacing--15);
+}
+
+.ppt-toc .toc-h4 {
+	padding-left: var(--wp--preset--spacing--25);
+}
+
+/* ==========================================================================
+   ARTICLE CARDS
+   ========================================================================== */
+
+.ppt-article-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ppt-article-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   FEATURED STORY
+   ========================================================================== */
+
+.ppt-featured-story {
+	transition: transform 0.2s ease;
+}
+
+.ppt-featured-story:hover {
+	transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   AUTHOR AVATARS
+   ========================================================================== */
+
+.ppt-author-avatar {
+	border-radius: 50%;
+	border: 2px solid var(--wp--preset--color--border);
+}
+
+.ppt-author-avatar-large {
+	border-radius: 50%;
+	border: 3px solid var(--wp--preset--color--border);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+	/* Stack sidebar below content on tablet */
+	.ppt-article-single > div > div {
+		grid-template-columns: 1fr !important;
+	}
+
+	.ppt-article-single aside {
+		position: static !important;
+		margin-top: var(--wp--preset--spacing--40);
+	}
+}
+
+@media (max-width: 768px) {
+	/* Reduce font sizes for mobile */
+	.ppt-article-content {
+		font-size: var(--wp--preset--font-size--16);
+	}
+
+	.ppt-article-content h2 {
+		font-size: var(--wp--preset--font-size--28);
+	}
+
+	.ppt-article-content h3 {
+		font-size: var(--wp--preset--font-size--22);
+	}
+
+	.ppt-article-content h4 {
+		font-size: var(--wp--preset--font-size--18);
+	}
+
+	.ppt-article-content blockquote {
+		font-size: var(--wp--preset--font-size--18);
+		padding: var(--wp--preset--spacing--20);
+	}
+
+	/* Stack featured story */
+	.ppt-featured-story {
+		grid-template-columns: 1fr !important;
+	}
+
+	/* Stack author header */
+	.ppt-article-single > div > div > div:first-child {
+		grid-template-columns: 1fr !important;
+		text-align: center;
+	}
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+	.ppt-article-content {
+		font-size: 12pt;
+		line-height: 1.5;
+	}
+
+	.ppt-article-content h2 {
+		font-size: 18pt;
+		page-break-after: avoid;
+	}
+
+	.ppt-article-content h3 {
+		font-size: 14pt;
+		page-break-after: avoid;
+	}
+
+	.ppt-article-content figure {
+		page-break-inside: avoid;
+	}
+
+	.ppt-article-content table {
+		page-break-inside: avoid;
+	}
+
+	.ppt-share-tools,
+	.ppt-toc,
+	.ppt-breadcrumb {
+		display: none;
+	}
+}
+
+/* ==========================================================================
+   REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+	.ppt-article-card,
+	.ppt-featured-story,
+	.ppt-article-content a,
+	.ppt-toc a {
+		transition: none;
+	}
+
+	.ppt-article-card:hover,
+	.ppt-featured-story:hover {
+		transform: none;
+	}
+}

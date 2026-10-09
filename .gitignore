@@ -1,0 +1,7 @@
+/runtime/
+/checkpoint/
+/routes.json
+/node_modules/
+*.log
+.env*
+wp-config.php

@@ -1,0 +1,174 @@
+/**
+ * Institutional Pages Styles
+ *
+ * Styles for About, Team, Partners, Contact, and Policy pages
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   TEAM CARDS
+   ========================================================================== */
+
+.ppt-team-card,
+.ppt-leadership-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ppt-team-card:hover,
+.ppt-leadership-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   PARTNER CARDS
+   ========================================================================== */
+
+.ppt-partner-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ppt-partner-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   POLICY CONTENT
+   ========================================================================== */
+
+.ppt-policy-content {
+	max-width: 720px;
+}
+
+.ppt-policy-content h2 {
+	font-size: var(--wp--preset--font-size--32);
+	font-weight: 700;
+	margin-top: var(--wp--preset--spacing--40);
+	margin-bottom: var(--wp--preset--spacing--20);
+}
+
+.ppt-policy-content h3 {
+	font-size: var(--wp--preset--font-size--24);
+	font-weight: 600;
+	margin-top: var(--wp--preset--spacing--30);
+	margin-bottom: var(--wp--preset--spacing--15);
+}
+
+.ppt-policy-content h4 {
+	font-size: var(--wp--preset--font-size--20);
+	font-weight: 600;
+	margin-top: var(--wp--preset--spacing--25);
+	margin-bottom: var(--wp--preset--spacing--10);
+}
+
+.ppt-policy-content p {
+	margin-bottom: var(--wp--preset--spacing--20);
+}
+
+.ppt-policy-content ul,
+.ppt-policy-content ol {
+	margin-bottom: var(--wp--preset--spacing--20);
+	padding-left: var(--wp--preset--spacing--30);
+}
+
+.ppt-policy-content li {
+	margin-bottom: var(--wp--preset--spacing--10);
+	line-height: 1.6;
+}
+
+.ppt-policy-content a {
+	color: var(--wp--preset--color--primary);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+	transition: color 0.2s ease;
+}
+
+.ppt-policy-content a:hover {
+	color: var(--wp--preset--color--primary-dark);
+	text-decoration-thickness: 2px;
+}
+
+/* ==========================================================================
+   BREADCRUMBS
+   ========================================================================== */
+
+.ppt-breadcrumb a {
+	color: var(--wp--preset--color--primary);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.ppt-breadcrumb a:hover {
+	color: var(--wp--preset--color--primary-dark);
+	text-decoration: underline;
+}
+
+.ppt-breadcrumb .ppt-current {
+	color: var(--wp--preset--color--text-light);
+}
+
+/* ==========================================================================
+   CONTACT PAGE
+   ========================================================================== */
+
+.ppt-contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--15);
+}
+
+.ppt-contact-info-item {
+	display: flex;
+	align-items: center;
+	gap: var(--wp--preset--spacing--15);
+}
+
+.ppt-contact-info-icon {
+	width: 40px;
+	height: 40px;
+	background-color: var(--wp--preset--color--surface-alt);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.ppt-contact-info-icon svg {
+	color: var(--wp--preset--color--primary);
+}
+
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+	/* Stack contact page columns */
+	.wp-block-group[style*="grid-template-columns:1fr 1fr"] {
+		grid-template-columns: 1fr !important;
+	}
+}
+
+/* ==========================================================================
+   REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+	.ppt-team-card,
+	.ppt-leadership-card,
+	.ppt-partner-card,
+	.ppt-breadcrumb a,
+	.ppt-policy-content a {
+		transition: none;
+	}
+
+	.ppt-team-card:hover,
+	.ppt-leadership-card:hover,
+	.ppt-partner-card:hover {
+		transform: none;
+	}
+}

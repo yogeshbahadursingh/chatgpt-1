@@ -1,0 +1,111 @@
+/**
+ * Training and Events Styles
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   TRAINING CARDS
+   ========================================================================== */
+
+.ppt-training-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ppt-training-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   EVENT CARDS
+   ========================================================================== */
+
+.ppt-event-card {
+	transition: box-shadow 0.2s ease;
+}
+
+.ppt-event-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   METADATA DISPLAY
+   ========================================================================== */
+
+.ppt-training-meta,
+.ppt-event-meta {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: var(--wp--preset--spacing--20);
+	padding: var(--wp--preset--spacing--20);
+	background-color: var(--wp--preset--color--surface-alt);
+	border-radius: 4px;
+}
+
+.ppt-meta-item {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--10);
+}
+
+.ppt-meta-label {
+	font-size: var(--wp--preset--font-size--12);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--wp--preset--color--text-light);
+	font-weight: 600;
+}
+
+.ppt-meta-value {
+	font-size: var(--wp--preset--font-size--16);
+	color: var(--wp--preset--color--text);
+}
+
+/* ==========================================================================
+   BADGES
+   ========================================================================== */
+
+.ppt-badge {
+	display: inline-block;
+	padding: 0.2em 0.6em;
+	background-color: var(--wp--preset--color--surface-alt);
+	border-radius: 20px;
+	font-size: var(--wp--preset--font-size--12);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.ppt-badge--virtual {
+	background-color: var(--wp--preset--color--info-light);
+	color: var(--wp--preset--color--info);
+}
+
+.ppt-badge--free {
+	background-color: var(--wp--preset--color--success-light);
+	color: var(--wp--preset--color--success);
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+	.ppt-training-meta,
+	.ppt-event-meta {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+	.ppt-training-card,
+	.ppt-event-card {
+		break-inside: avoid;
+	}
+}

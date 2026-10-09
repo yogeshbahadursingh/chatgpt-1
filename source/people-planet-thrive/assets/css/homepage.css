@@ -1,0 +1,285 @@
+/**
+ * Homepage Styles
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+
+.ppt-home-hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.ppt-home-hero__eyebrow {
+	opacity: 0.9;
+}
+
+.ppt-home-hero__headline {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ppt-home-hero__copy {
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.9;
+}
+
+/* ==========================================================================
+   INTRODUCTION SECTION
+   ========================================================================== */
+
+.ppt-home-introduction__image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* ==========================================================================
+   WHAT WE DO - PILLAR CARDS
+   ========================================================================== */
+
+.ppt-pillar-card {
+	transition: transform var(--ppt-transition-base), box-shadow var(--ppt-transition-base);
+}
+
+.ppt-pillar-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--ppt-shadow-lg);
+}
+
+.ppt-pillar-card .wp-block-group {
+	height: 100%;
+}
+
+/* ==========================================================================
+   CONTENT CARDS (Research, Articles, Publications, etc.)
+   ========================================================================== */
+
+.ppt-research-card,
+.ppt-article-card,
+.ppt-publication-card,
+.ppt-training-card,
+.ppt-insight-card,
+.ppt-event-card {
+	transition: transform var(--ppt-transition-base), box-shadow var(--ppt-transition-base);
+}
+
+.ppt-research-card:hover,
+.ppt-article-card:hover,
+.ppt-publication-card:hover,
+.ppt-training-card:hover,
+.ppt-insight-card:hover,
+.ppt-event-card:hover {
+	transform: translateY(-2px);
+}
+
+.ppt-research-card img,
+.ppt-article-card img,
+.ppt-publication-card img,
+.ppt-training-card img,
+.ppt-insight-card img,
+.ppt-event-card img {
+	transition: transform var(--ppt-transition-slow);
+}
+
+.ppt-research-card:hover img,
+.ppt-article-card:hover img,
+.ppt-publication-card:hover img,
+.ppt-training-card:hover img,
+.ppt-insight-card:hover img,
+.ppt-event-card:hover img {
+	transform: scale(1.03);
+}
+
+/* ==========================================================================
+   RESEARCH THEMES - DARK CARDS
+   ========================================================================== */
+
+.ppt-theme-card {
+	transition: transform var(--ppt-transition-base), box-shadow var(--ppt-transition-base);
+}
+
+.ppt-theme-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ppt-theme-card a {
+	color: var(--ppt-text-inverse) !important;
+}
+
+.ppt-theme-card a:hover {
+	color: var(--ppt-accent) !important;
+}
+
+/* ==========================================================================
+   IMPACT METRICS
+   ========================================================================== */
+
+.ppt-impact-card .wp-block-group {
+	text-align: center;
+	border-radius: var(--ppt-radius-medium);
+	box-shadow: var(--ppt-shadow-sm);
+	transition: transform var(--ppt-transition-base), box-shadow var(--ppt-transition-base);
+}
+
+.ppt-impact-card:hover .wp-block-group {
+	transform: translateY(-4px);
+	box-shadow: var(--ppt-shadow-md);
+}
+
+/* ==========================================================================
+   PARTNER LOGOS
+   ========================================================================== */
+
+.ppt-partner-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--ppt-radius-medium);
+	box-shadow: var(--ppt-shadow-sm);
+	transition: transform var(--ppt-transition-base), box-shadow var(--ppt-transition-base);
+}
+
+.ppt-partner-logo:hover {
+	transform: scale(1.05);
+	box-shadow: var(--ppt-shadow-md);
+}
+
+.ppt-partner-logo img {
+	max-height: 80px;
+	width: auto;
+	filter: grayscale(100%);
+	opacity: 0.7;
+	transition: filter var(--ppt-transition-base), opacity var(--ppt-transition-base);
+}
+
+.ppt-partner-logo:hover img {
+	filter: grayscale(0%);
+	opacity: 1;
+}
+
+/* ==========================================================================
+   NEWSLETTER FORM
+   ========================================================================== */
+
+.ppt-newsletter-form {
+	display: flex;
+	gap: var(--ppt-space-small);
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ppt-newsletter-form .newsletter-input {
+	flex: 1;
+	padding: var(--ppt-space-small) var(--ppt-space-medium);
+	border: 1px solid var(--ppt-border);
+	border-radius: var(--ppt-radius-small);
+	background-color: var(--ppt-surface);
+	color: var(--ppt-text);
+	font-size: var(--wp--preset--font-size--base);
+}
+
+.ppt-newsletter-form .newsletter-input::placeholder {
+	color: var(--ppt-text-muted);
+}
+
+.ppt-newsletter-form .newsletter-btn {
+	white-space: nowrap;
+}
+
+/* ==========================================================================
+   SECTION LABELS
+   ========================================================================== */
+
+.ppt-section-label {
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+	/* Stack 6-column grids to 3 columns on tablet */
+	.wp-block-columns:has(.ppt-pillar-card) {
+		flex-wrap: wrap;
+	}
+	
+	.wp-block-columns:has(.ppt-pillar-card) .wp-block-column {
+		flex-basis: calc(33.333% - var(--wp--style--block-gap, 1.5rem)) !important;
+	}
+}
+
+@media (max-width: 768px) {
+	/* Stack to 2 columns on mobile */
+	.wp-block-columns:has(.ppt-pillar-card) .wp-block-column {
+		flex-basis: calc(50% - var(--wp--style--block-gap, 1.5rem)) !important;
+	}
+
+	/* Stack newsletter form */
+	.ppt-newsletter-form {
+		flex-direction: column;
+	}
+
+	.ppt-newsletter-form .newsletter-btn {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	/* Stack to 1 column on small mobile */
+	.wp-block-columns:has(.ppt-pillar-card) .wp-block-column {
+		flex-basis: 100% !important;
+	}
+}
+
+/* ==========================================================================
+   REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+	.ppt-pillar-card,
+	.ppt-research-card,
+	.ppt-article-card,
+	.ppt-publication-card,
+	.ppt-training-card,
+	.ppt-insight-card,
+	.ppt-event-card,
+	.ppt-theme-card,
+	.ppt-impact-card .wp-block-group,
+	.ppt-partner-logo,
+	.ppt-partner-logo img {
+		transition: none;
+	}
+
+	.ppt-pillar-card:hover,
+	.ppt-research-card:hover,
+	.ppt-article-card:hover,
+	.ppt-publication-card:hover,
+	.ppt-training-card:hover,
+	.ppt-insight-card:hover,
+	.ppt-event-card:hover,
+	.ppt-theme-card:hover,
+	.ppt-impact-card:hover .wp-block-group,
+	.ppt-partner-logo:hover {
+		transform: none;
+	}
+
+	.ppt-research-card:hover img,
+	.ppt-article-card:hover img,
+	.ppt-publication-card:hover img,
+	.ppt-training-card:hover img,
+	.ppt-insight-card:hover img,
+	.ppt-event-card:hover img {
+		transform: none;
+	}
+}

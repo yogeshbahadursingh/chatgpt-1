@@ -1,0 +1,366 @@
+/**
+ * Custom Block Styles — People & Planet Thrive
+ *
+ * Extends the design system with block-specific styles.
+ * Uses semantic tokens from design-system.css.
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   SEPARATOR STYLES
+   ========================================================================== */
+
+/* Gold Thin */
+.is-style-gold-thin hr {
+	border-color: var(--ppt-accent);
+	border-width: 1px;
+}
+
+/* Gold Dotted */
+.is-style-gold-dotted hr {
+	border: none;
+	border-top: 2px dotted var(--ppt-accent);
+	opacity: 0.5;
+}
+
+/* ==========================================================================
+   GROUP/SECTION STYLES
+   ========================================================================== */
+
+.is-style-section-ivory {
+	background-color: var(--ppt-surface-alt);
+}
+
+.is-style-section-forest {
+	background-color: var(--ppt-surface-dark);
+	color: var(--ppt-text-inverse);
+}
+
+.is-style-section-forest h1,
+.is-style-section-forest h2,
+.is-style-section-forest h3,
+.is-style-section-forest h4,
+.is-style-section-forest h5,
+.is-style-section-forest h6 {
+	color: var(--ppt-text-inverse);
+}
+
+.is-style-section-forest .ppt-meta,
+.is-style-section-forest .wp-block-post-date,
+.is-style-section-forest .wp-block-post-author {
+	color: var(--ppt-text-inverse);
+	opacity: 0.7;
+}
+
+.is-style-section-teal {
+	background-color: var(--ppt-surface-dark-alt);
+	color: var(--ppt-text-inverse);
+}
+
+.is-style-section-teal h1,
+.is-style-section-teal h2,
+.is-style-section-teal h3,
+.is-style-section-teal h4,
+.is-style-section-teal h5,
+.is-style-section-teal h6 {
+	color: var(--ppt-text-inverse);
+}
+
+/* ==========================================================================
+   CARD GRID
+   ========================================================================== */
+
+.is-style-card-grid {
+	gap: var(--ppt-grid-gap-mobile);
+}
+
+@media (min-width: 768px) {
+	.is-style-card-grid {
+		gap: var(--ppt-grid-gap);
+	}
+}
+
+/* ==========================================================================
+   IMAGE FRAMED
+   ========================================================================== */
+
+.is-style-framed {
+	border: 1px solid var(--ppt-border);
+	padding: var(--ppt-space-xs);
+	border-radius: var(--ppt-radius-md);
+}
+
+/* ==========================================================================
+   HEADING SECTION LABEL
+   ========================================================================== */
+
+.is-style-section-label {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--tiny);
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ppt-secondary);
+}
+
+/* ==========================================================================
+   QUOTE GOLD BORDER
+   ========================================================================== */
+
+.is-style-gold-border {
+	border-left-color: var(--ppt-accent);
+	border-left-width: 3px;
+}
+
+/* ==========================================================================
+   BUTTON OUTLINE GOLD
+   ========================================================================== */
+
+.is-style-outline-gold .wp-block-button__link {
+	background: transparent;
+	border: 1px solid var(--ppt-accent);
+	color: var(--ppt-accent);
+}
+
+.is-style-outline-gold .wp-block-button__link:hover {
+	background: var(--ppt-accent);
+	color: var(--ppt-accent-text);
+}
+
+/* ==========================================================================
+   BUTTON OUTLINE WHITE
+   ========================================================================== */
+
+.is-style-outline-white .wp-block-button__link {
+	background: transparent;
+	border: 1px solid var(--ppt-text-inverse);
+	color: var(--ppt-text-inverse);
+}
+
+.is-style-outline-white .wp-block-button__link:hover {
+	background: var(--ppt-text-inverse);
+	color: var(--ppt-primary);
+}
+
+/* ==========================================================================
+   SCHOLARLY ARTICLE STYLES
+   ========================================================================== */
+
+/* Article metadata block */
+.ppt-article-meta {
+	border-bottom: 1px solid var(--ppt-accent);
+	padding: var(--ppt-space-m) 0;
+	margin-bottom: var(--ppt-space-l);
+}
+
+.ppt-article-meta dl {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: var(--ppt-space-xs) var(--ppt-space-m);
+	margin: 0;
+}
+
+.ppt-article-meta dt {
+	font-family: var(--ppt-font-sans);
+	font-weight: 600;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-text);
+}
+
+.ppt-article-meta dd {
+	margin: 0;
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-text-light);
+}
+
+/* DOI link styling */
+.ppt-doi-link {
+	font-family: var(--ppt-font-mono);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+/* Keywords */
+.ppt-keywords {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ppt-space-xs);
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ppt-keywords li {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--tiny);
+	font-weight: 500;
+	padding: 0.125rem 0.5rem;
+	background-color: var(--ppt-surface-alt);
+	border-radius: var(--ppt-radius-pill);
+	color: var(--ppt-text-light);
+}
+
+/* ==========================================================================
+   JOURNAL STYLES
+   ========================================================================== */
+
+.ppt-journal-header {
+	border-bottom: 2px solid var(--ppt-accent);
+	padding-bottom: var(--ppt-space-l);
+	margin-bottom: var(--ppt-space-xl);
+}
+
+.ppt-journal-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ppt-space-m);
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-text-muted);
+}
+
+.ppt-journal-meta dt {
+	font-weight: 600;
+	color: var(--ppt-text-light);
+}
+
+.ppt-journal-meta dd {
+	margin: 0;
+}
+
+/* ==========================================================================
+   RESEARCHER PROFILE
+   ========================================================================== */
+
+.ppt-researcher-profile {
+	display: flex;
+	gap: var(--ppt-space-xl);
+	align-items: flex-start;
+}
+
+.ppt-researcher-profile__image {
+	flex: 0 0 200px;
+}
+
+.ppt-researcher-profile__image img {
+	width: 100%;
+	height: auto;
+	border-radius: var(--ppt-radius-md);
+}
+
+.ppt-researcher-profile__content {
+	flex: 1;
+}
+
+.ppt-researcher-profile__orcid {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--ppt-space-xs);
+	font-family: var(--ppt-font-mono);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-secondary);
+}
+
+@media (max-width: 768px) {
+	.ppt-researcher-profile {
+		flex-direction: column;
+	}
+
+	.ppt-researcher-profile__image {
+		flex: 0 0 auto;
+		max-width: 200px;
+	}
+
+	.ppt-article-meta dl {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ==========================================================================
+   EVENT DETAILS
+   ========================================================================== */
+
+.ppt-event-details {
+	background: var(--ppt-surface-alt);
+	padding: var(--ppt-space-l);
+	margin-bottom: var(--ppt-space-l);
+	border-radius: var(--ppt-radius-md);
+}
+
+.ppt-event-details dt {
+	font-family: var(--ppt-font-sans);
+	font-weight: 600;
+	font-size: var(--wp--preset--font-size--tiny);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--ppt-secondary);
+	margin-bottom: var(--ppt-space-2xs);
+}
+
+.ppt-event-details dd {
+	margin: 0 0 var(--ppt-space-m) 0;
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	color: var(--ppt-text);
+}
+
+.ppt-event-details dd:last-child {
+	margin-bottom: 0;
+}
+
+/* ==========================================================================
+   PUBLICATION DETAILS
+   ========================================================================== */
+
+.ppt-publication-details {
+	border-left: 3px solid var(--ppt-accent);
+	padding-left: var(--ppt-space-l);
+	margin-bottom: var(--ppt-space-l);
+}
+
+.ppt-publication-details dt {
+	font-family: var(--ppt-font-sans);
+	font-weight: 600;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-text);
+}
+
+.ppt-publication-details dd {
+	margin: 0 0 var(--ppt-space-s) 0;
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	color: var(--ppt-text-light);
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+	.site-header,
+	.site-footer,
+	.wp-block-navigation,
+	.wp-block-button,
+	.ppt-pagination,
+	.ppt-breadcrumbs {
+		display: none !important;
+	}
+
+	body {
+		font-size: 12pt;
+		color: #000;
+		background: #fff;
+	}
+
+	a {
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.ppt-card {
+		border: 1px solid #ccc;
+		box-shadow: none;
+	}
+}

@@ -1,0 +1,1064 @@
+/**
+ * People & Planet Thrive — Design System
+ *
+ * Complete component library and design tokens.
+ * Uses CSS custom properties referencing theme.json tokens.
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   1. SEMANTIC TOKENS
+   ========================================================================== */
+
+:root {
+	/* Primary Actions */
+	--ppt-primary: var(--wp--preset--color--deep-forest);
+	--ppt-primary-hover: var(--wp--preset--color--midnight-teal);
+	--ppt-primary-text: var(--wp--preset--color--paper-white);
+
+	/* Secondary Actions */
+	--ppt-secondary: var(--wp--preset--color--emerald);
+	--ppt-secondary-hover: var(--wp--preset--color--deep-forest);
+	--ppt-secondary-text: var(--wp--preset--color--paper-white);
+
+	/* Accent */
+	--ppt-accent: var(--wp--preset--color--heritage-gold);
+	--ppt-accent-hover: var(--wp--preset--color--soft-gold);
+	--ppt-accent-text: var(--wp--preset--color--deep-forest);
+
+	/* Surfaces */
+	--ppt-surface: var(--wp--preset--color--paper-white);
+	--ppt-surface-alt: var(--wp--preset--color--warm-ivory);
+	--ppt-surface-dark: var(--wp--preset--color--deep-forest);
+	--ppt-surface-dark-alt: var(--wp--preset--color--midnight-teal);
+
+	/* Text */
+	--ppt-text: var(--wp--preset--color--ink);
+	--ppt-text-light: var(--wp--preset--color--ink-light);
+	--ppt-text-muted: var(--wp--preset--color--ink-muted);
+	--ppt-text-inverse: var(--wp--preset--color--paper-white);
+
+	/* Borders */
+	--ppt-border: var(--wp--preset--color--border);
+	--ppt-border-subtle: var(--wp--preset--color--border-subtle);
+	--ppt-border-strong: var(--wp--preset--color--ink-muted);
+
+	/* Status Colors */
+	--ppt-error: var(--wp--preset--color--error);
+	--ppt-error-light: var(--wp--preset--color--error-light);
+	--ppt-success: var(--wp--preset--color--success);
+	--ppt-success-light: var(--wp--preset--color--success-light);
+	--ppt-warning: var(--wp--preset--color--warning);
+	--ppt-warning-light: var(--wp--preset--color--warning-light);
+	--ppt-info: var(--wp--preset--color--info);
+	--ppt-info-light: var(--wp--preset--color--info-light);
+
+	/* Spacing */
+	--ppt-space-3xs: var(--wp--preset--spacing--3x-small);
+	--ppt-space-2xs: var(--wp--preset--spacing--2x-small);
+	--ppt-space-xs: var(--wp--preset--spacing--x-small);
+	--ppt-space-s: var(--wp--preset--spacing--small);
+	--ppt-space-m: var(--wp--preset--spacing--medium);
+	--ppt-space-l: var(--wp--preset--spacing--large);
+	--ppt-space-xl: var(--wp--preset--spacing--x-large);
+	--ppt-space-2xl: var(--wp--preset--spacing--2x-large);
+	--ppt-space-3xl: var(--wp--preset--spacing--3x-large);
+	--ppt-space-4xl: var(--wp--preset--spacing--4x-large);
+	--ppt-space-5xl: var(--wp--preset--spacing--5x-large);
+	--ppt-space-6xl: var(--wp--preset--spacing--6x-large);
+
+	/* Typography */
+	--ppt-font-serif: var(--wp--preset--font-family--serif);
+	--ppt-font-sans: var(--wp--preset--font-family--sans);
+	--ppt-font-mono: var(--wp--preset--font-family--mono);
+
+	/* Layout */
+	--ppt-reading-width: var(--wp--custom--reading-width);
+	--ppt-grid-gap: var(--wp--custom--grid-gap);
+	--ppt-grid-gap-mobile: var(--wp--custom--grid-gap-mobile);
+
+	/* Radius */
+	--ppt-radius-sm: var(--wp--custom--radius--small);
+	--ppt-radius-md: var(--wp--custom--radius--medium);
+	--ppt-radius-lg: var(--wp--custom--radius--large);
+	--ppt-radius-pill: var(--wp--custom--radius--pill);
+
+	/* Shadows */
+	--ppt-shadow-sm: var(--wp--custom--shadow--sm);
+	--ppt-shadow-md: var(--wp--custom--shadow--md);
+	--ppt-shadow-lg: var(--wp--custom--shadow--lg);
+	--ppt-shadow-xl: var(--wp--custom--shadow--xl);
+
+	/* Transitions */
+	--ppt-transition-fast: var(--wp--custom--transition--fast);
+	--ppt-transition-base: var(--wp--custom--transition--base);
+	--ppt-transition-slow: var(--wp--custom--transition--slow);
+}
+
+/* ==========================================================================
+   2. BASE TYPOGRAPHY
+   ========================================================================== */
+
+/* Display Text */
+.ppt-display {
+	font-family: var(--ppt-font-serif);
+	font-size: var(--wp--preset--font-size--display);
+	font-weight: 600;
+	line-height: 1.08;
+	letter-spacing: -0.025em;
+	color: var(--ppt-text);
+}
+
+/* Section Label */
+.ppt-label {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--tiny);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ppt-secondary);
+}
+
+/* Metadata */
+.ppt-meta {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--ppt-text-muted);
+}
+
+.ppt-meta strong,
+.ppt-meta b {
+	font-weight: 600;
+	color: var(--ppt-text-light);
+}
+
+/* Scholarly/Article Typography */
+.ppt-scholarly {
+	font-family: var(--ppt-font-serif);
+	font-size: var(--wp--preset--font-size--base);
+	line-height: 1.7;
+	color: var(--ppt-text);
+	max-width: var(--ppt-reading-width);
+}
+
+.ppt-scholarly p {
+	margin-bottom: var(--ppt-space-m);
+}
+
+.ppt-scholarly h2,
+.ppt-scholarly h3,
+.ppt-scholarly h4 {
+	margin-top: var(--ppt-space-2xl);
+	margin-bottom: var(--ppt-space-m);
+}
+
+/* ==========================================================================
+   3. BUTTONS
+   ========================================================================== */
+
+/* Primary Button */
+.ppt-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ppt-space-xs);
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+	padding: 0.9375rem 1.875rem;
+	border: 1px solid transparent;
+	border-radius: var(--ppt-radius-sm);
+	cursor: pointer;
+	transition: all var(--ppt-transition-fast);
+}
+
+.ppt-btn:hover {
+	text-decoration: none;
+}
+
+.ppt-btn:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+/* Primary */
+.ppt-btn--primary {
+	background-color: var(--ppt-primary);
+	color: var(--ppt-primary-text);
+	border-color: var(--ppt-primary);
+}
+
+.ppt-btn--primary:hover {
+	background-color: var(--ppt-primary-hover);
+	border-color: var(--ppt-primary-hover);
+}
+
+.ppt-btn--primary:active {
+	background-color: var(--ppt-primary);
+}
+
+/* Secondary */
+.ppt-btn--secondary {
+	background-color: var(--ppt-secondary);
+	color: var(--ppt-secondary-text);
+	border-color: var(--ppt-secondary);
+}
+
+.ppt-btn--secondary:hover {
+	background-color: var(--ppt-secondary-hover);
+	border-color: var(--ppt-secondary-hover);
+}
+
+/* Outline */
+.ppt-btn--outline {
+	background-color: transparent;
+	color: var(--ppt-primary);
+	border-color: var(--ppt-primary);
+}
+
+.ppt-btn--outline:hover {
+	background-color: var(--ppt-primary);
+	color: var(--ppt-primary-text);
+}
+
+/* Ghost */
+.ppt-btn--ghost {
+	background-color: transparent;
+	color: var(--ppt-primary);
+	border-color: transparent;
+}
+
+.ppt-btn--ghost:hover {
+	background-color: var(--ppt-surface-alt);
+}
+
+/* Accent */
+.ppt-btn--accent {
+	background-color: var(--ppt-accent);
+	color: var(--ppt-accent-text);
+	border-color: var(--ppt-accent);
+}
+
+.ppt-btn--accent:hover {
+	background-color: var(--ppt-accent-hover);
+	border-color: var(--ppt-accent-hover);
+}
+
+/* Sizes */
+.ppt-btn--sm {
+	font-size: var(--wp--preset--font-size--tiny);
+	padding: 0.625rem 1.25rem;
+	min-height: 44px;
+}
+
+.ppt-btn--lg {
+	font-size: var(--wp--preset--font-size--base);
+	padding: 1.125rem 2.25rem;
+}
+
+/* Disabled */
+.ppt-btn:disabled,
+.ppt-btn[disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+/* ==========================================================================
+   4. TEXT LINKS
+   ========================================================================== */
+
+.ppt-link {
+	color: var(--ppt-secondary);
+	text-decoration: none;
+	transition: color var(--ppt-transition-fast);
+}
+
+.ppt-link:hover {
+	color: var(--ppt-primary);
+	text-decoration: underline;
+}
+
+.ppt-link:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+/* Underline Link */
+.ppt-link--underline {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.ppt-link--underline:hover {
+	text-decoration-thickness: 2px;
+}
+
+/* Arrow Link */
+.ppt-link--arrow::after {
+	content: " →";
+	transition: transform var(--ppt-transition-fast);
+	display: inline-block;
+}
+
+.ppt-link--arrow:hover::after {
+	transform: translateX(3px);
+}
+
+/* ==========================================================================
+   5. CARDS
+   ========================================================================== */
+
+.ppt-card {
+	background-color: var(--ppt-surface);
+	border: 1px solid var(--ppt-border);
+	border-radius: var(--ppt-radius-md);
+	overflow: hidden;
+	transition: box-shadow var(--ppt-transition-base), transform var(--ppt-transition-base);
+}
+
+.ppt-card:hover {
+	box-shadow: var(--ppt-shadow-md);
+}
+
+.ppt-card__image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.ppt-card__content {
+	padding: var(--ppt-space-l);
+}
+
+.ppt-card__title {
+	font-family: var(--ppt-font-serif);
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0 0 var(--ppt-space-s);
+	color: var(--ppt-text);
+}
+
+.ppt-card__title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ppt-card__title a:hover {
+	color: var(--ppt-secondary);
+}
+
+.ppt-card__meta {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-text-muted);
+	margin-bottom: var(--ppt-space-s);
+}
+
+.ppt-card__excerpt {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	line-height: 1.6;
+	color: var(--ppt-text-light);
+	margin: 0;
+}
+
+/* Card Variants */
+.ppt-card--horizontal {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+}
+
+@media (max-width: 640px) {
+	.ppt-card--horizontal {
+		grid-template-columns: 1fr;
+	}
+}
+
+.ppt-card--compact .ppt-card__content {
+	padding: var(--ppt-space-m);
+}
+
+.ppt-card--compact .ppt-card__title {
+	font-size: var(--wp--preset--font-size--large);
+}
+
+/* ==========================================================================
+   6. BADGES
+   ========================================================================== */
+
+.ppt-badge {
+	display: inline-flex;
+	align-items: center;
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--tiny);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	padding: 0.25rem 0.625rem;
+	border-radius: var(--ppt-radius-pill);
+}
+
+.ppt-badge--default {
+	background-color: var(--ppt-surface-alt);
+	color: var(--ppt-text-light);
+}
+
+.ppt-badge--primary {
+	background-color: var(--ppt-primary);
+	color: var(--ppt-primary-text);
+}
+
+.ppt-badge--secondary {
+	background-color: var(--ppt-secondary);
+	color: var(--ppt-secondary-text);
+}
+
+.ppt-badge--accent {
+	background-color: var(--ppt-accent);
+	color: var(--ppt-accent-text);
+}
+
+.ppt-badge--outline {
+	background-color: transparent;
+	border: 1px solid var(--ppt-border-strong);
+	color: var(--ppt-text-light);
+}
+
+/* ==========================================================================
+   7. BREADCRUMBS
+   ========================================================================== */
+
+.ppt-breadcrumbs {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-text-muted);
+	padding: var(--ppt-space-m) 0;
+}
+
+.ppt-breadcrumbs__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--ppt-space-xs);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ppt-breadcrumbs__item {
+	display: flex;
+	align-items: center;
+	gap: var(--ppt-space-xs);
+}
+
+.ppt-breadcrumbs__separator {
+	color: var(--ppt-border-strong);
+}
+
+.ppt-breadcrumbs__link {
+	color: var(--ppt-text-muted);
+	text-decoration: none;
+}
+
+.ppt-breadcrumbs__link:hover {
+	color: var(--ppt-secondary);
+	text-decoration: underline;
+}
+
+.ppt-breadcrumbs__current {
+	color: var(--ppt-text);
+	font-weight: 500;
+}
+
+/* ==========================================================================
+   8. PAGINATION
+   ========================================================================== */
+
+.ppt-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ppt-space-xs);
+	padding: var(--ppt-space-xl) 0;
+}
+
+.ppt-pagination__link,
+.ppt-pagination__current {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 2.75rem;
+	min-height: 2.75rem;
+	padding: 0 var(--ppt-space-s);
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 500;
+	text-decoration: none;
+	border: 1px solid var(--ppt-border);
+	border-radius: var(--ppt-radius-sm);
+	transition: all var(--ppt-transition-fast);
+}
+
+.ppt-pagination__link {
+	color: var(--ppt-text-light);
+	background-color: var(--ppt-surface);
+}
+
+.ppt-pagination__link:hover {
+	color: var(--ppt-primary);
+	border-color: var(--ppt-primary);
+	background-color: var(--ppt-surface-alt);
+}
+
+.ppt-pagination__link:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+.ppt-pagination__current {
+	color: var(--ppt-primary-text);
+	background-color: var(--ppt-primary);
+	border-color: var(--ppt-primary);
+	font-weight: 600;
+}
+
+.ppt-pagination__prev,
+.ppt-pagination__next {
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   9. TABLES
+   ========================================================================== */
+
+.ppt-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	line-height: 1.5;
+}
+
+.ppt-table th,
+.ppt-table td {
+	padding: var(--ppt-space-s) var(--ppt-space-m);
+	text-align: left;
+	border-bottom: 1px solid var(--ppt-border);
+}
+
+.ppt-table th {
+	font-weight: 600;
+	color: var(--ppt-text);
+	background-color: var(--ppt-surface-alt);
+	border-bottom-width: 2px;
+}
+
+.ppt-table tbody tr:hover {
+	background-color: var(--ppt-surface-alt);
+}
+
+.ppt-table--striped tbody tr:nth-child(even) {
+	background-color: var(--ppt-surface-alt);
+}
+
+.ppt-table--bordered th,
+.ppt-table--bordered td {
+	border: 1px solid var(--ppt-border);
+}
+
+/* ==========================================================================
+   10. FORMS
+   ========================================================================== */
+
+.ppt-form-group {
+	margin-bottom: var(--ppt-space-l);
+}
+
+.ppt-label {
+	display: block;
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 600;
+	color: var(--ppt-text);
+	margin-bottom: var(--ppt-space-xs);
+}
+
+.ppt-input,
+.ppt-textarea,
+.ppt-select {
+	width: 100%;
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	line-height: 1.5;
+	color: var(--ppt-text);
+	background-color: var(--ppt-surface);
+	border: 1px solid var(--ppt-border);
+	border-radius: var(--ppt-radius-sm);
+	padding: 0.625rem 0.875rem;
+	transition: border-color var(--ppt-transition-fast), box-shadow var(--ppt-transition-fast);
+}
+
+.ppt-input:focus,
+.ppt-textarea:focus,
+.ppt-select:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+	border-color: var(--ppt-secondary);
+	box-shadow: 0 0 0 3px rgba(18, 107, 82, 0.1);
+}
+
+.ppt-input::placeholder,
+.ppt-textarea::placeholder {
+	color: var(--ppt-text-muted);
+}
+
+.ppt-textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+.ppt-select {
+	appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236B7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 0.875rem center;
+	padding-right: 2.5rem;
+}
+
+/* Form States */
+.ppt-input--error,
+.ppt-textarea--error,
+.ppt-select--error {
+	border-color: var(--ppt-error);
+}
+
+.ppt-input--error:focus,
+.ppt-textarea--error:focus {
+	box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.1);
+}
+
+.ppt-form-error {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-error);
+	margin-top: var(--ppt-space-xs);
+}
+
+.ppt-form-help {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-text-muted);
+	margin-top: var(--ppt-space-xs);
+}
+
+/* Checkbox & Radio */
+.ppt-checkbox,
+.ppt-radio {
+	display: flex;
+	align-items: center;
+	gap: var(--ppt-space-xs);
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	color: var(--ppt-text);
+	cursor: pointer;
+}
+
+.ppt-checkbox input,
+.ppt-radio input {
+	width: 1.125rem;
+	height: 1.125rem;
+	accent-color: var(--ppt-secondary);
+}
+
+/* ==========================================================================
+   11. NOTICES / ALERTS
+   ========================================================================== */
+
+.ppt-notice {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	line-height: 1.5;
+	padding: var(--ppt-space-m) var(--ppt-space-l);
+	border-left: 4px solid;
+	border-radius: var(--ppt-radius-sm);
+	margin-bottom: var(--ppt-space-l);
+}
+
+.ppt-notice__title {
+	font-weight: 600;
+	margin-bottom: var(--ppt-space-xs);
+}
+
+.ppt-notice--info {
+	background-color: var(--ppt-info-light);
+	border-color: var(--ppt-info);
+	color: var(--ppt-info);
+}
+
+.ppt-notice--success {
+	background-color: var(--ppt-success-light);
+	border-color: var(--ppt-success);
+	color: var(--ppt-success);
+}
+
+.ppt-notice--warning {
+	background-color: var(--ppt-warning-light);
+	border-color: var(--ppt-warning);
+	color: var(--ppt-warning);
+}
+
+.ppt-notice--error {
+	background-color: var(--ppt-error-light);
+	border-color: var(--ppt-error);
+	color: var(--ppt-error);
+}
+
+/* ==========================================================================
+   12. QUOTES
+   ========================================================================== */
+
+.ppt-quote {
+	font-family: var(--ppt-font-serif);
+	font-size: var(--wp--preset--font-size--x-large);
+	font-style: italic;
+	line-height: 1.4;
+	color: var(--ppt-text);
+	padding-left: var(--ppt-space-xl);
+	border-left: 3px solid var(--ppt-accent);
+	margin: var(--ppt-space-2xl) 0;
+}
+
+.ppt-quote__cite {
+	display: block;
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	font-style: normal;
+	font-weight: 500;
+	color: var(--ppt-text-muted);
+	margin-top: var(--ppt-space-m);
+}
+
+/* ==========================================================================
+   13. ACCORDIONS
+   ========================================================================== */
+
+.ppt-accordion {
+	border: 1px solid var(--ppt-border);
+	border-radius: var(--ppt-radius-md);
+	overflow: hidden;
+}
+
+.ppt-accordion__item {
+	border-bottom: 1px solid var(--ppt-border);
+}
+
+.ppt-accordion__item:last-child {
+	border-bottom: none;
+}
+
+.ppt-accordion__trigger {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--ppt-space-m) var(--ppt-space-l);
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	font-weight: 600;
+	color: var(--ppt-text);
+	background-color: var(--ppt-surface);
+	border: none;
+	cursor: pointer;
+	text-align: left;
+	transition: background-color var(--ppt-transition-fast);
+}
+
+.ppt-accordion__trigger:hover {
+	background-color: var(--ppt-surface-alt);
+}
+
+.ppt-accordion__trigger:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: -2px;
+}
+
+.ppt-accordion__icon {
+	transition: transform var(--ppt-transition-fast);
+}
+
+.ppt-accordion__item[open] .ppt-accordion__icon {
+	transform: rotate(180deg);
+}
+
+.ppt-accordion__content {
+	padding: 0 var(--ppt-space-l) var(--ppt-space-l);
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	line-height: 1.6;
+	color: var(--ppt-text-light);
+}
+
+/* ==========================================================================
+   14. TABS
+   ========================================================================== */
+
+.ppt-tabs {
+	border-bottom: 1px solid var(--ppt-border);
+}
+
+.ppt-tabs__list {
+	display: flex;
+	gap: var(--ppt-space-l);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ppt-tabs__tab {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--base);
+	font-weight: 500;
+	color: var(--ppt-text-muted);
+	padding: var(--ppt-space-m) 0;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+	transition: all var(--ppt-transition-fast);
+}
+
+.ppt-tabs__tab:hover {
+	color: var(--ppt-text);
+}
+
+.ppt-tabs__tab[aria-selected="true"] {
+	color: var(--ppt-primary);
+	border-bottom-color: var(--ppt-primary);
+	font-weight: 600;
+}
+
+.ppt-tabs__tab:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+.ppt-tabs__panel {
+	padding: var(--ppt-space-l) 0;
+}
+
+/* ==========================================================================
+   15. MEDIA & FIGURES
+   ========================================================================== */
+
+.ppt-figure {
+	margin: var(--ppt-space-xl) 0;
+}
+
+.ppt-figure__image {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: var(--ppt-radius-md);
+}
+
+.ppt-figure__caption {
+	font-family: var(--ppt-font-sans);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--ppt-text-muted);
+	margin-top: var(--ppt-space-s);
+	line-height: 1.5;
+}
+
+/* Video Embed */
+.ppt-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	margin: var(--ppt-space-xl) 0;
+	border-radius: var(--ppt-radius-md);
+}
+
+.ppt-video iframe,
+.ppt-video video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/* ==========================================================================
+   16. UTILITY CLASSES
+   ========================================================================== */
+
+/* Text Alignment */
+.ppt-text-left { text-align: left; }
+.ppt-text-center { text-align: center; }
+.ppt-text-right { text-align: right; }
+
+/* Display */
+.ppt-block { display: block; }
+.ppt-inline { display: inline; }
+.ppt-inline-block { display: inline-block; }
+.ppt-flex { display: flex; }
+.ppt-grid { display: grid; }
+
+/* Spacing Utilities */
+.ppt-mt-0 { margin-top: 0; }
+.ppt-mt-s { margin-top: var(--ppt-space-s); }
+.ppt-mt-m { margin-top: var(--ppt-space-m); }
+.ppt-mt-l { margin-top: var(--ppt-space-l); }
+.ppt-mt-xl { margin-top: var(--ppt-space-xl); }
+.ppt-mt-2xl { margin-top: var(--ppt-space-2xl); }
+
+.ppt-mb-0 { margin-bottom: 0; }
+.ppt-mb-s { margin-bottom: var(--ppt-space-s); }
+.ppt-mb-m { margin-bottom: var(--ppt-space-m); }
+.ppt-mb-l { margin-bottom: var(--ppt-space-l); }
+.ppt-mb-xl { margin-bottom: var(--ppt-space-xl); }
+.ppt-mb-2xl { margin-bottom: var(--ppt-space-2xl); }
+
+/* Visibility */
+.ppt-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* ==========================================================================
+   17. FOCUS STATES (Accessibility)
+   ========================================================================== */
+
+*:focus-visible {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+/* ==========================================================================
+   18. REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* ==========================================================================
+   19. RESPONSIVE GRID
+   ========================================================================== */
+
+.ppt-grid {
+	display: grid;
+	gap: var(--ppt-grid-gap-mobile);
+}
+
+@media (min-width: 768px) {
+	.ppt-grid {
+		gap: var(--ppt-grid-gap);
+	}
+}
+
+.ppt-grid--2 {
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+	.ppt-grid--2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.ppt-grid--3 {
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+	.ppt-grid--3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.ppt-grid--3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.ppt-grid--4 {
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+	.ppt-grid--4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.ppt-grid--4 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+/* ==========================================================================
+   20. PRINT STYLES
+   ========================================================================== */
+
+@media print {
+	.ppt-btn,
+	.ppt-pagination,
+	.ppt-breadcrumbs,
+	.site-header,
+	.site-footer {
+		display: none !important;
+	}
+
+	body {
+		font-size: 12pt;
+		color: #000;
+		background: #fff;
+	}
+
+	a {
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.ppt-card {
+		border: 1px solid #ccc;
+		box-shadow: none;
+	}
+}

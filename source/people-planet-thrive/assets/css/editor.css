@@ -1,0 +1,224 @@
+/**
+ * Editor Styles — People & Planet Thrive
+ *
+ * Ensures the Gutenberg editor visually resembles the frontend.
+ * Provides editor parity for typography, spacing, and components.
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   EDITOR TYPOGRAPHY
+   ========================================================================== */
+
+.editor-styles-wrapper {
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: var(--wp--preset--font-size--base);
+	line-height: 1.6;
+	color: var(--wp--preset--color--ink);
+}
+
+/* Headings in editor */
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+	font-family: var(--wp--preset--font-family--serif);
+	font-weight: 600;
+	line-height: 1.15;
+	letter-spacing: -0.01em;
+	color: var(--wp--preset--color--deep-forest);
+}
+
+.editor-styles-wrapper h1 {
+	font-size: var(--wp--preset--font-size--display);
+	line-height: 1.08;
+	letter-spacing: -0.025em;
+}
+
+.editor-styles-wrapper h2 {
+	font-size: var(--wp--preset--font-size--4x-large);
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+}
+
+.editor-styles-wrapper h3 {
+	font-size: var(--wp--preset--font-size--3x-large);
+	line-height: 1.15;
+	letter-spacing: -0.015em;
+}
+
+.editor-styles-wrapper h4 {
+	font-size: var(--wp--preset--font-size--2x-large);
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+.editor-styles-wrapper h5 {
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.25;
+}
+
+.editor-styles-wrapper h6 {
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.3;
+}
+
+/* Links in editor */
+.editor-styles-wrapper a {
+	color: var(--wp--preset--color--emerald);
+	text-decoration: none;
+}
+
+.editor-styles-wrapper a:hover {
+	color: var(--wp--preset--color--deep-forest);
+	text-decoration: underline;
+}
+
+/* ==========================================================================
+   EDITOR BLOCK STYLES
+   ========================================================================== */
+
+/* Pullquote */
+.editor-styles-wrapper .wp-block-pullquote {
+	border-left: 3px solid var(--wp--preset--color--heritage-gold);
+	padding: var(--wp--preset--spacing--large) var(--wp--preset--spacing--x-large);
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: var(--wp--preset--font-size--2x-large);
+	font-style: italic;
+	line-height: 1.3;
+	letter-spacing: -0.01em;
+	color: var(--wp--preset--color--deep-forest);
+}
+
+/* Quote */
+.editor-styles-wrapper .wp-block-quote {
+	border-left: 2px solid var(--wp--preset--color--emerald);
+	padding-left: var(--wp--preset--spacing--large);
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: 1.6;
+}
+
+/* Separator */
+.editor-styles-wrapper .wp-block-separator {
+	border-color: var(--wp--preset--color--border);
+}
+
+/* Code */
+.editor-styles-wrapper .wp-block-code {
+	font-family: var(--wp--preset--font-family--mono);
+	font-size: var(--wp--preset--font-size--small);
+	line-height: 1.6;
+	background-color: var(--wp--preset--color--warm-ivory);
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--medium);
+	padding: var(--wp--preset--spacing--medium);
+}
+
+/* Table */
+.editor-styles-wrapper .wp-block-table {
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: var(--wp--preset--font-size--small);
+	line-height: 1.5;
+}
+
+.editor-styles-wrapper .wp-block-table th,
+.editor-styles-wrapper .wp-block-table td {
+	padding: var(--wp--preset--spacing--small) var(--wp--preset--spacing--medium);
+	border-color: var(--wp--preset--color--border);
+}
+
+.editor-styles-wrapper .wp-block-table th {
+	font-weight: 600;
+	background-color: var(--wp--preset--color--warm-ivory);
+}
+
+/* ==========================================================================
+   EDITOR SPACING
+   ========================================================================== */
+
+/* Ensure proper spacing between blocks */
+.editor-styles-wrapper .wp-block-group {
+	max-width: 100%;
+}
+
+/* Constrain content width for reading */
+.editor-styles-wrapper .wp-block-post-content {
+	max-width: var(--wp--custom--reading-width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ==========================================================================
+   EDITOR PATTERNS
+   ========================================================================== */
+
+/* Scholarly article meta pattern */
+.editor-styles-wrapper .ppt-article-meta {
+	border-bottom: 1px solid var(--wp--preset--color--heritage-gold);
+	padding: var(--wp--preset--spacing--medium) 0;
+	margin-bottom: var(--wp--preset--spacing--large);
+}
+
+/* Card styling in editor */
+.editor-styles-wrapper .wp-block-column[style*="border-top"] {
+	transition: none;
+}
+
+/* ==========================================================================
+   EDITOR BUTTON STYLES
+   ========================================================================== */
+
+/* Ensure buttons render correctly in editor */
+.editor-styles-wrapper .wp-block-button__link {
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	padding: 0.9375rem 1.875rem;
+	border-radius: var(--wp--custom--radius--small);
+}
+
+/* Outline Gold button style */
+.editor-styles-wrapper .is-style-outline-gold .wp-block-button__link {
+	background: transparent;
+	border: 1px solid var(--wp--preset--color--heritage-gold);
+	color: var(--wp--preset--color--heritage-gold);
+}
+
+/* Outline White button style */
+.editor-styles-wrapper .is-style-outline-white .wp-block-button__link {
+	background: transparent;
+	border: 1px solid var(--wp--preset--color--paper-white);
+	color: var(--wp--preset--color--paper-white);
+}
+
+/* ==========================================================================
+   EDITOR FOCUS STATES
+   ========================================================================== */
+
+/* Ensure focus states are visible in editor */
+.editor-styles-wrapper *:focus-visible {
+	outline: 2px solid var(--wp--preset--color--heritage-gold);
+	outline-offset: 2px;
+}
+
+/* ==========================================================================
+   EDITOR REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+	.editor-styles-wrapper *,
+	.editor-styles-wrapper *::before,
+	.editor-styles-wrapper *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}

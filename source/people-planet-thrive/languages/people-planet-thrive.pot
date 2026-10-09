@@ -1,0 +1,166 @@
+# Copyright (C) 2026 People & Planet Thrive Initiative Pvt. Ltd.
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: People & Planet Thrive 1.0.0\n"
+"Report-Msgid-Bugs-To: https://ppthrive.com\n"
+"POT-Creation-Date: 2026-01-01 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: inc/class-theme-setup.php
+msgid "Primary Navigation"
+msgstr ""
+
+#: inc/class-theme-setup.php
+msgid "Footer Navigation"
+msgstr ""
+
+#: inc/class-theme-setup.php
+msgid "Secondary Navigation"
+msgstr ""
+
+#: inc/class-theme-setup.php
+msgid "Social Links"
+msgstr ""
+
+#: inc/class-theme-setup.php
+msgid "Sidebar"
+msgstr ""
+
+#: inc/class-theme-setup.php
+msgid "Main sidebar widget area."
+msgstr ""
+
+#: inc/class-theme-setup.php
+msgid "Footer Widgets"
+msgstr ""
+
+#: inc/class-theme-setup.php
+msgid "Footer widget area."
+msgstr ""
+
+#: index.php
+msgid "Skip to content"
+msgstr ""
+
+#: index.php
+msgid "No content found."
+msgstr ""
+
+#: index.php
+msgid "Knowledge for People. Progress for Planet."
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Gold Thin"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Gold Dotted"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Ivory Section"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Forest Section"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Teal Section"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Card Grid"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Framed"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Section Label"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Gold Border"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Outline Gold"
+msgstr ""
+
+#: inc/class-block-styles.php
+msgid "Outline White"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "PPT Hero Sections"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "PPT Content Sections"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "PPT Card Layouts"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "PPT Calls to Action"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "PPT Scholarly"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "Hero — Default"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "A full-width hero section with heading, description, and call to action."
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "Section — Content with Image"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "Two-column section with text content and image."
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "CTA — Newsletter"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "Newsletter signup call to action."
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "Cards — Three Column"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "Three-column card layout for features or highlights."
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "Scholarly — Article Metadata"
+msgstr ""
+
+#: inc/class-patterns.php
+msgid "Metadata display for scholarly articles."
+msgstr ""
+
+#: inc/class-schema.php
+msgid "Home"
+msgstr ""

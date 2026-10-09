@@ -1,0 +1,719 @@
+/**
+ * Global Website Chrome Styles
+ * Utility bar, header, navigation, footer
+ *
+ * @package PeoplePlanetThrive
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   UTILITY BAR
+   ========================================================================== */
+
+.utility-bar {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.utility-bar a {
+	color: var(--ppt-accent);
+	text-decoration: none;
+	transition: color var(--ppt-transition-fast);
+}
+
+.utility-bar a:hover {
+	color: var(--ppt-accent-hover);
+	text-decoration: underline;
+}
+
+.utility-bar__left,
+.utility-bar__right {
+	display: flex;
+	align-items: center;
+	gap: var(--ppt-space-small);
+}
+
+.utility-bar .utility-nav {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.utility-bar .utility-nav a {
+	color: var(--ppt-text-inverse);
+}
+
+.utility-bar .utility-nav a:hover {
+	color: var(--ppt-accent);
+}
+
+.utility-bar .utility-social {
+	margin: 0;
+	padding: 0;
+}
+
+.utility-bar .utility-social li {
+	margin: 0;
+}
+
+.utility-bar .wp-block-separator {
+	margin: 0;
+	height: 1rem;
+}
+
+@media (max-width: 768px) {
+	.utility-bar {
+		display: none;
+	}
+}
+
+/* ==========================================================================
+   SITE HEADER
+   ========================================================================== */
+
+.site-header {
+	background-color: var(--ppt-surface);
+	position: relative;
+	z-index: 1000;
+	transition: all var(--ppt-transition-base);
+}
+
+.site-header.is-sticky {
+	position: sticky;
+	top: 0;
+	box-shadow: var(--ppt-shadow-md);
+}
+
+.site-header.is-transparent {
+	background-color: transparent;
+	border-bottom-color: transparent !important;
+}
+
+.site-header.is-transparent .site-title a {
+	color: var(--ppt-text-inverse);
+}
+
+.site-header.is-transparent .main-navigation a {
+	color: var(--ppt-text-inverse);
+}
+
+.site-header.is-transparent .main-navigation a:hover {
+	color: var(--ppt-accent);
+}
+
+.header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--ppt-space-large);
+}
+
+.header-left {
+	flex-shrink: 0;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	gap: var(--ppt-space-large);
+	flex: 1;
+	justify-content: flex-end;
+}
+
+/* Site Logo/Title */
+.site-logo .site-title {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.site-logo .site-title a {
+	color: var(--ppt-primary);
+	text-decoration: none;
+	transition: color var(--ppt-transition-fast);
+}
+
+.site-logo .site-title a:hover {
+	color: var(--ppt-secondary);
+}
+
+/* ==========================================================================
+   MAIN NAVIGATION
+   ========================================================================== */
+
+.main-navigation {
+	display: flex;
+	align-items: center;
+}
+
+.main-navigation .wp-block-navigation__container {
+	display: flex;
+	align-items: center;
+	gap: var(--ppt-space-large);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-navigation .wp-block-navigation-item {
+	position: relative;
+}
+
+.main-navigation .wp-block-navigation-item > a {
+	display: flex;
+	align-items: center;
+	gap: var(--ppt-space-2xs);
+	color: var(--ppt-text);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	padding: var(--ppt-space-x-small) 0;
+	transition: color var(--ppt-transition-fast);
+}
+
+.main-navigation .wp-block-navigation-item > a:hover {
+	color: var(--ppt-secondary);
+}
+
+.main-navigation .wp-block-navigation-item.has-child > a::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid currentColor;
+	opacity: 0.6;
+}
+
+/* Dropdown Menu */
+.main-navigation .wp-block-navigation-item__submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 240px;
+	background-color: var(--ppt-surface);
+	border: 1px solid var(--ppt-border);
+	border-radius: var(--ppt-radius-medium);
+	box-shadow: var(--ppt-shadow-lg);
+	padding: var(--ppt-space-small) 0;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-10px);
+	transition: all var(--ppt-transition-fast);
+	z-index: 100;
+}
+
+.main-navigation .wp-block-navigation-item:hover > .wp-block-navigation-item__submenu,
+.main-navigation .wp-block-navigation-item:focus-within > .wp-block-navigation-item__submenu {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.main-navigation .wp-block-navigation-item__submenu li {
+	list-style: none;
+}
+
+.main-navigation .wp-block-navigation-item__submenu a {
+	display: block;
+	padding: var(--ppt-space-x-small) var(--ppt-space-medium);
+	color: var(--ppt-text);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--small);
+	transition: all var(--ppt-transition-fast);
+}
+
+.main-navigation .wp-block-navigation-item__submenu a:hover {
+	background-color: var(--ppt-surface-alt);
+	color: var(--ppt-secondary);
+}
+
+/* Mega Menu Ready */
+.main-navigation .wp-block-navigation-item.mega-menu > .wp-block-navigation-item__submenu {
+	min-width: 600px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--ppt-space-medium);
+	padding: var(--ppt-space-large);
+}
+
+/* ==========================================================================
+   HEADER ACTIONS
+   ========================================================================== */
+
+.header-actions {
+	display: flex;
+	align-items: center;
+	gap: var(--ppt-space-medium);
+}
+
+/* Search */
+.header-search {
+	position: relative;
+}
+
+.header-search .wp-block-search__button {
+	background: transparent;
+	border: none;
+	color: var(--ppt-text);
+	cursor: pointer;
+	padding: var(--ppt-space-x-small);
+	transition: color var(--ppt-transition-fast);
+}
+
+.header-search .wp-block-search__button:hover {
+	color: var(--ppt-secondary);
+}
+
+.header-search .wp-block-search__input {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	margin-top: var(--ppt-space-small);
+	width: 300px;
+	padding: var(--ppt-space-small) var(--ppt-space-medium);
+	border: 1px solid var(--ppt-border);
+	border-radius: var(--ppt-radius-medium);
+	background-color: var(--ppt-surface);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.header-search.is-open .wp-block-search__input {
+	display: block;
+}
+
+/* CTA Button */
+.header-cta .wp-block-button__link {
+	font-size: var(--wp--preset--font-size--small);
+	padding: var(--ppt-space-x-small) var(--ppt-space-medium);
+}
+
+/* ==========================================================================
+   MOBILE MENU TOGGLE
+   ========================================================================== */
+
+.mobile-menu-toggle {
+	display: none;
+}
+
+.mobile-menu-button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: var(--ppt-space-small);
+	min-width: 44px;
+	min-height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--ppt-text);
+	transition: color var(--ppt-transition-fast);
+}
+
+.mobile-menu-button:hover {
+	color: var(--ppt-secondary);
+}
+
+.mobile-menu-icon {
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: currentColor;
+	position: relative;
+	transition: all var(--ppt-transition-fast);
+}
+
+.mobile-menu-icon::before,
+.mobile-menu-icon::after {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	background-color: currentColor;
+	left: 0;
+	transition: all var(--ppt-transition-fast);
+}
+
+.mobile-menu-icon::before {
+	top: -7px;
+}
+
+.mobile-menu-icon::after {
+	top: 7px;
+}
+
+.mobile-menu-button[aria-expanded="true"] .mobile-menu-icon {
+	background-color: transparent;
+}
+
+.mobile-menu-button[aria-expanded="true"] .mobile-menu-icon::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.mobile-menu-button[aria-expanded="true"] .mobile-menu-icon::after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+	.main-navigation {
+		display: none;
+	}
+
+	.header-cta {
+		display: none;
+	}
+
+	.mobile-menu-toggle {
+		display: block;
+	}
+}
+
+/* ==========================================================================
+   MOBILE NAVIGATION PANEL
+   ========================================================================== */
+
+.mobile-nav-panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--ppt-surface);
+	z-index: 9999;
+	overflow-y: auto;
+	transform: translateX(100%);
+	transition: transform var(--ppt-transition-base);
+}
+
+.mobile-nav-panel.is-open {
+	transform: translateX(0);
+}
+
+.mobile-nav-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--ppt-space-medium) var(--ppt-space-large);
+	border-bottom: 1px solid var(--ppt-border);
+}
+
+.mobile-nav-close {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: var(--ppt-space-small);
+	min-width: 44px;
+	min-height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--ppt-text);
+	transition: color var(--ppt-transition-fast);
+}
+
+.mobile-nav-close:hover {
+	color: var(--ppt-secondary);
+}
+
+.mobile-nav-content {
+	padding: var(--ppt-space-large);
+}
+
+.mobile-nav-menu .wp-block-navigation__container {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.mobile-nav-menu .wp-block-navigation-item {
+	border-bottom: 1px solid var(--ppt-border-subtle);
+}
+
+.mobile-nav-menu .wp-block-navigation-item > a {
+	display: block;
+	padding: var(--ppt-space-medium) 0;
+	color: var(--ppt-text);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--base);
+	font-weight: 500;
+}
+
+.mobile-nav-menu .wp-block-navigation-item__submenu {
+	padding-left: var(--ppt-space-medium);
+}
+
+.mobile-nav-menu .wp-block-navigation-item__submenu a {
+	display: block;
+	padding: var(--ppt-space-small) 0;
+	color: var(--ppt-text-light);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.mobile-nav-footer {
+	padding: var(--ppt-space-large);
+	border-top: 1px solid var(--ppt-border);
+}
+
+.mobile-nav-search {
+	margin-bottom: var(--ppt-space-medium);
+}
+
+/* ==========================================================================
+   SITE FOOTER
+   ========================================================================== */
+
+.site-footer {
+	color: var(--ppt-text-inverse);
+}
+
+.site-footer a {
+	color: var(--ppt-text-inverse);
+	text-decoration: none;
+	transition: color var(--ppt-transition-fast);
+}
+
+.site-footer a:hover {
+	color: var(--ppt-accent);
+}
+
+.footer-brand {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ppt-space-medium);
+}
+
+.footer-logo .site-title {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 700;
+}
+
+.footer-logo .site-title a {
+	color: var(--ppt-text-inverse);
+}
+
+.footer-heading {
+	margin: 0 0 var(--ppt-space-medium) 0;
+}
+
+.footer-nav-col {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ppt-space-small);
+}
+
+.footer-nav .wp-block-navigation__container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ppt-space-x-small);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-nav a {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.footer-contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ppt-space-x-small);
+}
+
+.footer-contact-info a {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.footer-social {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	gap: var(--ppt-space-small);
+}
+
+.footer-social li {
+	margin: 0;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+	margin-top: var(--ppt-space-medium);
+}
+
+.ppt-newsletter-form {
+	display: flex;
+	gap: var(--ppt-space-x-small);
+}
+
+.newsletter-input {
+	flex: 1;
+	padding: var(--ppt-space-small) var(--ppt-space-medium);
+	border: 1px solid var(--ppt-border);
+	border-radius: var(--ppt-radius-small);
+	background-color: var(--ppt-surface);
+	color: var(--ppt-text);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.newsletter-input::placeholder {
+	color: var(--ppt-text-muted);
+}
+
+.newsletter-btn {
+	padding: var(--ppt-space-small) var(--ppt-space-medium);
+	font-size: var(--wp--preset--font-size--small);
+	white-space: nowrap;
+}
+
+/* Footer Legal */
+.footer-legal {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--ppt-space-medium);
+}
+
+.footer-legal p {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.legal-nav .wp-block-navigation__container {
+	display: flex;
+	gap: var(--ppt-space-medium);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.legal-nav a {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+/* Footer Responsive */
+@media (max-width: 1024px) {
+	.site-footer .wp-block-columns {
+		flex-direction: column;
+	}
+
+	.footer-brand,
+	.footer-nav-col,
+	.footer-contact,
+	.footer-newsletter {
+		width: 100%;
+		margin-bottom: var(--ppt-space-x-large);
+	}
+
+	.footer-legal {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+/* Newsletter Form Responsive */
+@media (max-width: 480px) {
+	.ppt-newsletter-form {
+		flex-direction: column;
+	}
+
+	.newsletter-input,
+	.newsletter-btn {
+		width: 100%;
+	}
+}
+
+/* ==========================================================================
+   SKIP LINK
+   ========================================================================== */
+
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: var(--ppt-primary);
+	color: var(--ppt-text-inverse);
+	padding: var(--ppt-space-small) var(--ppt-space-medium);
+	z-index: 10000;
+	transition: top var(--ppt-transition-fast);
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
+/* ==========================================================================
+   FOCUS STATES
+   ========================================================================== */
+
+/* All interactive elements */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:not([tabindex="-1"]):focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+/* Navigation links */
+.main-navigation a:focus,
+.mobile-nav-menu a:focus,
+.footer-nav a:focus,
+.legal-nav a:focus,
+.utility-nav a:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+/* Buttons */
+.wp-block-button__link:focus,
+.mobile-menu-button:focus,
+.mobile-nav-close:focus,
+.newsletter-btn:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+/* Form inputs */
+.newsletter-input:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus,
+select:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+	border-color: var(--ppt-accent);
+}
+
+/* Search button */
+.header-search .wp-block-search__button:focus {
+	outline: 2px solid var(--ppt-accent);
+	outline-offset: 2px;
+}
+
+/* ==========================================================================
+   REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+	.site-header,
+	.mobile-nav-panel,
+	.main-navigation .wp-block-navigation-item__submenu {
+		transition: none;
+	}
+}
