@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-15T12:04:38.039Z",
+  "results": [
+    {
+      "test": "Real active browser tab runs ambient motion",
+      "pass": true
+    },
+    {
+      "test": "Real background-tab suspension and return",
+      "status": "unverified",
+      "detail": "This automated Edge session kept the original page document.hidden=false after another tab was brought to front. The separate component suite verifies the visibilitychange handler with controlled hidden/visible values."
+    },
+    {
+      "test": "20-second browser recording saved",
+      "pass": true
+    }
+  ]
+}

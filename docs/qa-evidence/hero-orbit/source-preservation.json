@@ -1,0 +1,13 @@
+{
+  "templateOutsideComponentUnchanged": true,
+  "logoBlockUnchanged": true,
+  "rescueOutsideOldMotionUnchanged": true,
+  "version": "2.4.1",
+  "sourceMatchesInstalled": {
+    "templates/front-page.html": true,
+    "inc/class-enqueue.php": true,
+    "assets/css/rescue.css": true,
+    "assets/css/hero-orb.css": true,
+    "assets/js/hero-orb.js": true
+  }
+}

@@ -221,6 +221,10 @@ class PPT_Enqueue {
 
 		// Premium hero orb motion (front page only).
 		if ( is_front_page() ) {
+			$hero_orb_css = PPT_THEME_DIR . '/assets/css/hero-orb.css';
+			if ( file_exists( $hero_orb_css ) ) {
+				wp_enqueue_style( 'ppt-hero-orb', PPT_THEME_URI . '/assets/css/hero-orb.css', array( 'ppt-rescue' ), filemtime( $hero_orb_css ) );
+			}
 			$hero_orb_js = PPT_THEME_DIR . '/assets/js/hero-orb.js';
 			if ( file_exists( $hero_orb_js ) ) {
 				wp_enqueue_script(

@@ -1,0 +1,35 @@
+/* Decorative motion is independent of the stationary logo and page layout. */
+.ppt-hero-art { position:relative; }
+.ppt-planet-orb { background:none;box-shadow:none;isolation:isolate;overflow:visible; }
+.ppt-planet-orb::after { content:none; }
+.ppt-planet-orb .ppt-orb-decoration { position:absolute;inset:0;margin:0!important;pointer-events:none;z-index:0; }
+.ppt-orb-depth { position:absolute;inset:0;pointer-events:none; }
+.ppt-orb-depth-surface { transform:translate3d(calc(var(--ppt-depth-x,0px)*.55),calc(var(--ppt-depth-y,0px)*.55),0); }
+.ppt-orb-depth-rings { transform:translate3d(var(--ppt-depth-x,0px),var(--ppt-depth-y,0px),0); }
+.ppt-orb-surface { position:absolute;inset:0;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 32% 28%,#5ebf91 0 5%,#0d7569 23%,#063d49 54%,#021b27 72%);box-shadow:0 55px 120px rgba(0,0,0,.36),inset -30px -25px 70px rgba(0,0,0,.35),inset 18px 18px 40px rgba(255,255,255,.08); }
+.ppt-orb-surface::after { content:"";position:absolute;inset:12%;border:1px solid rgba(255,255,255,.16);border-radius:50%; }
+.ppt-orb-illumination { position:absolute;inset:0;border-radius:50%;background:radial-gradient(ellipse at 30% 26%,rgba(190,255,220,.18),rgba(118,255,202,.07) 18%,transparent 50%);opacity:.65; }
+.ppt-orb-paths { display:block;width:100%;height:100%;overflow:visible;pointer-events:none; }
+.ppt-orbit-assembly { transform-box:view-box;transform-origin:500px 500px; }
+.ppt-orbit-assembly-a { transform:rotate(-48deg); }
+.ppt-orbit-assembly-b { transform:rotate(-28deg);opacity:.35; }
+.ppt-orbit-path { fill:none;stroke:#e2bf73;stroke-opacity:.55;stroke-width:1;vector-effect:non-scaling-stroke; }
+.ppt-orbit-dot-a { fill:#e2bf73; }
+.ppt-orbit-dot-b { fill:#9aefc7; }
+.ppt-orbit-halo { fill:#e2bf73;fill-opacity:.1; }
+.ppt-orbit-assembly-b .ppt-orbit-halo { fill:#9aefc7; }
+.ppt-hero-art.is-motion-ready .ppt-orbit-assembly-a { animation:pptOrbitAssemblyA 240s linear infinite paused; }
+.ppt-hero-art.is-motion-ready .ppt-orbit-assembly-b { animation:pptOrbitAssemblyB 300s linear infinite paused; }
+.ppt-hero-art.is-motion-ready .ppt-orb-illumination { animation:pptOrbLight 17s ease-in-out infinite alternate paused; }
+.ppt-hero-art[data-motion="running"] .ppt-orbit-assembly,.ppt-hero-art[data-motion="running"] .ppt-orb-illumination { animation-play-state:running; }
+.ppt-orb-motion-control { position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:3;min-height:44px;min-width:160px;margin:0!important;padding:8px 14px;border:1px solid #b4995c;border-radius:999px;background:#062e2b;color:#f6f1e7;font:inherit;font-size:12px;line-height:1.3;cursor:pointer;white-space:nowrap; }
+.ppt-orb-motion-control[hidden] { display:none!important; }
+.ppt-orb-motion-control:focus-visible { outline:3px solid #e2bf73;outline-offset:4px; }
+.ppt-orb-motion-control:disabled { cursor:default; }
+@keyframes pptOrbitAssemblyA { from{transform:rotate(-48deg)} to{transform:rotate(312deg)} }
+@keyframes pptOrbitAssemblyB { from{transform:rotate(-28deg)} to{transform:rotate(-388deg)} }
+@keyframes pptOrbLight { from{transform:translate(-2%,-1%) rotate(-6deg);opacity:.5} to{transform:translate(3%,2%) rotate(9deg);opacity:.8} }
+@media (prefers-reduced-motion:reduce) {
+ .ppt-hero-art .ppt-orbit-assembly,.ppt-hero-art .ppt-orb-illumination { animation:none!important; }
+ .ppt-hero-art .ppt-orb-depth { transform:none!important; }
+}

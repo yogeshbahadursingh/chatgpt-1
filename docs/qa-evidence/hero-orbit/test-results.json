@@ -1,0 +1,780 @@
+{
+  "timestamp": "2026-10-15T11:59:31.882Z",
+  "url": "http://127.0.0.1:8877/",
+  "results": [
+    {
+      "test": "Ambient motion advances with exactly three CSS animations and two native path motions",
+      "pass": true,
+      "detail": {
+        "motion": "running",
+        "manual": "false",
+        "time": 3.2331480979919434,
+        "animations": [
+          {
+            "name": "pptOrbLight",
+            "time": 3216.4699999732748,
+            "state": "running"
+          },
+          {
+            "name": "pptOrbitAssemblyA",
+            "time": 3216.4699999732748,
+            "state": "running"
+          },
+          {
+            "name": "pptOrbitAssemblyB",
+            "time": 3216.4699999732748,
+            "state": "running"
+          }
+        ],
+        "depth": [
+          "",
+          ""
+        ],
+        "logo": {
+          "x": 968.5625,
+          "y": 475.984375,
+          "width": 280,
+          "height": 187.328125,
+          "top": 475.984375,
+          "right": 1248.5625,
+          "bottom": 663.3125,
+          "left": 968.5625
+        },
+        "copy": {
+          "x": 115.203125,
+          "y": 222.59375,
+          "width": 637.5625,
+          "height": 740.125,
+          "top": 222.59375,
+          "right": 752.765625,
+          "bottom": 962.71875,
+          "left": 115.203125
+        },
+        "dots": [
+          [
+            1072.564360749422,
+            276.05485435649933
+          ],
+          [
+            1394.7490104358399,
+            566.8460752910164
+          ]
+        ]
+      }
+    },
+    {
+      "test": "Logo card and surrounding text remain stationary",
+      "pass": true
+    },
+    {
+      "test": "Decorations hidden from assistive technology and pointer hits",
+      "pass": true
+    },
+    {
+      "test": "Pause control reachable by keyboard with visible focus",
+      "pass": true
+    },
+    {
+      "test": "Enter pauses all ambient clocks",
+      "pass": true
+    },
+    {
+      "test": "Dots stay on their actual paths throughout 32s/38s laps",
+      "pass": true,
+      "detail": {
+        "maxErrorSvgUnits": 0.1538741683442089,
+        "seamDisplacementsCssPx": [
+          0.11501770256465442,
+          0.09035399437398567
+        ]
+      }
+    },
+    {
+      "test": "Lap boundaries have no discontinuity",
+      "pass": true,
+      "detail": {
+        "maxErrorSvgUnits": 0.1538741683442089,
+        "seamDisplacementsCssPx": [
+          0.11501770256465442,
+          0.09035399437398567
+        ]
+      }
+    },
+    {
+      "test": "Space resumes motion",
+      "pass": true
+    },
+    {
+      "test": "Fine-pointer depth moves decorations within 8px",
+      "pass": true,
+      "detail": [
+        "5.590px",
+        "-3.993px"
+      ]
+    },
+    {
+      "test": "Pointer cannot move the logo or hero copy",
+      "pass": true
+    },
+    {
+      "test": "Pause also freezes pointer-driven depth",
+      "pass": true
+    },
+    {
+      "test": "Pointer leave returns gently to centre",
+      "pass": true
+    },
+    {
+      "test": "Pointer rAF stops after settling; no continuous JS render loop",
+      "pass": true
+    },
+    {
+      "test": "Ambient motion, pointer depth and pause cause no component layout shifts",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "test": "Offscreen motion suspends",
+      "pass": true
+    },
+    {
+      "test": "Onscreen ambient motion resumes",
+      "pass": true
+    },
+    {
+      "test": "Scrolling away/back preserves manual pause",
+      "pass": true
+    },
+    {
+      "test": "Visibility handler suspends clocks (simulated hidden tab)",
+      "pass": true
+    },
+    {
+      "test": "Visibility handler resumes when visible",
+      "pass": true
+    },
+    {
+      "test": "Visibility return preserves manual pause",
+      "pass": true
+    },
+    {
+      "test": "Live reduced-motion preference gives a complete static composition",
+      "pass": true
+    },
+    {
+      "test": "Reduced-motion toggle does not clear manual pause",
+      "pass": true
+    },
+    {
+      "test": "Reinitialisation cannot duplicate native motion elements",
+      "pass": true
+    },
+    {
+      "test": "Reinitialisation cannot duplicate button listeners",
+      "pass": true
+    },
+    {
+      "test": "Responsive component at 360px",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 44,
+          "y": 455.8125,
+          "width": 272,
+          "height": 334,
+          "top": 455.8125,
+          "right": 316,
+          "bottom": 789.8125,
+          "left": 44
+        },
+        "logo": {
+          "x": 93,
+          "y": 536.140625,
+          "width": 190,
+          "height": 127.328125,
+          "top": 536.140625,
+          "right": 283,
+          "bottom": 663.46875,
+          "left": 93
+        }
+      }
+    },
+    {
+      "test": "Responsive component at 390px",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 44,
+          "y": 443.890625,
+          "width": 302,
+          "height": 358,
+          "top": 443.890625,
+          "right": 346,
+          "bottom": 801.890625,
+          "left": 44
+        },
+        "logo": {
+          "x": 105,
+          "y": 536.21875,
+          "width": 190,
+          "height": 127.328125,
+          "top": 536.21875,
+          "right": 295,
+          "bottom": 663.546875,
+          "left": 105
+        }
+      }
+    },
+    {
+      "test": "Responsive component at 600px",
+      "pass": true,
+      "detail": {
+        "width": 600,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 46,
+          "y": 389.734375,
+          "width": 508,
+          "height": 466,
+          "top": 389.734375,
+          "right": 554,
+          "bottom": 855.734375,
+          "left": 46
+        },
+        "logo": {
+          "x": 160,
+          "y": 506.0625,
+          "width": 280,
+          "height": 187.328125,
+          "top": 506.0625,
+          "right": 440,
+          "bottom": 693.390625,
+          "left": 160
+        }
+      }
+    },
+    {
+      "test": "Responsive component at 768px",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 52.734375,
+          "y": 390.34375,
+          "width": 662.546875,
+          "height": 466,
+          "top": 390.34375,
+          "right": 715.28125,
+          "bottom": 856.34375,
+          "left": 52.734375
+        },
+        "logo": {
+          "x": 244,
+          "y": 506.671875,
+          "width": 280,
+          "height": 187.328125,
+          "top": 506.671875,
+          "right": 524,
+          "bottom": 694,
+          "left": 244
+        }
+      }
+    },
+    {
+      "test": "Responsive component at 900px",
+      "pass": true,
+      "detail": {
+        "width": 900,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 72,
+          "y": 350.28125,
+          "width": 756,
+          "height": 546,
+          "top": 350.28125,
+          "right": 828,
+          "bottom": 896.28125,
+          "left": 72
+        },
+        "logo": {
+          "x": 310,
+          "y": 506.609375,
+          "width": 280,
+          "height": 187.328125,
+          "top": 506.609375,
+          "right": 590,
+          "bottom": 693.9375,
+          "left": 310
+        }
+      }
+    },
+    {
+      "test": "Responsive component at 1024px",
+      "pass": true,
+      "detail": {
+        "width": 1024,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 81.921875,
+          "y": 349.828125,
+          "width": 860.171875,
+          "height": 546,
+          "top": 349.828125,
+          "right": 942.09375,
+          "bottom": 895.828125,
+          "left": 81.921875
+        },
+        "logo": {
+          "x": 372,
+          "y": 506.15625,
+          "width": 280,
+          "height": 187.328125,
+          "top": 506.15625,
+          "right": 652,
+          "bottom": 693.484375,
+          "left": 372
+        }
+      }
+    },
+    {
+      "test": "Responsive component at 1280px",
+      "pass": true,
+      "detail": {
+        "width": 1280,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 758.71875,
+          "y": 286.046875,
+          "width": 418.890625,
+          "height": 532.390625,
+          "top": 286.046875,
+          "right": 1177.609375,
+          "bottom": 818.4375,
+          "left": 758.71875
+        },
+        "logo": {
+          "x": 861.90625,
+          "y": 435.578125,
+          "width": 280,
+          "height": 187.328125,
+          "top": 435.578125,
+          "right": 1141.90625,
+          "bottom": 622.90625,
+          "left": 861.90625
+        }
+      }
+    },
+    {
+      "test": "Responsive component at 1440px",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 853.5625,
+          "y": 314.65625,
+          "width": 471.25,
+          "height": 556,
+          "top": 314.65625,
+          "right": 1324.8125,
+          "bottom": 870.65625,
+          "left": 853.5625
+        },
+        "logo": {
+          "x": 968.5625,
+          "y": 475.984375,
+          "width": 280,
+          "height": 187.328125,
+          "top": 475.984375,
+          "right": 1248.5625,
+          "bottom": 663.3125,
+          "left": 968.5625
+        }
+      }
+    },
+    {
+      "test": "Responsive component at 1920px",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "overflow": false,
+        "logoLoaded": true,
+        "logoInsideViewport": true,
+        "squareSphere": true,
+        "buttonInsideHero": true,
+        "buttonInsideViewport": true,
+        "art": {
+          "x": 1119,
+          "y": 345.34375,
+          "width": 561,
+          "height": 556,
+          "top": 345.34375,
+          "right": 1680,
+          "bottom": 901.34375,
+          "left": 1119
+        },
+        "logo": {
+          "x": 1259.5,
+          "y": 506.671875,
+          "width": 280,
+          "height": 187.328125,
+          "top": 506.671875,
+          "right": 1539.5,
+          "bottom": 694,
+          "left": 1259.5
+        }
+      }
+    },
+    {
+      "test": "Component automated accessibility scan",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "test": "Logo home link remains clickable",
+      "pass": true
+    },
+    {
+      "test": "Adjacent About CTA works",
+      "pass": true
+    },
+    {
+      "test": "Adjacent Research CTA works",
+      "pass": true
+    },
+    {
+      "test": "No-JavaScript fallback retains logo, sphere, rings and dots",
+      "pass": true
+    },
+    {
+      "test": "No-JavaScript fallback has no CSS motion",
+      "pass": true
+    },
+    {
+      "test": "Initial reduced-motion load is static",
+      "pass": true
+    },
+    {
+      "test": "Touch swipe over component scrolls naturally without pointer depth",
+      "pass": true
+    },
+    {
+      "test": "No browser console errors or unhandled exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "geometry": [
+    {
+      "width": 360,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 44,
+        "y": 455.8125,
+        "width": 272,
+        "height": 334,
+        "top": 455.8125,
+        "right": 316,
+        "bottom": 789.8125,
+        "left": 44
+      },
+      "logo": {
+        "x": 93,
+        "y": 536.140625,
+        "width": 190,
+        "height": 127.328125,
+        "top": 536.140625,
+        "right": 283,
+        "bottom": 663.46875,
+        "left": 93
+      }
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 44,
+        "y": 443.890625,
+        "width": 302,
+        "height": 358,
+        "top": 443.890625,
+        "right": 346,
+        "bottom": 801.890625,
+        "left": 44
+      },
+      "logo": {
+        "x": 105,
+        "y": 536.21875,
+        "width": 190,
+        "height": 127.328125,
+        "top": 536.21875,
+        "right": 295,
+        "bottom": 663.546875,
+        "left": 105
+      }
+    },
+    {
+      "width": 600,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 46,
+        "y": 389.734375,
+        "width": 508,
+        "height": 466,
+        "top": 389.734375,
+        "right": 554,
+        "bottom": 855.734375,
+        "left": 46
+      },
+      "logo": {
+        "x": 160,
+        "y": 506.0625,
+        "width": 280,
+        "height": 187.328125,
+        "top": 506.0625,
+        "right": 440,
+        "bottom": 693.390625,
+        "left": 160
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 52.734375,
+        "y": 390.34375,
+        "width": 662.546875,
+        "height": 466,
+        "top": 390.34375,
+        "right": 715.28125,
+        "bottom": 856.34375,
+        "left": 52.734375
+      },
+      "logo": {
+        "x": 244,
+        "y": 506.671875,
+        "width": 280,
+        "height": 187.328125,
+        "top": 506.671875,
+        "right": 524,
+        "bottom": 694,
+        "left": 244
+      }
+    },
+    {
+      "width": 900,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 72,
+        "y": 350.28125,
+        "width": 756,
+        "height": 546,
+        "top": 350.28125,
+        "right": 828,
+        "bottom": 896.28125,
+        "left": 72
+      },
+      "logo": {
+        "x": 310,
+        "y": 506.609375,
+        "width": 280,
+        "height": 187.328125,
+        "top": 506.609375,
+        "right": 590,
+        "bottom": 693.9375,
+        "left": 310
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 81.921875,
+        "y": 349.828125,
+        "width": 860.171875,
+        "height": 546,
+        "top": 349.828125,
+        "right": 942.09375,
+        "bottom": 895.828125,
+        "left": 81.921875
+      },
+      "logo": {
+        "x": 372,
+        "y": 506.15625,
+        "width": 280,
+        "height": 187.328125,
+        "top": 506.15625,
+        "right": 652,
+        "bottom": 693.484375,
+        "left": 372
+      }
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 758.71875,
+        "y": 286.046875,
+        "width": 418.890625,
+        "height": 532.390625,
+        "top": 286.046875,
+        "right": 1177.609375,
+        "bottom": 818.4375,
+        "left": 758.71875
+      },
+      "logo": {
+        "x": 861.90625,
+        "y": 435.578125,
+        "width": 280,
+        "height": 187.328125,
+        "top": 435.578125,
+        "right": 1141.90625,
+        "bottom": 622.90625,
+        "left": 861.90625
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 853.5625,
+        "y": 314.65625,
+        "width": 471.25,
+        "height": 556,
+        "top": 314.65625,
+        "right": 1324.8125,
+        "bottom": 870.65625,
+        "left": 853.5625
+      },
+      "logo": {
+        "x": 968.5625,
+        "y": 475.984375,
+        "width": 280,
+        "height": 187.328125,
+        "top": 475.984375,
+        "right": 1248.5625,
+        "bottom": 663.3125,
+        "left": 968.5625
+      }
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "logoLoaded": true,
+      "logoInsideViewport": true,
+      "squareSphere": true,
+      "buttonInsideHero": true,
+      "buttonInsideViewport": true,
+      "art": {
+        "x": 1119,
+        "y": 345.34375,
+        "width": 561,
+        "height": 556,
+        "top": 345.34375,
+        "right": 1680,
+        "bottom": 901.34375,
+        "left": 1119
+      },
+      "logo": {
+        "x": 1259.5,
+        "y": 506.671875,
+        "width": 280,
+        "height": 187.328125,
+        "top": 506.671875,
+        "right": 1539.5,
+        "bottom": 694,
+        "left": 1259.5
+      }
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Visibility transitions simulated in headless Chromium; native tab switching tested separately when available.",
+    "Emulated devices, not physical-device performance measurements."
+  ]
+}
