@@ -1,0 +1,17 @@
+{
+  "identityUnchanged": true,
+  "customisationsUnchanged": true,
+  "pagesUnchanged": true,
+  "settingsUnchanged": true,
+  "changedThemeFiles": [
+    "README.md",
+    "style.css"
+  ],
+  "changedMetadataFields": [
+    "Name",
+    "Author",
+    "AuthorURI",
+    "Description"
+  ],
+  "version": "2.4.1"
+}

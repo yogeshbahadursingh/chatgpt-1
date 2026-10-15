@@ -1,0 +1,20 @@
+{
+  "controlledComparison": true,
+  "observations": [
+    {
+      "label": "current",
+      "characters": 9362,
+      "sha256": "68d23b87e85e73ec044a076da66f74efc3366c77bed08763bbe46c1ae356ae48"
+    },
+    {
+      "label": "original",
+      "characters": 9362,
+      "sha256": "68d23b87e85e73ec044a076da66f74efc3366c77bed08763bbe46c1ae356ae48"
+    },
+    {
+      "label": "restored",
+      "characters": 9362,
+      "sha256": "68d23b87e85e73ec044a076da66f74efc3366c77bed08763bbe46c1ae356ae48"
+    }
+  ]
+}

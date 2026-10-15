@@ -1,14 +1,16 @@
-# People & Planet Thrive — WordPress Block Theme
+# NexSec Labs Theme — WordPress Block Theme
 
-**Theme Name:** People & Planet Thrive
+**Theme Name:** NexSec Labs Theme
+**Developer:** [NexSec Labs](https://nexseclabs.co.uk/)
+**Client:** People & Planet Thrive
 **Theme URI:** https://ppthrive.com
-**Version:** 2.4.0
+**Version:** 2.4.1
 **Requires WordPress:** 6.4+
 **Requires PHP:** 8.0+
 
 ## Description
 
-A sophisticated WordPress block theme for People & Planet Thrive — a global platform for research, scholarly publishing, education, and community collaboration.
+Custom WordPress theme designed and developed by NexSec Labs for People & Planet Thrive.
 
 Built with Full Site Editing, accessibility-first design, and editorial precision.
 
@@ -87,7 +89,11 @@ GNU General Public License v2 or later.
 
 ## Credits
 
-Developed by People & Planet Thrive Initiative Pvt. Ltd.
+Designed and developed by [NexSec Labs](https://nexseclabs.co.uk/) for People & Planet Thrive, the client.
+
+This is a custom standalone theme, with no parent theme. The directory, package identifier and text domain remain `people-planet-thrive`. Developer attribution identifies the theme's developer; it does not change the client's public branding, business identity, content ownership, copyright wording or existing licences and third-party credits. It adds no public footer backlink.
+
+The attribution change retains development version 2.4.1. Prepare any subsequent release through the project's existing versioning and packaging process; do not reset the version or rename the package.
 
 ## Version 2.3.0 handover
 

@@ -1,0 +1,56 @@
+[
+  {
+    "route": "/about/",
+    "width": 390,
+    "status": 200,
+    "oneHeading": true,
+    "noOverflow": true,
+    "contentUnchanged": true,
+    "screenshotIdentical": true
+  },
+  {
+    "route": "/about/",
+    "width": 1440,
+    "status": 200,
+    "oneHeading": true,
+    "noOverflow": true,
+    "contentUnchanged": true,
+    "screenshotIdentical": true
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 390,
+    "status": 200,
+    "oneHeading": true,
+    "noOverflow": true,
+    "contentUnchanged": true,
+    "screenshotIdentical": true
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 1440,
+    "status": 200,
+    "oneHeading": true,
+    "noOverflow": true,
+    "contentUnchanged": true,
+    "screenshotIdentical": true
+  },
+  {
+    "route": "/publications/",
+    "width": 390,
+    "status": 200,
+    "oneHeading": true,
+    "noOverflow": true,
+    "contentUnchanged": false,
+    "screenshotIdentical": true
+  },
+  {
+    "route": "/publications/",
+    "width": 1440,
+    "status": 200,
+    "oneHeading": true,
+    "noOverflow": true,
+    "contentUnchanged": false,
+    "screenshotIdentical": true
+  }
+]
