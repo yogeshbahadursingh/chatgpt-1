@@ -4,7 +4,7 @@
 **Developer:** [NexSec Labs](https://nexseclabs.co.uk/)
 **Client:** People & Planet Thrive
 **Theme URI:** https://ppthrive.com
-**Version:** 2.4.1
+**Version:** 2.4.2
 **Requires WordPress:** 6.4+
 **Requires PHP:** 8.0+
 
@@ -93,7 +93,7 @@ Designed and developed by [NexSec Labs](https://nexseclabs.co.uk/) for People & 
 
 This is a custom standalone theme, with no parent theme. The directory, package identifier and text domain remain `people-planet-thrive`. Developer attribution identifies the theme's developer; it does not change the client's public branding, business identity, content ownership, copyright wording or existing licences and third-party credits. It adds no public footer backlink.
 
-The attribution change retains development version 2.4.1. Prepare any subsequent release through the project's existing versioning and packaging process; do not reset the version or rename the package.
+The attribution and orbit changes were prepared at development version 2.4.1. This upload package is release 2.4.2, with matching stylesheet and theme-constant versions. The package directory and internal identifiers are unchanged. PPT Core remains version 2.4.1.
 
 ## Version 2.3.0 handover
 

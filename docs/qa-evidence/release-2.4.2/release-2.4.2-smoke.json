@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "verified_at": "2026-10-15T12:28:47.613Z",
+  "checks": [
+    "Homepage HTTP 200 after installing ZIPs",
+    "Packaged orbital assets load and run",
+    "Existing logo loads",
+    "Pause and Resume work after ZIP installation",
+    "No document overflow at 360px",
+    "No document overflow at 768px",
+    "No document overflow at 1440px",
+    "Reduced motion remains static",
+    "No console errors or unhandled exceptions"
+  ],
+  "errors": []
+}

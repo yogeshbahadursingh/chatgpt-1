@@ -1,6 +1,6 @@
-# Current 2.4.0 installation gate
+# Current upload packages — theme 2.4.2 / PPT Core 2.4.1
 
-Both theme and PPT Core are 2.4.0. Follow [the current release handover](CUSTOMER-EXPERIENCE-2.4.0.md) for staging installation, the explicit Experience Update, saved-template reconciliation, privacy/mail setup, cache exclusions and rollback. Resolve the live hosting errors and obtain explicit approval before production deployment. The older installation guidance below is historical context.
+Use [the current package handover](RELEASE-2.4.2.md) for the verified upload ZIPs, installation steps, hashes and rollback. These packages include the NexSec Labs theme attribution and accessible orbit animation. They do not migrate database content or publish unfinished Terms. Production deployment still requires explicit approval. The older installation guidance below is historical context; importers and site setup are not required merely to update the theme's orbit component.
 
 ---
 

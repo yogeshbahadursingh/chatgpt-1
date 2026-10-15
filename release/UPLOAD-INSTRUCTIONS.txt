@@ -1,0 +1,28 @@
+PEOPLE & PLANET THRIVE — VERIFIED WORDPRESS PACKAGES
+15 October 2026
+
+people-planet-thrive.zip — NexSec Labs Theme 2.4.2
+Upload through Appearance > Themes > Add New Theme > Upload Theme.
+This is the complete theme ZIP containing the latest attribution and orbit animation.
+Replace the existing people-planet-thrive theme when WordPress prompts.
+
+ppt-core.zip — PPT Core 2.4.1
+Upload through Plugins > Add New Plugin > Upload Plugin if this companion plugin needs updating.
+It is unchanged by the orbit update; an identical current installation does not need reinstalling.
+
+Use the ZIPs separately. They are not a full-site database/media migration.
+Back up the target site and test on staging first. No production deployment has been performed.
+Clear page/asset caches after installation. Saved Site Editor templates may override theme files;
+review only the relevant front-page override without deleting unrelated customisations.
+Do not run demo importers or reset content merely to apply this visual update.
+
+All 106 PHP files passed syntax checks. All 160 archive files match source.
+Both ZIPs were installed successfully on local WordPress and verified against source.
+Post-install logo, orbit controls, reduced motion and responsive checks passed.
+The packages do not publish or approve unfinished Terms.
+
+SHA-256
+cf9e0aba092e38edaed1d57feb0ae9438a7b9f0912b179151474b4e9b31f9db2  people-planet-thrive.zip
+16ab9e12cdd8d4e702c902866e01f830e06d0e7f47c5ee544ec02b9b90e3369a  ppt-core.zip
+
+Full verification, limitations and rollback notes: ../docs/RELEASE-2.4.2.md

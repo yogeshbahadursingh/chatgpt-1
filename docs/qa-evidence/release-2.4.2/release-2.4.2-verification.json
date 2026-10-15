@@ -1,0 +1,24 @@
+{
+  "pass": true,
+  "core_version": "2.4.1",
+  "verified_at": "2026-10-15T12:27:36.9357359Z",
+  "theme_version": "2.4.2",
+  "packages": [
+    {
+      "sha256": "cf9e0aba092e38edaed1d57feb0ae9438a7b9f0912b179151474b4e9b31f9db2",
+      "verified_files": 134,
+      "no_private_runtime_or_review_content": true,
+      "bytes": 1963718,
+      "all_entries_match_source": true,
+      "package": "people-planet-thrive.zip"
+    },
+    {
+      "sha256": "16ab9e12cdd8d4e702c902866e01f830e06d0e7f47c5ee544ec02b9b90e3369a",
+      "verified_files": 26,
+      "no_private_runtime_or_review_content": true,
+      "bytes": 59113,
+      "all_entries_match_source": true,
+      "package": "ppt-core.zip"
+    }
+  ]
+}
