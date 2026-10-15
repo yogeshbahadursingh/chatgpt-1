@@ -47,4 +47,3 @@ const cli=mode=>execFileSync('C:/xampp/php/php.exe',[base+'/runtime/wp-cli.phar'
 }finally{if(b)await b.close();if(prepared)cli('cleanup');fs.writeFileSync(out+'/browser-results.json',JSON.stringify({results,geometry,a11y,diagnostics},null,2));}
 const orders=JSON.parse(fs.readFileSync(out+'/orders.json'));check('Both unpaid orders preserve exact acceptance records',orders.length===2&&orders.every(o=>o.status==='on-hold'&&o.native_value==='1'&&o.acceptance?.accepted&&o.acceptance.version==='QA-2026-10-15'&&!o.downloads_permitted),orders);fs.writeFileSync(out+'/browser-results.json',JSON.stringify({results,geometry,a11y,diagnostics},null,2));
 })().catch(e=>{console.error(e);process.exitCode=1});
-
