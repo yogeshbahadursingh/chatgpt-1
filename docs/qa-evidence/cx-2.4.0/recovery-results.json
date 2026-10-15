@@ -1,0 +1,11 @@
+[
+  {
+    "test": "Invalid login reports failure and retains username",
+    "pass": true,
+    "detail": "Home / My account\nMy account\nUnknown email address. Check again or try your username.\nLogin\n\nUsername or email address *\nRequired\n\nPassword *\nRequired\n\n Remember me\nLOG IN\n\nLost your password?"
+  },
+  {
+    "test": "Zero-results search is explicit and retains the editable query",
+    "pass": true
+  }
+]

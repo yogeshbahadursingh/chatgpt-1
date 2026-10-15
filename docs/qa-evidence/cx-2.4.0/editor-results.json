@@ -1,0 +1,18 @@
+[
+  {
+    "test": "Collaboration page opens as valid native editable blocks",
+    "pass": true,
+    "detail": {
+      "blocks": 64,
+      "invalid": []
+    }
+  },
+  {
+    "test": "Saving native page content changes the frontend",
+    "pass": true
+  },
+  {
+    "test": "Authorised staff can find classified private enquiries",
+    "pass": true
+  }
+]

@@ -1,3 +1,11 @@
+# Current 2.4.0 installation gate
+
+Both theme and PPT Core are 2.4.0. Follow [the current release handover](CUSTOMER-EXPERIENCE-2.4.0.md) for staging installation, the explicit Experience Update, saved-template reconciliation, privacy/mail setup, cache exclusions and rollback. Resolve the live hosting errors and obtain explicit approval before production deployment. The older installation guidance below is historical context.
+
+---
+
+## Historical evidence below — versions as originally recorded
+
 # Installation and production handover
 
 Theme 2.3.4 with PPT Core 2.3.3 includes the supplied logo, with compact navbar sizing and the site name alongside it. See COMPACT-NAVBAR.md for this follow-up. Production deployment requires explicit human approval. Do not deploy the local test database, runtime directory, test orders, mail interception plugin or local configuration. See [LOGO-UPDATE.md](LOGO-UPDATE.md) for focused verification and [PLUGIN-GUIDE.md](PLUGIN-GUIDE.md) for plugin requirements.

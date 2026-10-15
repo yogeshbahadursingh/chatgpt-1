@@ -15,6 +15,7 @@ get_header();
 		
 		<p style="font-size:var(--wp--preset--font-size--20);line-height:1.6;margin-top:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Build your capacity with our courses, workshops, and training programs.', 'people-planet-thrive' ); ?></p>
 
+		<?php if(function_exists('ppt_enquiry_url')): ?><div class="ppt-cx-next"><p>Find a course or workshop, then check its dates, audience and participation route. Concepts and expressions of interest are labelled clearly.</p><a href="<?php echo esc_url(ppt_enquiry_url('Learning')); ?>">No suitable offering? Tell us what you want to learn</a></div><?php endif; ?>
 		<!-- Filters -->
 		<div class="wp-block-group" style="border-top:1px solid var(--wp--preset--color--border);border-bottom:1px solid var(--wp--preset--color--border);margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--40);padding:var(--wp--preset--spacing--20) 0">
 			<p style="font-size:var(--wp--preset--font-size--14);font-weight:600;margin-bottom:var(--wp--preset--spacing--10)"><?php esc_html_e( 'Filter by type:', 'people-planet-thrive' ); ?></p>
@@ -65,7 +66,8 @@ get_header();
 
 						<div style="padding:var(--wp--preset--spacing--20)">
 							
-							<?php if ( $delivery_mode ) : ?>
+							<?php if(function_exists('ppt_opportunity_state'))echo '<p class="ppt-status-label">'.esc_html(ppt_opportunity_state(get_the_ID())).'</p>'; ?>
+<?php if ( $delivery_mode ) : ?>
 								<span style="display:inline-block;padding:0.2em 0.6em;background-color:var(--wp--preset--color--surface-alt);border-radius:20px;font-size:var(--wp--preset--font-size--12);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:var(--wp--preset--spacing--10)">
 									<?php echo esc_html( ucfirst( str_replace( '-', ' ', $delivery_mode ) ) ); ?>
 								</span>
@@ -103,7 +105,7 @@ get_header();
 								<?php if ( $is_free === '1' ) : ?>
 									<span style="color:var(--wp--preset--color--success)"><?php esc_html_e( 'Free', 'people-planet-thrive' ); ?></span>
 								<?php elseif ( $price ) : ?>
-									<span style="color:var(--wp--preset--color--primary)">$<?php echo esc_html( $price ); ?></span>
+									<span style="color:var(--wp--preset--color--primary)"><?php echo function_exists('ppt_opportunity_fee') ? esc_html(ppt_opportunity_fee(get_the_ID())) : esc_html($price); ?></span>
 								<?php endif; ?>
 							</div>
 

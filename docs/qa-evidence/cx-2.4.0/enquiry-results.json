@@ -1,0 +1,177 @@
+[
+    {
+        "test": "Enquiry saved and classified: Publishing",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Enquiry saved and classified: Research",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Enquiry saved and classified: Partnership",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Enquiry saved and classified: Training",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Enquiry saved and classified: Learning",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Enquiry saved and classified: Editorial",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Enquiry saved and classified: General",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Duplicate retry uses existing record and sends no second notification",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Server rejects invalid name",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Server rejects invalid email",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Server rejects invalid category",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Server rejects invalid message",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Server rejects invalid consent",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Server rejects invalid ppt_enquiry_nonce",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Server rejects invalid ticket",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Server rejects invalid website",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Mail failure retains a private staff record and truthful acceptance",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Staff notification only uses configured recipient",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Database insertion failure never claims success",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Storage failure can be retried successfully",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Rate limit retains the entered data",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Disabled service rejects direct submission",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Disabled UI does not offer a fake form",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Enquiries excluded from public routing REST and search",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Anonymous visitor cannot read enquiries",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Authorised administrator can review enquiries",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "An enquiry cannot accidentally be made public",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Staff can trash an enquiry",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Native privacy export contains only the requested enquiries",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Upgrade preserves later editorial changes",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Undated offering has honest interest flow",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Past session has no booking promise",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Demo offering cannot promise enrollment",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Native page is made of editable blocks",
+        "pass": true,
+        "detail": ""
+    },
+    {
+        "test": "Verified privacy-request eraser removes owned enquiry records",
+        "pass": true,
+        "detail": ""
+    }
+]

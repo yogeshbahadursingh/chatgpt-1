@@ -2,7 +2,7 @@
 
 **Theme Name:** People & Planet Thrive
 **Theme URI:** https://ppthrive.com
-**Version:** 2.3.4
+**Version:** 2.4.0
 **Requires WordPress:** 6.4+
 **Requires PHP:** 8.0+
 

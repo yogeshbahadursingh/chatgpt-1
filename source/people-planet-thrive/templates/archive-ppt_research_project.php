@@ -56,7 +56,7 @@ if ( ! empty( $_GET['ppt_topic'] ) && is_scalar( $_GET['ppt_topic'] ) ) {
 					$status_colors = array(
 						'active'    => '#126B52',
 						'completed' => '#6B7280',
-						'planning'  => '#C69A45',
+						'planning'  => '#795515',
 						'on-hold'   => '#B91C1C',
 					);
 					$status_color = isset( $status_colors[ $status ] ) ? $status_colors[ $status ] : '#6B7280';

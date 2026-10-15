@@ -129,7 +129,7 @@ $training_types = get_the_terms( get_the_ID(), 'ppt_training_type' );
 					<?php elseif ( $price ) : ?>
 						<div>
 							<strong style="display:block;font-size:var(--wp--preset--font-size--12);text-transform:uppercase;letter-spacing:0.05em;color:var(--wp--preset--color--text-light);margin-bottom:var(--wp--preset--spacing--10)"><?php esc_html_e( 'Price', 'people-planet-thrive' ); ?></strong>
-							<span style="font-size:var(--wp--preset--font-size--16);font-weight:600;color:var(--wp--preset--color--primary)">$<?php echo esc_html( $price ); ?></span>
+							<span style="font-size:var(--wp--preset--font-size--16);font-weight:600;color:var(--wp--preset--color--primary)"><?php echo function_exists('ppt_opportunity_fee') ? esc_html(ppt_opportunity_fee(get_the_ID())) : esc_html($price); ?></span>
 						</div>
 					<?php endif; ?>
 
@@ -144,12 +144,7 @@ $training_types = get_the_terms( get_the_ID(), 'ppt_training_type' );
 
 				<!-- Action Buttons -->
 				<div class="wp-block-group" style="display:flex;flex-wrap:wrap;gap:var(--wp--preset--spacing--15)">
-					<?php if ( $registration_url ) : ?>
-						<a href="<?php echo esc_url( $registration_url ); ?>" class="wp-block-button__link wp-element-button" target="_blank" rel="noopener"><?php esc_html_e( 'Register Now', 'people-planet-thrive' ); ?></a>
-					<?php elseif ( $product_id && class_exists( 'WooCommerce' ) ) : ?>
-						<a href="<?php echo esc_url( get_permalink( $product_id ) ); ?>" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Enroll Now', 'people-planet-thrive' ); ?></a>
-					<?php endif; ?>
-				</div>
+					<?php echo function_exists('ppt_opportunity_action') ? ppt_opportunity_action(get_the_ID()) : ''; ?>		</div>
 
 			</div>
 

@@ -189,14 +189,15 @@ $related_query = new WP_Query( $related_args );
 			<aside style="position:sticky;top:var(--wp--preset--spacing--30)">
 				
 				<!-- Table of Contents -->
-				<div class="ppt-toc" style="margin-bottom:var(--wp--preset--spacing--30);padding:var(--wp--preset--spacing--20);background-color:var(--wp--preset--color--surface-alt);border-radius:4px">
+				<?php if($word_count>=800 && preg_match_all('/<h[234]\b/i',$content)>=3): ?>
+				<div class="ppt-toc" hidden style="margin-bottom:var(--wp--preset--spacing--30);padding:var(--wp--preset--spacing--20);background-color:var(--wp--preset--color--surface-alt);border-radius:4px">
 					<h3 style="font-size:var(--wp--preset--font-size--14);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:var(--wp--preset--spacing--15)"><?php esc_html_e( 'Contents', 'people-planet-thrive' ); ?></h3>
 					<div id="ppt-toc-content" style="font-size:var(--wp--preset--font-size--14);line-height:1.6">
 						<!-- TOC will be populated by JavaScript -->
 						<p style="color:var(--wp--preset--color--text-light);font-style:italic"><?php esc_html_e( 'Loading...', 'people-planet-thrive' ); ?></p>
 					</div>
 				</div>
-
+				<?php endif; ?>
 				<!-- Related Articles -->
 				<?php if ( $related_query->have_posts() ) : ?>
 					<div style="padding:var(--wp--preset--spacing--20);background-color:var(--wp--preset--color--surface-alt);border-radius:4px">

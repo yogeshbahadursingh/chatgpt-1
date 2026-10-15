@@ -1,0 +1,27 @@
+[
+  {
+    "test": "eligible download HTTP entitlement",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "test": "expired download HTTP entitlement",
+    "status": 403,
+    "pass": true
+  },
+  {
+    "test": "exhausted download HTTP entitlement",
+    "status": 403,
+    "pass": true
+  },
+  {
+    "test": "revoked download HTTP entitlement",
+    "status": 404,
+    "pass": true
+  },
+  {
+    "test": "Protected file denies direct access",
+    "pass": true,
+    "status": 403
+  }
+]

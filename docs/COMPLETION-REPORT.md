@@ -1,3 +1,9 @@
+# Current customer experience candidate — 2.4.0
+
+The latest local candidate is theme/core 2.4.0. See [QA-REPORT.md](QA-REPORT.md), [CX-REQUIREMENTS.md](CX-REQUIREMENTS.md), and [CUSTOMER-EXPERIENCE-2.4.0.md](CUSTOMER-EXPERIENCE-2.4.0.md). Production remains unchanged and blocked by hosting/access, content/privacy/merchant decisions and explicit deployment approval. Historical completion language below applies only to its stated release and scope.
+
+---
+
 # Review handover — 2.3.2, 9 October 2026
 
 **Current deliverables are theme 2.3.4 with PPT Core 2.3.3:** see [COMPACT-NAVBAR.md](COMPACT-NAVBAR.md) for the smaller navbar logo and visible name, [LOGO-UPDATE.md](LOGO-UPDATE.md) for the original logo integration, and [PLUGIN-GUIDE.md](PLUGIN-GUIDE.md). The audit history and remaining production approval requirements below still apply.

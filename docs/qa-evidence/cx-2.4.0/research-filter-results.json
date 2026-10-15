@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "name": "all",
+      "status": "PASS",
+      "expected": 6,
+      "actual": 6,
+      "issues": []
+    },
+    {
+      "name": "planning includes legacy planned records",
+      "status": "PASS",
+      "expected": 6,
+      "actual": 6,
+      "issues": []
+    },
+    {
+      "name": "legacy planned query alias",
+      "status": "PASS",
+      "expected": 6,
+      "actual": 6,
+      "issues": []
+    },
+    {
+      "name": "active",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0,
+      "issues": []
+    },
+    {
+      "name": "completed",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0,
+      "issues": []
+    },
+    {
+      "name": "on hold",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0,
+      "issues": []
+    },
+    {
+      "name": "missing topic stays empty",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0,
+      "issues": []
+    },
+    {
+      "name": "topic",
+      "status": "PASS",
+      "expected": 1,
+      "actual": 1,
+      "issues": []
+    },
+    {
+      "name": "combined planning and topic",
+      "status": "PASS",
+      "expected": 1,
+      "actual": 1,
+      "issues": []
+    }
+  ],
+  "pagination": "NOT TESTABLE: this read-only fixture has fewer than 13 published projects"
+}

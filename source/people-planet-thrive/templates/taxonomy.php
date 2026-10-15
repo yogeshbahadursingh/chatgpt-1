@@ -10,6 +10,7 @@ get_header(); ?>
 <?php while(have_posts()): the_post(); $ppt_type=get_post_type_object(get_post_type()); ?>
 <article class="ppt-pub-card">
 <p class="ppt-kicker"><?php echo esc_html($ppt_type->labels->singular_name); ?></p>
+<?php if(function_exists('ppt_catalog_meta'))echo ppt_catalog_meta(get_the_ID()); ?>
 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 <?php if(has_post_thumbnail()) the_post_thumbnail('medium',array('loading'=>'lazy')); ?>
 <p><?php echo esc_html(wp_trim_words(get_the_excerpt(),30)); ?></p>

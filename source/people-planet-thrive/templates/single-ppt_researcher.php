@@ -148,7 +148,7 @@ if ( $project_ids ) {
 					$status_colors = array(
 						'active'    => '#126B52',
 						'completed' => '#6B7280',
-						'planning'  => '#C69A45',
+						'planning'  => '#795515',
 						'on-hold'   => '#B91C1C',
 					);
 					$status_color = isset( $status_colors[ $project_status ] ) ? $status_colors[ $project_status ] : '#6B7280';

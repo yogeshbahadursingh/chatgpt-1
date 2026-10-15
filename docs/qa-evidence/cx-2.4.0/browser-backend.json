@@ -1,0 +1,54 @@
+{
+    "enquiries": [
+        {
+            "id": 262,
+            "category": "General",
+            "status": "private",
+            "notification": "accepted_by_mail_transport"
+        },
+        {
+            "id": 257,
+            "category": "Learning",
+            "status": "private",
+            "notification": "accepted_by_mail_transport"
+        },
+        {
+            "id": 256,
+            "category": "Editorial",
+            "status": "private",
+            "notification": "accepted_by_mail_transport"
+        },
+        {
+            "id": 255,
+            "category": "Training",
+            "status": "private",
+            "notification": "accepted_by_mail_transport"
+        },
+        {
+            "id": 254,
+            "category": "Partnership",
+            "status": "private",
+            "notification": "accepted_by_mail_transport"
+        },
+        {
+            "id": 253,
+            "category": "Research",
+            "status": "private",
+            "notification": "accepted_by_mail_transport"
+        },
+        {
+            "id": 248,
+            "category": "Publishing",
+            "status": "private",
+            "notification": "accepted_by_mail_transport"
+        }
+    ],
+    "orders": [
+        {
+            "id": 263,
+            "status": "completed",
+            "total": "0.00",
+            "download_permitted": true
+        }
+    ]
+}

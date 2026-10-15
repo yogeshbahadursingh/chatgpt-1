@@ -1,0 +1,25 @@
+{
+  "versions": {
+    "wordpress": "7.1.2",
+    "theme": "2.3.4",
+    "plugin": "2.3.3",
+    "woocommerce": "11.1.2"
+  },
+  "environment": "local",
+  "records": 102,
+  "overrides": [
+    {
+      "id": 27,
+      "type": "wp_navigation",
+      "slug": "ppt-primary",
+      "sha256": "b94135acb881fe0c0123dc1e2a1ec1a9dd17a6b394e633300209c7c09c98d932"
+    },
+    {
+      "id": 28,
+      "type": "wp_template_part",
+      "slug": "header",
+      "sha256": "0a480c5982b3beb90dfbdee4a35281452446d380d7dd1eb2fe1f637baedf033f"
+    }
+  ],
+  "fullExport": "Private local checkpoint/runtime only; not distributed"
+}

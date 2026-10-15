@@ -1,0 +1,1666 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/work-with-us/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/contact/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/contact/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/contact/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/contact/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/contact/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/contact/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/contact/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/contact/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/about/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/about/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/about/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/about/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/about/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/about/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/about/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/about/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/publications/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/publications/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/publications/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/publications/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/publications/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/publications/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/publications/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/publications/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/journals/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/journals/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/journals/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/journals/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/journals/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/journals/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/journals/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/journals/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/research/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/research/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/research/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/research/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/research/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/research/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/research/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/research/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/training/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/training/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/training/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/training/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/training/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/training/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/training/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/training/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/insights/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/insights/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/insights/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/insights/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/insights/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/insights/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/insights/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/insights/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/events/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/events/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/events/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/events/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/events/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/events/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/events/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/events/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/careers/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/careers/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/careers/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/careers/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/careers/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/careers/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/careers/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/careers/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=research",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=research",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=research",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=research",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=research",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=research",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=research",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=research",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/my-account/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/my-account/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/my-account/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/my-account/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/my-account/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/my-account/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/my-account/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/my-account/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cart/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cart/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cart/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cart/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cart/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cart/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cart/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "/cart/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "width": 683,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "width": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "clipped": []
+  }
+]

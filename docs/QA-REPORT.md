@@ -1,3 +1,55 @@
+# Current 2.4.0 QA — 15 October 2026
+
+**Local review candidate; production is unchanged and blocked from sign-off.** Theme and PPT Core 2.4.0 were installed from the final ZIPs on the isolated WordPress 7.1.2 / WooCommerce 11.1.2 installation. All 105 source PHP files linted; all 157 installed files match source hashes. Backups and private fixture/session files are excluded from delivery.
+
+| Check | Current result | Evidence / boundary |
+|---|---|---|
+| Local routes | 142 expected results | [Per-route report](CX-ROUTES.md); intentional 404 retained |
+| Enquiry server lifecycle/security | 35/35 | [Results](qa-evidence/cx-2.4.0/enquiry-results.json) |
+| Visitor browser journeys | 21/21 | [Results](qa-evidence/cx-2.4.0/browser-results.json); six classifications, no-JS, validation retention, receipt spoof, guest free checkout/download |
+| Private backend verification | Seven classified enquiries and one completed zero-total order | [Sanitised records](qa-evidence/cx-2.4.0/browser-backend.json); owned records deleted afterwards |
+| Physical/mixed browser checkout | 6/6 | [Results](qa-evidence/cx-2.4.0/purchase-results.json), [on-hold orders](qa-evidence/cx-2.4.0/purchase-backend.json); local offline method, owned orders/stock restored |
+| Native commerce | 10/10 | [Cart/entitlement/retry](qa-evidence/cx-2.4.0/commerce-core.json); simulated settlement/offline adapter, not a real gateway |
+| Download HTTP lifecycle | 5/5 | [Results](qa-evidence/cx-2.4.0/commerce-http.json); eligible 200, expired/exhausted 403, revoked 404, direct file 403 |
+| Native page editor / staff UI | 3/3 | [64 valid blocks, save and private staff view](qa-evidence/cx-2.4.0/editor-results.json) |
+| Publication/navigation edits | 3/3 | [Results and restoration](qa-evidence/cx-2.4.0/editability-results.json) |
+| Discovery/privacy/override preservation | 7/7 | [Results](qa-evidence/cx-2.4.0/discovery.json) |
+| Demo structured data | 4/4 | [HTTP checks](qa-evidence/cx-2.4.0/schema.json); no fictional Book/Product/ScholarlyArticle/Periodical entities |
+| Contents navigation | 4/4 | [Short/long/no-JS/focus](qa-evidence/cx-2.4.0/contents-results.json) |
+| Navigation | 16/16 + 7/7 authenticated/asset checks | [Keyboard/reduced-motion/no-JS](qa-evidence/cx-2.4.0/navigation-premium-results.json), [real toolbar and assets](qa-evidence/cx-2.4.0/authenticated-navigation.json) |
+| Responsive geometry | 208/208 | [26 routes × 320/360/390/683/768/1024/1280/1440px](qa-evidence/cx-2.4.0/responsive.json); no overflow, clipped controls or broken images |
+| Affected-route reflow/accessibility and recovery | 46 final checks | [Final results with retest provenance](qa-evidence/cx-2.4.0/followup-final.json), [account/search retest](qa-evidence/cx-2.4.0/recovery-results.json); includes 32 targeted reflow checks |
+| Automated accessibility | 28 final route observations, zero detected violations | [Merged results with run provenance](qa-evidence/cx-2.4.0/accessibility-final.json). Initial six failing pages and subsequent retests retained. Incomplete colour checks still require judgement. Not WCAG conformance. |
+| Archive pagination and no-Woo fallback | 19/19 | [Exact membership, filter retention and cleanup](qa-evidence/cx-2.4.0/archive-journey-results.json) |
+| Research filtering | 9/9 | [Native data comparisons](qa-evidence/cx-2.4.0/research-filter-results.json) |
+| Anonymous privileged actions / REST file leak | 3/3 | [Security checks](qa-evidence/cx-2.4.0/security-results.json) |
+
+The broad first run found missing font requests, inline-link distinction, research badge contrast and a small password toggle. These were fixed, with affected pages and fresh asset requests retested. The initial account assertion used an obsolete WooCommerce error selector; the corrected native-banner test passed. Search copy was made explicit and retested. These initial results remain in the evidence rather than being represented as a clean first pass. The physical checkout fixture initially triggered native county validation; supplying the complete test address allowed print and mixed checkout to pass without changing WooCommerce validation or production settings.
+
+## Performance observations
+
+| Route | Before LCP | After LCP | After CLS | After TTFB |
+|---|---|---|---|---|
+| / | 12.41s | 2.03s | 0.000000 | 1.42s |
+| /work-with-us/ | 15.73s | 1.90s | 0.000000 | 1.70s |
+| /contact/ | 7.37s | 1.24s | 0.000000 | 1.14s |
+| /publications/ | 8.37s | 1.34s | 0.000000 | 1.17s |
+| /research/ | 9.91s | 2.10s | 0.000000 | 1.89s |
+| /training/ | 20.06s | 1.69s | 0.000041 | 1.48s |
+| /insights/ | 8.27s | 1.36s | 0.000000 | 1.23s |
+
+These are individual local Chromium observations, with warm resources on later pages and changing host/cache load. Removing nonexistent font requests addresses a concrete defect; the whole timing improvement cannot be causally attributed to frontend edits. No field p75, field INP, representative mobile-network result or guaranteed score is claimed. [Before](qa-evidence/cx-2.4.0/before-performance.json), [after](qa-evidence/cx-2.4.0/after-performance.json).
+
+## Visual evidence and release boundary
+
+[Desktop before](qa-evidence/cx-2.4.0/before-work-with-us-1440.png) · [desktop after](qa-evidence/cx-2.4.0/after-work-with-us-1440.png) · [mobile before](qa-evidence/cx-2.4.0/before-work-with-us-390.png) · [mobile after](qa-evidence/cx-2.4.0/after-work-with-us-390.png). Contact and Training comparisons are in the same evidence directory.
+
+Only Chromium is available. Full assistive-technology/manual contrast/native zoom coverage, actual inbox delivery, merchant sandbox callbacks/refunds, production cache/file protection, hosting-error diagnosis and Search Console security checks remain unverified or blocked. See [the complete requirement matrix](CX-REQUIREMENTS.md) and [installation/cache/rollback instructions](CUSTOMER-EXPERIENCE-2.4.0.md). No real payment, external customer message or production deployment occurred.
+
+---
+
+## Historical evidence below — versions as originally recorded
+
 # QA report — 2.3.2, 9 October 2026
 
 **Latest theme: 2.3.4, with PPT Core 2.3.3.** The small-logo/navbar-name follow-up is recorded in [COMPACT-NAVBAR.md](COMPACT-NAVBAR.md).

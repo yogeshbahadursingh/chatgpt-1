@@ -1,0 +1,90 @@
+/* Shared editorial rhythm. Existing homepage, native blocks and WooCommerce remain authoritative. */
+body.ppt-experience { --ppt-cx-layout:1200px; --ppt-cx-reading:720px; --ppt-cx-line:#d7ded7; }
+html { scroll-padding-top:200px; }
+.ppt-experience :where(main,[id]) { scroll-margin-top:200px; }
+.ppt-experience .site-main:not(.ppt-lux-home) { padding-bottom:clamp(48px,6vw,88px); }
+.ppt-experience .site-main:not(.ppt-lux-home) h1 { font-size:clamp(2.15rem,4.2vw,3.75rem)!important; line-height:1.08!important; letter-spacing:-.035em; text-wrap:balance; }
+.ppt-experience .site-main:not(.ppt-lux-home) h2 { line-height:1.2; }
+.ppt-page-shell { width:100%;max-width:var(--ppt-cx-layout,1200px)!important;margin-inline:auto!important;padding-block:clamp(32px,5vw,64px); }
+.ppt-page-hero { max-width:none!important;padding-bottom:clamp(24px,4vw,48px);margin-bottom:clamp(24px,4vw,48px);border-bottom:1px solid var(--ppt-cx-line,#d7ded7); }
+.ppt-page-hero .wp-block-post-title { max-width:900px;margin:24px 0 0!important; }
+.ppt-page-content { max-width:none!important; }
+.ppt-page-content>:not(.alignwide):not(.alignfull) { max-width:var(--ppt-cx-reading,720px);margin-inline:auto; }
+.ppt-page-content>.alignwide { width:100%;max-width:var(--ppt-cx-layout,1200px); }
+.ppt-page-content h2 { font-size:clamp(1.5rem,2.3vw,2.1rem);margin-block:1.8em .65em; }
+.ppt-page-content p,.ppt-page-content li,.ppt-experience .entry-content p { line-height:1.75; }
+.ppt-experience .entry-content { max-width:75ch;margin-inline:auto; }
+.ppt-page-content .ppt-big-copy { font-size:clamp(1.2rem,2vw,1.6rem);line-height:1.55; }
+.ppt-collaboration { margin-top:0!important; }
+.ppt-collaboration>.ppt-big-copy { max-width:70ch;margin:0; }
+.ppt-cx-actions { display:flex;align-items:center;flex-wrap:wrap;gap:24px;margin-block:28px 64px!important; }
+.ppt-action { display:inline-flex;align-items:center;gap:32px;min-height:48px;padding:10px 24px;border-radius:4px;background:#062e2b;color:#fff!important;text-decoration:none!important;font-weight:600; }
+.ppt-action:hover { background:#144b40; }
+.ppt-pathways-section { margin-block:0 64px; }
+.ppt-pathways-section h2 { margin-top:12px; }
+.ppt-pathways { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:32px; }
+.ppt-pathway { display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.5vw,32px);border:1px solid #d7ded7;border-top:3px solid #b08b44;background:#fff;min-width:0;margin:0!important; }
+.ppt-pathway>* { margin:0!important;max-width:none!important; }
+.ppt-pathway h3 { font-size:clamp(1.5rem,2vw,1.85rem);line-height:1.18;letter-spacing:-.025em; }
+.ppt-pathway .ppt-kicker { font-size:10px!important;letter-spacing:.1em; }
+.ppt-pathway p { font-size:15px;line-height:1.65; }
+.ppt-pathway-prepare { color:#43564f; }
+.ppt-pathway-prepare strong { font-size:12px;color:#243b33;text-transform:uppercase;letter-spacing:.06em; }
+.ppt-pathway-action { margin-top:auto!important;padding-top:18px; }
+.ppt-pathway-action a { display:inline-flex;align-items:center;min-height:44px;gap:8px;color:#075246;font-weight:600;text-decoration:underline;text-underline-offset:4px; }
+.ppt-next-panel { padding:clamp(24px,4vw,48px);background:#f8f5ee;margin-block:56px!important; }
+.ppt-next-panel h2 { margin-top:0; }
+.ppt-next-steps { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px; }
+.ppt-next-step { margin:0!important; }
+.ppt-next-step h3 { font-size:1.25rem; }
+.ppt-next-step p { font-size:15px; }
+.ppt-collaboration .wp-block-details { border-bottom:1px solid #d7ded7;padding:20px 0;margin:0; }
+.ppt-collaboration .wp-block-details summary { cursor:pointer;font-weight:600;min-height:28px; }
+.ppt-collaboration .wp-block-details p { max-width:75ch; }
+.ppt-enquiry-panel { max-width:820px;margin:56px auto 0!important;padding:clamp(22px,4vw,44px);border:1px solid #bdcbbf;background:#fcfaf5;box-sizing:border-box; }
+.ppt-enquiry-panel h2 { margin:8px 0 16px; }
+.ppt-enquiry-panel h2,.ppt-enquiry-confirmation h2 { font-size:clamp(1.7rem,3vw,2.4rem); }
+.ppt-enquiry { max-width:none; }
+.ppt-enquiry p { margin-block:20px; }
+.ppt-enquiry label { font-size:15px;font-weight:600;color:#163a30; }
+.ppt-enquiry label span { font-size:12px;font-weight:400; }
+.ppt-enquiry input:not([type=checkbox]),.ppt-enquiry select,.ppt-enquiry textarea { background:#fff;border:1px solid #799188;min-height:48px;border-radius:3px;font:16px/1.5 var(--ppt-font-sans,sans-serif);color:#102f2a; }
+.ppt-form-pair { display:grid;grid-template-columns:1fr 1fr;gap:20px; }
+.ppt-form-pair p { min-width:0; }
+.ppt-field-hint { display:block;font-size:13px;line-height:1.6;color:#43564f;margin-top:8px; }
+.ppt-consent { display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start; }
+.ppt-consent input { width:20px;height:20px;margin:4px 0 0;accent-color:#075246; }
+.ppt-consent label { line-height:1.7;font-weight:400; }
+.ppt-enquiry button { min-height:48px;border-radius:4px;font-weight:600;cursor:pointer; }
+.ppt-enquiry button:disabled { opacity:.7;cursor:wait; }
+.ppt-submit-status { display:block;font-size:14px;margin-top:12px; }
+.ppt-error-summary { padding:20px;border:2px solid #a03832;background:#fff7f5;margin-block:24px; }
+.ppt-error-summary h3 { margin:0;font-size:1.25rem; }
+.ppt-error-summary a,.ppt-field-error { color:#8e2520;text-decoration:underline; }
+.ppt-field-error { display:block;margin-top:6px;font-size:14px;text-decoration:none; }
+.ppt-enquiry [aria-invalid=true] { border:2px solid #a03832!important; }
+.ppt-enquiry-confirmation { padding:32px;border-left:4px solid #126b52;background:#edf5ee;max-width:760px;margin:40px auto; }
+.ppt-cx-next,.ppt-empty,.ppt-opportunity-status { padding:24px;border-left:3px solid #a67b31;background:#f8f5ee;margin-block:28px; }
+.ppt-cx-next h2 { margin-top:0; }
+.ppt-opportunity-status .wp-element-button { white-space:normal; }
+.ppt-status-label { font-size:12px!important;color:#60450f!important;background:#f8f1de;padding:5px 9px;width:fit-content;max-width:100%;line-height:1.5; }
+.ppt-experience .ppt-directory { gap:28px; }
+.ppt-experience .ppt-directory .ppt-pub-card { border-bottom:1px solid #d7ded7;padding-bottom:24px; }
+.ppt-experience .ppt-directory h3 { font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.25; }
+.ppt-experience .ppt-directory .ppt-cover { min-height:180px; }
+.ppt-experience .site-main>div>section { margin-block:48px; }
+.ppt-experience .ppt-footer-brand .wp-block-site-logo img { width:144px; }
+.ppt-experience .ppt-premium-footer { padding-top:48px;padding-bottom:28px; }
+.ppt-experience .ppt-footer-grid { gap:40px;margin-bottom:32px; }
+.ppt-experience .ppt-footer-bottom { margin-top:32px;padding-top:22px; }
+.ppt-experience .ppt-footer-small { max-width:28ch; }
+.ppt-experience .site-main :where(a):not(.wp-element-button):not(.ppt-action) { text-underline-offset:3px; }
+.ppt-consent a,.ppt-general-enquiry a,.ppt-enquiry-confirmation a,.ppt-enquiry-context a,.ppt-cx-next a { text-decoration:underline!important;text-underline-offset:3px; }
+.ppt-experience .woocommerce form .password-input input { min-height:48px;padding-right:52px; }
+.ppt-experience .woocommerce .show-password-input { min-width:44px;min-height:44px;right:0;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center; }
+.ppt-experience :focus-visible { outline:3px solid #94702d;outline-offset:4px; }
+/* Ambient motion remains in the hero; content is readable without an entrance overlay. */
+.ppt-experience .ppt-brand-intro { display:none!important; }
+.ppt-experience.ppt-intro-lock { overflow:auto; }
+@media(max-width:1050px){.ppt-pathways{grid-template-columns:repeat(2,minmax(0,1fr));}.ppt-next-steps{gap:20px;}}
+@media(max-width:650px){.ppt-pathways,.ppt-next-steps,.ppt-form-pair{grid-template-columns:1fr;}.ppt-pathway{padding:24px;}.ppt-form-pair{gap:0;}.ppt-cx-actions{margin-bottom:40px!important;gap:16px;}.ppt-next-panel{margin-block:36px!important;}.ppt-enquiry-panel{padding:22px 18px;}.ppt-page-hero{padding-bottom:24px;margin-bottom:28px;}.ppt-page-shell{padding-top:28px;}.ppt-page-content h2{margin-top:1.4em;}.ppt-premium-footer .ppt-footer-grid{gap:28px;}}

@@ -235,10 +235,10 @@
 					return;
 				}
 
-				// Here you would typically send to your newsletter service
-				// For now, just show success message
-				alert('Thank you for subscribing!');
-				email.value = '';
+				// A legacy saved form has no delivery backend. Preserve input and state this honestly.
+				var status = form.querySelector('.ppt-newsletter-status');
+				if (!status) { status = document.createElement('p'); status.className = 'ppt-newsletter-status'; status.setAttribute('role', 'status'); form.appendChild(status); }
+				status.textContent = 'This signup form is not connected. Please use the published newsletter link, if available, or contact the team.';
 			});
 		});
 	}

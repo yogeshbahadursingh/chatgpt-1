@@ -1,0 +1,14 @@
+[
+  {
+    "test": "Native publication title and author field update the detail view",
+    "pass": true
+  },
+  {
+    "test": "Saved native navigation label updates the frontend",
+    "pass": true
+  },
+  {
+    "test": "Existing editorial content and navigation restored",
+    "pass": true
+  }
+]

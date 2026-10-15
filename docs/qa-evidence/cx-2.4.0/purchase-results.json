@@ -1,0 +1,26 @@
+[
+  {
+    "test": "print edition exposes product description and purchase action",
+    "pass": true
+  },
+  {
+    "test": "print checkout requests a shipping address",
+    "pass": true
+  },
+  {
+    "test": "print native offline test checkout reaches order confirmation",
+    "pass": true
+  },
+  {
+    "test": "mixed edition exposes product description and purchase action",
+    "pass": true
+  },
+  {
+    "test": "mixed checkout requests a shipping address",
+    "pass": true
+  },
+  {
+    "test": "mixed native offline test checkout reaches order confirmation",
+    "pass": true
+  }
+]

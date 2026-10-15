@@ -37,7 +37,7 @@
 					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--x-large)">Journals</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"}}} -->
-					<p style="font-size:var(--wp--preset--font-size--small);line-height:1.6">Peer-reviewed scholarly journals advancing research across disciplines.</p>
+					<p style="font-size:var(--wp--preset--font-size--small);line-height:1.6">Journal scopes, available articles and guidance for prospective authors.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:ppt-secondary"}}}}} -->
 					<p class="has-link-color"><a href="/journals">Explore Journals →</a></p>

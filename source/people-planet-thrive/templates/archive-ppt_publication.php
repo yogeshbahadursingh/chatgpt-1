@@ -21,7 +21,7 @@ foreach($sections as $title=>$config){
    $product=$commerce?wc_get_product($item->ID):null;
    if($commerce && (!$product || !$product->is_visible()))continue;
    $cover=$product?$product->get_image('medium'):(has_post_thumbnail($item)?get_the_post_thumbnail($item,'medium',array('loading'=>'lazy')):'<span class="ppt-cover ppt-cover-one">'.esc_html($item->post_title).'</span>');
-   echo '<article class="ppt-pub-card"><a href="'.esc_url(get_permalink($item)).'">'.$cover.'<h3>'.esc_html($item->post_title).'</h3></a><p>'.esc_html(wp_trim_words(get_the_excerpt($item),22)).'</p>'.($product?$product->get_price_html():'').'</article>';
+   echo '<article class="ppt-pub-card"><a href="'.esc_url(get_permalink($item)).'">'.$cover.'<h3>'.esc_html($item->post_title).'</h3></a>'.(function_exists('ppt_catalog_meta')?ppt_catalog_meta($item->ID):'').'<p>'.esc_html(wp_trim_words(get_the_excerpt($item),22)).'</p>'.($product?$product->get_price_html():'').'</article>';
   }
   echo '</div>';
  }else echo '<p>Our publishing programme is currently being developed.</p>';

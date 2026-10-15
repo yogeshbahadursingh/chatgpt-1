@@ -1,0 +1,18 @@
+[
+  {
+    "test": "Short article omits contents navigation",
+    "pass": true
+  },
+  {
+    "test": "Long article builds three contents links and retains editorial heading ID",
+    "pass": true
+  },
+  {
+    "test": "Contents moves keyboard focus below sticky header",
+    "pass": true
+  },
+  {
+    "test": "Without JavaScript article remains readable and empty contents is hidden",
+    "pass": true
+  }
+]

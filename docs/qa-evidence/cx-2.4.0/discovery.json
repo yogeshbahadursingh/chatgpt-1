@@ -1,0 +1,30 @@
+[
+    {
+        "test": "Opt-in sitemap exclusion removes marked demos only",
+        "pass": true
+    },
+    {
+        "test": "Without approval demo sitemap membership is unchanged",
+        "pass": true
+    },
+    {
+        "test": "Staging is excluded from indexing",
+        "pass": true
+    },
+    {
+        "test": "Saved wp_navigation 27 preserved",
+        "pass": true
+    },
+    {
+        "test": "Saved wp_template_part 28 preserved",
+        "pass": true
+    },
+    {
+        "test": "Private enquiries are not a search content type",
+        "pass": true
+    },
+    {
+        "test": "Enquiry file uploads are not accepted",
+        "pass": true
+    }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "test": "Anonymous ppt_repair_site denied",
+    "status": 400,
+    "pass": true
+  },
+  {
+    "test": "Anonymous ppt_demo denied",
+    "status": 400,
+    "pass": true
+  },
+  {
+    "test": "Publication REST response does not expose protected download URL",
+    "pass": true
+  }
+]

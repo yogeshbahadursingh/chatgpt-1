@@ -36,7 +36,8 @@
 
 		headings.forEach(function(heading, index) {
 			// Generate unique ID for heading
-			const headingId = 'heading-' + index;
+			let headingId = heading.id || 'ppt-section-' + index;
+			while (document.getElementById(headingId) && document.getElementById(headingId) !== heading) headingId += '-section';
 			heading.id = headingId;
 
 			// Create list item
@@ -74,14 +75,16 @@
 				e.preventDefault();
 				const target = document.getElementById(headingId);
 				if (target) {
-					const headerOffset = 100;
+					const headerOffset = (document.querySelector('.ppt-premium-header')?.getBoundingClientRect().height || 100) + 60;
 					const elementPosition = target.getBoundingClientRect().top;
 					const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
 					window.scrollTo({
 						top: offsetPosition,
-						behavior: 'smooth'
+						behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
 					});
+					target.setAttribute('tabindex', '-1');
+					target.focus({preventScroll:true});
 				}
 			});
 
@@ -92,6 +95,7 @@
 		// Replace loading text with TOC
 		tocContainer.innerHTML = '';
 		tocContainer.appendChild(tocList);
+		tocContainer.closest('.ppt-toc').hidden = false;
 	}
 
 	/**

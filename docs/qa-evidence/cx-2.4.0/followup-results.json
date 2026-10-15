@@ -1,0 +1,194 @@
+[
+  {
+    "test": "Fresh accessibility retest /work-with-us/",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "/work-with-us/ reflows at 320",
+    "pass": true
+  },
+  {
+    "test": "/work-with-us/ reflows at 390",
+    "pass": true
+  },
+  {
+    "test": "/work-with-us/ reflows at 683",
+    "pass": true
+  },
+  {
+    "test": "/work-with-us/ reflows at 1440",
+    "pass": true
+  },
+  {
+    "test": "Fresh accessibility retest /contact/",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "/contact/ reflows at 320",
+    "pass": true
+  },
+  {
+    "test": "/contact/ reflows at 390",
+    "pass": true
+  },
+  {
+    "test": "/contact/ reflows at 683",
+    "pass": true
+  },
+  {
+    "test": "/contact/ reflows at 1440",
+    "pass": true
+  },
+  {
+    "test": "Fresh accessibility retest /careers/",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "/careers/ reflows at 320",
+    "pass": true
+  },
+  {
+    "test": "/careers/ reflows at 390",
+    "pass": true
+  },
+  {
+    "test": "/careers/ reflows at 683",
+    "pass": true
+  },
+  {
+    "test": "/careers/ reflows at 1440",
+    "pass": true
+  },
+  {
+    "test": "Fresh accessibility retest /submit-manuscript/",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "/submit-manuscript/ reflows at 320",
+    "pass": true
+  },
+  {
+    "test": "/submit-manuscript/ reflows at 390",
+    "pass": true
+  },
+  {
+    "test": "/submit-manuscript/ reflows at 683",
+    "pass": true
+  },
+  {
+    "test": "/submit-manuscript/ reflows at 1440",
+    "pass": true
+  },
+  {
+    "test": "Fresh accessibility retest /research-projects/demo-community-climate-resilience-pathways/",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "/research-projects/demo-community-climate-resilience-pathways/ reflows at 320",
+    "pass": true
+  },
+  {
+    "test": "/research-projects/demo-community-climate-resilience-pathways/ reflows at 390",
+    "pass": true
+  },
+  {
+    "test": "/research-projects/demo-community-climate-resilience-pathways/ reflows at 683",
+    "pass": true
+  },
+  {
+    "test": "/research-projects/demo-community-climate-resilience-pathways/ reflows at 1440",
+    "pass": true
+  },
+  {
+    "test": "Fresh accessibility retest /researchers/demo-demonstration-researcher-a/",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "/researchers/demo-demonstration-researcher-a/ reflows at 320",
+    "pass": true
+  },
+  {
+    "test": "/researchers/demo-demonstration-researcher-a/ reflows at 390",
+    "pass": true
+  },
+  {
+    "test": "/researchers/demo-demonstration-researcher-a/ reflows at 683",
+    "pass": true
+  },
+  {
+    "test": "/researchers/demo-demonstration-researcher-a/ reflows at 1440",
+    "pass": true
+  },
+  {
+    "test": "Fresh accessibility retest /research-projects/",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "/research-projects/ reflows at 320",
+    "pass": true
+  },
+  {
+    "test": "/research-projects/ reflows at 390",
+    "pass": true
+  },
+  {
+    "test": "/research-projects/ reflows at 683",
+    "pass": true
+  },
+  {
+    "test": "/research-projects/ reflows at 1440",
+    "pass": true
+  },
+  {
+    "test": "Fresh accessibility retest /my-account/",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "/my-account/ reflows at 320",
+    "pass": true
+  },
+  {
+    "test": "/my-account/ reflows at 390",
+    "pass": true
+  },
+  {
+    "test": "/my-account/ reflows at 683",
+    "pass": true
+  },
+  {
+    "test": "/my-account/ reflows at 1440",
+    "pass": true
+  },
+  {
+    "test": "Invalid account login gives an error and preserves username",
+    "pass": false
+  },
+  {
+    "test": "Journal detail links to real author and editorial guidance",
+    "pass": true
+  },
+  {
+    "test": "Author guidance reaches a publication enquiry",
+    "pass": true
+  },
+  {
+    "test": "Search zero-results retains search and recovery navigation",
+    "pass": false
+  },
+  {
+    "test": "Touch opens the mobile menu",
+    "pass": true
+  },
+  {
+    "test": "Touch closes the mobile menu",
+    "pass": true
+  }
+]

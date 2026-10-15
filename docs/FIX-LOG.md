@@ -1,3 +1,20 @@
+# Current 2.4.0 fixes — 15 October 2026
+
+1. Replaced the legacy Work With Us text stack with a native block journey and six distinct actions; added conservative explicit migration with editorial preservation.
+2. Replaced email-only acceptance with private enquiry persistence, truthful references, configured staff notification status, validation retention, duplicate/rate/ticket protection and native privacy export/erasure. Browser testing found and fixed the WordPress reserved-name POST collision by prefixing form field names.
+3. Added shared page/layout/form/status components, relevant research and author actions, product/order support and a proportionate footer while preserving saved header/navigation hashes.
+4. Removed unsupported blanket peer-review wording; labelled demonstrations; made past/undated/demo opportunities use honest interest actions. Event times identify the configured timezone.
+5. Removed the blocking entrance overlay and fake legacy newsletter success. Added conditional long-article contents with stable anchors, reduced-motion scrolling and keyboard focus.
+6. Fixed accessibility defects found in actual rendered pages: underlined inline enquiry/privacy links, a 44px password toggle, and darker planning badges on project/archive/profile templates. Fresh affected-route scans passed.
+7. Removed 11 nonexistent fontFace declarations, retaining the already-rendered fallback stacks. Fresh asset requests passed; no new external font service was introduced.
+8. Made empty search results explicit while retaining the query. Verified protected WooCommerce entitlements, offline failed-order retry, native editing, filters and pagination with owned local fixtures. Fixed test-fixture double-granting before verifying expiry/exhaustion/revocation.
+
+Implementation and limitations: [release handover](CUSTOMER-EXPERIENCE-2.4.0.md), [requirement statuses](CX-REQUIREMENTS.md), [current QA](QA-REPORT.md). No production code/content/orders/users/settings changed.
+
+---
+
+## Historical evidence below — versions as originally recorded
+
 # Fix log — release 2.3.2, 9 October 2026
 
 **Theme 2.3.4 follow-up:** smaller navbar logo (64px desktop / 48px mobile) with the editable site name beside it, per owner feedback. See [COMPACT-NAVBAR.md](COMPACT-NAVBAR.md). PPT Core remains 2.3.3.

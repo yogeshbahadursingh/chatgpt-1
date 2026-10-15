@@ -1,0 +1,236 @@
+[
+  {
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/work-with-us/",
+    "violations": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "label[for=\"ppt-consent\"] > a"
+            ],
+            "summary": "Fix any of the following:\n  The link has insufficient color contrast of 1.93:1 with the surrounding text. (Minimum contrast is 3:1, link text: #126b52, surrounding text: #163a30)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          {
+            "target": [
+              ".ppt-general-enquiry > a"
+            ],
+            "summary": "Fix any of the following:\n  The link has insufficient color contrast of 2.76:1 with the surrounding text. (Minimum contrast is 3:1, link text: #126b52, surrounding text: #101820)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/contact/",
+    "violations": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "label[for=\"ppt-consent\"] > a"
+            ],
+            "summary": "Fix any of the following:\n  The link has insufficient color contrast of 1.93:1 with the surrounding text. (Minimum contrast is 3:1, link text: #126b52, surrounding text: #163a30)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          }
+        ]
+      }
+    ],
+    "incomplete": []
+  },
+  {
+    "route": "/about/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/publications/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/journals/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/research/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/training/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/insights/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/events/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/careers/",
+    "violations": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "label[for=\"ppt-consent\"] > a"
+            ],
+            "summary": "Fix any of the following:\n  The link has insufficient color contrast of 1.93:1 with the surrounding text. (Minimum contrast is 3:1, link text: #126b52, surrounding text: #163a30)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          }
+        ]
+      }
+    ],
+    "incomplete": []
+  },
+  {
+    "route": "/?s=research",
+    "violations": [],
+    "incomplete": [
+      "aria-prohibited-attr"
+    ]
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/my-account/",
+    "violations": [
+      {
+        "id": "target-size",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".show-password-input"
+            ],
+            "summary": "Fix any of the following:\n  Target has insufficient size (22px by 22px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22px instead of at least 24px."
+          }
+        ]
+      }
+    ],
+    "incomplete": []
+  },
+  {
+    "route": "/cart/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/research-projects/demo-community-climate-resilience-pathways/",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".wp-block-group:nth-child(2) > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.58 (foreground color: #ffffff, background color: #c69a45, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/researchers/demo-demonstration-researcher-a/",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".wp-block-group:nth-child(1) > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.58 (foreground color: #ffffff, background color: #c69a45, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".wp-block-group:nth-child(2) > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.58 (foreground color: #ffffff, background color: #c69a45, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "violations": [],
+    "incomplete": []
+  }
+]

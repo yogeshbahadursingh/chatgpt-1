@@ -1,0 +1,521 @@
+{
+  "errors": [],
+  "assets": [
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-medium.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-medium.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/jetbrains-mono-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-bold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-regular.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/inter-semibold.woff2",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8877/wp-content/themes/people-planet-thrive/assets/fonts/source-serif-4-regular.woff2",
+      "status": 404
+    }
+  ]
+}

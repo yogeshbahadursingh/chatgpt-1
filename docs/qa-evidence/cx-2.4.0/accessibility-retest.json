@@ -1,0 +1,44 @@
+[
+  {
+    "route": "/work-with-us/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/contact/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/careers/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/submit-manuscript/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/research-projects/demo-community-climate-resilience-pathways/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/researchers/demo-demonstration-researcher-a/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/research-projects/",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "route": "/my-account/",
+    "violations": [],
+    "incomplete": []
+  }
+]

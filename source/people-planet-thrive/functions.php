@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Theme constants.
  */
-define( 'PPT_THEME_VERSION', '2.3.4' );
+define( 'PPT_THEME_VERSION', '2.4.0' );
 define( 'PPT_THEME_DIR', get_template_directory() );
 define( 'PPT_THEME_URI', get_template_directory_uri() );
 
@@ -159,3 +159,5 @@ add_filter( 'render_block', 'ppt_portable_block_links', 20, 2 );
 require_once PPT_THEME_DIR . '/inc/completion.php';
 require_once PPT_THEME_DIR . '/inc/navigation-premium.php';
 require_once PPT_THEME_DIR . '/inc/branding.php';
+
+require_once PPT_THEME_DIR . '/inc/customer-experience.php';

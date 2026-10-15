@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/contact/",
+    "status": 404,
+    "title": " 404 Not Found\r\n",
+    "databaseError": false,
+    "criticalError": false,
+    "cache": "private, no-cache, no-store, must-revalidate, max-age=0"
+  },
+  {
+    "path": "/publication-type/e-books/",
+    "status": 404,
+    "title": " 404 Not Found\r\n",
+    "databaseError": false,
+    "criticalError": false,
+    "cache": "private, no-cache, no-store, must-revalidate, max-age=0"
+  },
+  {
+    "path": "/publications/demo-knowledge-into-action/",
+    "status": 404,
+    "title": " 404 Not Found\r\n",
+    "databaseError": false,
+    "criticalError": false,
+    "cache": "private, no-cache, no-store, must-revalidate, max-age=0"
+  },
+  {
+    "path": "/wp-admin/",
+    "status": 404,
+    "title": " 404 Not Found\r\n",
+    "databaseError": false,
+    "criticalError": false,
+    "cache": "private, no-cache, no-store, must-revalidate, max-age=0"
+  },
+  {
+    "path": "/shop/items/R283838545/",
+    "status": 404,
+    "title": " 404 Not Found\r\n",
+    "databaseError": false,
+    "criticalError": false,
+    "cache": "private, no-cache, no-store, must-revalidate, max-age=0"
+  }
+]

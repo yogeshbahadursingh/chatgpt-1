@@ -1,0 +1,79 @@
+[
+  {
+    "route": "/",
+    "h1": [
+      "Knowledge for People.Progress for Planet."
+    ],
+    "lcp": 12412,
+    "cls": 0.009050022334346064,
+    "bytes": 689781,
+    "assets": 40,
+    "forms": 0
+  },
+  {
+    "route": "/work-with-us/",
+    "h1": [
+      "Work With Us"
+    ],
+    "lcp": 15728,
+    "cls": 0.0000473608699845679,
+    "bytes": 0,
+    "assets": 37,
+    "forms": 0
+  },
+  {
+    "route": "/contact/",
+    "h1": [
+      "Contact"
+    ],
+    "lcp": 7368,
+    "cls": 0,
+    "bytes": 0,
+    "assets": 38,
+    "forms": 1
+  },
+  {
+    "route": "/publications/",
+    "h1": [
+      "Publications"
+    ],
+    "lcp": 8372,
+    "cls": 0.0000473608699845679,
+    "bytes": 24767,
+    "assets": 46,
+    "forms": 0
+  },
+  {
+    "route": "/research/",
+    "h1": [
+      "Research"
+    ],
+    "lcp": 9908,
+    "cls": 0.0000473608699845679,
+    "bytes": 0,
+    "assets": 38,
+    "forms": 0
+  },
+  {
+    "route": "/training/",
+    "h1": [
+      "Training & Learning"
+    ],
+    "lcp": 20056,
+    "cls": 0.00008883317358699845,
+    "bytes": 4630,
+    "assets": 46,
+    "forms": 0
+  },
+  {
+    "route": "/insights/",
+    "h1": [
+      "Insights"
+    ],
+    "lcp": 8272,
+    "cls": 0,
+    "bytes": 0,
+    "assets": 39,
+    "forms": 0
+  }
+]

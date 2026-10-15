@@ -1,0 +1,67 @@
+[
+    {
+        "test": "print cart uses the correct shipping requirement",
+        "pass": true,
+        "detail": {
+            "shipping_required": true,
+            "subtotal": "12.5",
+            "shipping": "4",
+            "total": "16.50"
+        }
+    },
+    {
+        "test": "print cart has a native delivery rate",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "digital cart uses the correct shipping requirement",
+        "pass": true,
+        "detail": {
+            "shipping_required": false,
+            "subtotal": "6",
+            "shipping": "0",
+            "total": "6.00"
+        }
+    },
+    {
+        "test": "Digital-only cart has no shipping charge",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "mixed cart uses the correct shipping requirement",
+        "pass": true,
+        "detail": {
+            "shipping_required": true,
+            "subtotal": "18.5",
+            "shipping": "4",
+            "total": "22.50"
+        }
+    },
+    {
+        "test": "mixed cart has a native delivery rate",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Unpaid paid-edition order has no entitlement",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Simulated settled order receives native download entitlement",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Failed order exposes a native payment retry URL",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Native offline retry reuses the order without a duplicate",
+        "pass": true,
+        "detail": null
+    }
+]

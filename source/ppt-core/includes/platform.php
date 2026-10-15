@@ -20,6 +20,7 @@ function ppt_directory($attrs){
   $html.=has_post_thumbnail($p)?get_the_post_thumbnail($p,'medium',array('loading'=>'lazy')):'<span class="ppt-cover ppt-cover-one">'.esc_html($p->post_title).'</span>';
   $html.='</a><p class="ppt-kicker">'.esc_html($obj->labels->singular_name).'</p><h3><a href="'.esc_url($url).'">'.esc_html($p->post_title).'</a></h3><p>'.esc_html(wp_trim_words(get_the_excerpt($p),28)).'</p>';
   if($p->post_type==='product' && function_exists('wc_get_product')){ $product=wc_get_product($p->ID); if($product) $html.=$product->get_price_html(); }
+  if(function_exists('ppt_catalog_meta'))$html.=ppt_catalog_meta($p->ID);
   $html.='</article>';
  }
  return $html.'</div>';
@@ -58,48 +59,15 @@ add_filter('the_content',function($content){
  }
  return $content;
 },25);
-function ppt_enquiry_categories(){ return array('General','Publishing','Research','Training','Partnership','Books & Orders','Media','Careers'); }
 add_action('admin_menu',function(){ add_options_page('PPT Platform','PPT Platform','manage_options','ppt-platform',function(){
  if(!current_user_can('manage_options')) return;
  echo '<div class="wrap"><h1>PPT Platform</h1><form method="post" action="options.php">'; settings_fields('ppt-platform');
  foreach(array('ppt_enquiry_email'=>'Enquiry recipient email','ppt_contact_address'=>'Public contact address','ppt_newsletter_url'=>'Newsletter signup URL','ppt_social_url'=>'Public social profile URL') as $key=>$label) echo '<p><label for="'.esc_attr($key).'">'.esc_html($label).'</label><br><input class="regular-text" id="'.esc_attr($key).'" name="'.esc_attr($key).'" value="'.esc_attr(get_option($key,'')).'"></p>';
- echo '<p><label><input type="checkbox" name="ppt_enquiries_enabled" value="1" '.checked(get_option('ppt_enquiries_enabled'),'1',false).'> Enable enquiries after configuring mail and approving privacy information</label></p>'; submit_button(); echo '</form></div>';
+ echo '<p><label><input type="checkbox" name="ppt_enquiries_enabled" value="1" '.checked(get_option('ppt_enquiries_enabled'),'1',false).'> Enable enquiries after configuring mail and approving privacy information</label></p>'; echo '<p><label><input type="checkbox" name="ppt_exclude_demo_indexing" value="1" '.checked(get_option('ppt_exclude_demo_indexing'),'1',false).'> Exclude importer-tagged demonstration records from native sitemaps and request noindex (enable only after content/indexing approval)</label></p>'; submit_button(); echo '</form></div>';
  }); });
 add_action('admin_init',function(){
  foreach(array('ppt_enquiry_email'=>'sanitize_email','ppt_contact_address'=>'sanitize_textarea_field','ppt_newsletter_url'=>'esc_url_raw','ppt_social_url'=>'esc_url_raw','ppt_enquiries_enabled'=>'absint') as $key=>$sanitize) register_setting('ppt-platform',$key,array('sanitize_callback'=>$sanitize,'type'=>'string'));
 });
-function ppt_enquiry(){
- if(!get_option('ppt_enquiries_enabled') || !is_email(get_option('ppt_enquiry_email'))) return '<p class="ppt-empty">Our enquiry service is being prepared. Contact details will appear here when confirmed.</p>';
- $selected=sanitize_text_field(wp_unslash($_GET['enquiry']??'General'));
- $status=sanitize_key($_GET['ppt_message']??'');
- $messages=array('sent'=>'Your enquiry has been accepted for delivery.','failed'=>'We could not send your message. Please try again later.','invalid'=>'Please check the required fields and try again.','limited'=>'Please wait a few minutes before sending another enquiry.');
- ob_start();
- if(isset($messages[$status])) echo '<p role="status">'.esc_html($messages[$status]).'</p>';
- ?>
- <form class="ppt-enquiry" method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
- <?php wp_nonce_field('ppt_enquiry','ppt_enquiry_nonce'); ?>
- <input type="hidden" name="action" value="ppt_enquiry"><input type="hidden" name="started" value="<?php echo esc_attr(time()); ?>">
- <p><label for="ppt-name">Your name</label><input required maxlength="120" id="ppt-name" name="name" autocomplete="name"></p>
- <p><label for="ppt-email">Email</label><input required type="email" maxlength="254" id="ppt-email" name="email" autocomplete="email"></p>
- <p><label for="ppt-category">Enquiry category</label><select id="ppt-category" name="category"><?php foreach(ppt_enquiry_categories() as $category) echo '<option '.selected($selected,$category,false).'>'.esc_html($category).'</option>'; ?></select></p>
- <p><label for="ppt-message">Message</label><textarea required minlength="20" maxlength="5000" rows="7" id="ppt-message" name="message"></textarea></p>
- <p class="ppt-honeypot" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></p>
- <p><label><input required type="checkbox" name="consent" value="1"> I agree to the use of these details to respond to this enquiry.</label> <a href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">Privacy information</a></p>
- <button type="submit">Send enquiry</button></form>
- <?php return ob_get_clean();
-}
-function ppt_handle_enquiry(){
- $redirect=function($status){wp_safe_redirect(add_query_arg('ppt_message',$status,home_url('/contact/')));exit;};
- if(!isset($_POST['ppt_enquiry_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['ppt_enquiry_nonce'])),'ppt_enquiry')) $redirect('invalid');
- $email=sanitize_email(wp_unslash($_POST['email']??'')); $name=sanitize_text_field(wp_unslash($_POST['name']??'')); $message=sanitize_textarea_field(wp_unslash($_POST['message']??'')); $category=sanitize_text_field(wp_unslash($_POST['category']??''));
- if(!get_option('ppt_enquiries_enabled') || !is_email(get_option('ppt_enquiry_email'))) $redirect('failed');
- if(!is_email($email)||!$name||strlen($name)>120||strlen($message)<20||strlen($message)>5000||!in_array($category,ppt_enquiry_categories(),true)||empty($_POST['consent'])||!empty($_POST['website'])||time()-absint($_POST['started']??0)<3) $redirect('invalid');
- $key='ppt_rate_'.hash_hmac('sha256',$_SERVER['REMOTE_ADDR']??'unknown',wp_salt());
- if(get_transient($key)) $redirect('limited'); set_transient($key,1,MINUTE_IN_SECONDS*3);
- $sent=wp_mail(get_option('ppt_enquiry_email'),'PPT enquiry: '.$category,"Name: $name\nEmail: $email\nCategory: $category\n\n$message",array('Reply-To: '.$email));
- $redirect($sent?'sent':'failed');
-}
-add_action('admin_post_ppt_enquiry','ppt_handle_enquiry'); add_action('admin_post_nopriv_ppt_enquiry','ppt_handle_enquiry');
 // Publication file metadata is never a paid-download transport. WooCommerce owns access.
 add_filter('get_post_metadata',function($value,$id,$key,$single){
  if($key==='_ppt_publication_file_url' && !is_admin() && (get_post_meta($id,'_ppt_publication_product_id',true) || !get_post_meta($id,'_ppt_publication_is_free',true))) return $single?'':array();

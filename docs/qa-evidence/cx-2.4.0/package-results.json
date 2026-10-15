@@ -1,0 +1,18 @@
+{
+  "built_at": "2026-10-15T10:00:35.5603951Z",
+  "packages": [
+    {
+      "files": 132,
+      "sha256": "eed79c2ae35c041cfff8f5b6af1bd96d734f5c602ddbc0a4adf5abd8b391ce34",
+      "bytes": 1960912,
+      "package": "people-planet-thrive.zip"
+    },
+    {
+      "files": 25,
+      "sha256": "b04cb7f23fff903b2441ae673e08b74133276616dfabd82847d5a0cf2c363969",
+      "bytes": 57412,
+      "package": "ppt-core.zip"
+    }
+  ],
+  "php_files_linted": 105
+}

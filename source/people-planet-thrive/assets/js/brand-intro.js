@@ -2,6 +2,13 @@
   'use strict';
   var intro = document.getElementById('ppt-brand-intro');
   if (!intro) return;
+  // Keep the ambient hero motion, but never obscure reading or lock navigation.
+  if (document.body.classList.contains('ppt-experience')) {
+    intro.remove();
+    document.body.classList.remove('ppt-intro-lock');
+    document.documentElement.classList.remove('ppt-intro-first', 'ppt-intro-playing');
+    return;
+  }
 
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var seen = false;

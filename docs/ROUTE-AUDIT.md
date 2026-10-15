@@ -1,3 +1,15 @@
+# Current 2.4.0 route audit — 15 October 2026
+
+**142/142 local routes met the expected HTTP result and had one main heading, with no exposed PHP diagnostics or raw PPT shortcodes.** The intentional missing route returned 404; other audited destinations returned 200, including expected native checkout/account redirects. The source/data inventory included existing institutional pages, every published supported content type, archives, shared taxonomies, policies, search, shop/cart/checkout/account/download entry points.
+
+See [the per-route audience/task/template inventory](CX-ROUTES.md) and [complete JSON](qa-evidence/cx-2.4.0/routes.json). A technical pass is not content approval or proof of merchant readiness. The table records rendered link choices and actual templates, not invented routes.
+
+The independent live audit returned 14 database errors initially and server 404s in a later sample. See LIVE-AUDIT.md. These production failures remain blockers; they are not hidden by the local pass count.
+
+---
+
+## Historical evidence below — versions as originally recorded
+
 # Route audit — 9 October 2026
 
 This is the 2.3.2 route baseline. The 2.3.3 logo follow-up changes no route architecture; its focused retest is recorded in [LOGO-UPDATE.md](LOGO-UPDATE.md).

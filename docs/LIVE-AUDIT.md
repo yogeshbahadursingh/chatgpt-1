@@ -1,3 +1,19 @@
+# Current 2.4.0 candidate — public observations, 15 October 2026
+
+**Production was not modified. The live site is not verified healthy.** The local candidate and the production observations are separate.
+
+An initial read-only crawl of 171 actual linked/system paths returned 156 HTTP 200 responses, one branded 404 for the supplied retail URL, and 14 HTTP 500 database-error pages. Home, Insights and Work With Us were accessible independently; the earlier external-tool 403 was not reproduced. Public asset URLs indicated theme 2.3.4 and PPT Core 2.3.2, not an authenticated inventory. Store/Cart/Checkout showed the WooCommerce holding page; Checkout redirected to Cart. This supersedes the historical claim that those store endpoints were 404s in the earlier audit. Account rendered a real login page.
+
+The actual browser initially displayed “There has been a critical error on this website” at /wp-admin/. A later low-frequency retest returned plain server-level 404 pages at Contact, an ebook taxonomy, a publication detail, /wp-admin/ and the supplied retail URL. This is changed observable behaviour, not proof the database issue was resolved. See [initial observations](qa-evidence/cx-2.4.0/live-results.json) and [later retest](qa-evidence/cx-2.4.0/live-retest.json). Hosting error/access logs were requested; no authenticated repair or production deployment was attempted.
+
+The supplied /shop/items/R283838545/ lead did not resolve to retail content during the initial crawl. A search did not return matching indexed results at that time. That does not establish historical indexing or rule out compromise. Production files, users, database, redirects and Search Console Security Issues/Manual Actions/URL Inspection are still blocked. Preserve evidence and investigate through authorised hosting access.
+
+Some live holding responses allowed a 60-second cache lifetime while Account was private/no-cache. Holding-page headers do not establish cache safety for real carts, orders or authenticated sessions. SpeedyCache/CDN configuration is uninspected. Local form/cart/checkout/account no-store behaviour and explicit deployment exclusions are documented in [the release handover](CUSTOMER-EXPERIENCE-2.4.0.md).
+
+---
+
+## Historical evidence below — versions as originally recorded
+
 # Live website audit — 9 October 2026
 
 Subsequent local release 2.3.3 adds the owner-supplied logo; see [LOGO-UPDATE.md](LOGO-UPDATE.md). This public audit remains unchanged and does not establish that the new packages are deployed.

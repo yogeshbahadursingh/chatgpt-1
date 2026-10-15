@@ -1,0 +1,184 @@
+[
+  {
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/work-with-us/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "source": "accessibility-retest.json"
+  },
+  {
+    "route": "/contact/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility-retest.json"
+  },
+  {
+    "route": "/about/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/publications/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/journals/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/research/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/training/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/insights/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/events/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/careers/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility-retest.json"
+  },
+  {
+    "route": "/?s=research",
+    "violations": [],
+    "incomplete": [
+      "aria-prohibited-attr"
+    ],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/?s=cx-no-results-984735",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/cx-not-a-real-page/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/my-account/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility-retest.json"
+  },
+  {
+    "route": "/cart/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/research-projects/demo-community-climate-resilience-pathways/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility-retest.json"
+  },
+  {
+    "route": "/researchers/demo-demonstration-researcher-a/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility-retest.json"
+  },
+  {
+    "route": "http://127.0.0.1:8877/authors/demo-demonstration-author-a/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "http://127.0.0.1:8877/training/demo-community-research-engagement/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "http://127.0.0.1:8877/events/demo-knowledge-into-practice-forum/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "http://127.0.0.1:8877/category/commentary/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility.json"
+  },
+  {
+    "route": "/submit-manuscript/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility-retest.json"
+  },
+  {
+    "route": "/research-projects/",
+    "violations": [],
+    "incomplete": [],
+    "source": "accessibility-retest.json"
+  }
+]

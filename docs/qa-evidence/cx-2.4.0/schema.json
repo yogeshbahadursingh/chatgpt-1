@@ -1,0 +1,54 @@
+[
+  {
+    "type": "ppt_article",
+    "url": "http://127.0.0.1:8877/articles/demo-community-priorities-in-climate-resilience-planning/",
+    "status": 200,
+    "types": [
+      "Organization",
+      "ImageObject",
+      "BreadcrumbList",
+      "ListItem",
+      "ListItem"
+    ],
+    "pass": true
+  },
+  {
+    "type": "ppt_journal",
+    "url": "http://127.0.0.1:8877/journals/demo-journal-of-sustainable-communities/",
+    "status": 200,
+    "types": [
+      "Organization",
+      "ImageObject",
+      "BreadcrumbList",
+      "ListItem",
+      "ListItem"
+    ],
+    "pass": true
+  },
+  {
+    "type": "ppt_publication",
+    "url": "http://127.0.0.1:8877/publications/demo-designing-accessible-public-dialogue/",
+    "status": 200,
+    "types": [
+      "Organization",
+      "ImageObject",
+      "BreadcrumbList",
+      "ListItem",
+      "ListItem"
+    ],
+    "pass": true
+  },
+  {
+    "type": "product",
+    "url": "http://127.0.0.1:8877/product/demo-product-designing-accessible-public-dialogue/",
+    "status": 200,
+    "types": [
+      "Organization",
+      "ImageObject",
+      "BreadcrumbList",
+      "ListItem",
+      "ListItem"
+    ],
+    "pass": true
+  }
+]

@@ -130,7 +130,7 @@ get_header();
 									<?php if ( $is_free === '1' ) : ?>
 										<span style="color:var(--wp--preset--color--success)"><?php esc_html_e( 'Free', 'people-planet-thrive' ); ?></span>
 									<?php elseif ( $price ) : ?>
-										<span style="color:var(--wp--preset--color--primary)">$<?php echo esc_html( $price ); ?></span>
+										<span style="color:var(--wp--preset--color--primary)"><?php echo function_exists('ppt_opportunity_fee') ? esc_html(ppt_opportunity_fee(get_the_ID())) : esc_html($price); ?></span>
 									<?php endif; ?>
 								</div>
 							</div>

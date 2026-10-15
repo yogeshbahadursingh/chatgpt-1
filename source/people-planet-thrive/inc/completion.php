@@ -43,7 +43,7 @@ add_filter('render_block_data',function($block){
  return $block;
 });
 add_action('init',function(){ add_shortcode('ppt_home','ppt_home_section'); add_shortcode('ppt_footer_connect',function(){
- $html='<p>'.esc_html(get_option('ppt_contact_address','')).'</p><p><a href="'.esc_url(home_url('/work-with-us/')).'">Work With Us</a><br><a href="'.esc_url(home_url('/careers/')).'">Careers</a><br><a href="'.esc_url(home_url('/contact/')).'">Contact</a></p>';
+ $html='<p>'.esc_html(get_option('ppt_contact_address','')).'</p><p><a href="'.esc_url(home_url('/work-with-us/')).'">Work With Us</a><br><a href="'.esc_url(home_url('/careers/')).'">Careers</a></p>';
  foreach(array('ppt_newsletter_url'=>'Newsletter','ppt_social_url'=>'Follow our updates') as $key=>$label) if(get_option($key)) $html.='<p><a href="'.esc_url(get_option($key)).'">'.esc_html($label).'</a></p>';
  return $html;
  }); });

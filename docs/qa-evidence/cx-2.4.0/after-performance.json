@@ -1,0 +1,93 @@
+[
+  {
+    "route": "/",
+    "h1": [
+      "Knowledge for People.Progress for Planet."
+    ],
+    "lcp": 2032,
+    "cls": 0,
+    "bytes": 724586,
+    "ttfb": 1422.2000000476837,
+    "failedFontReferences": false,
+    "assets": 44,
+    "forms": 0
+  },
+  {
+    "route": "/work-with-us/",
+    "h1": [
+      "Work with People & Planet Thrive"
+    ],
+    "lcp": 1900,
+    "cls": 0,
+    "bytes": 1315,
+    "ttfb": 1699.1000000238419,
+    "failedFontReferences": false,
+    "assets": 41,
+    "forms": 1
+  },
+  {
+    "route": "/contact/",
+    "h1": [
+      "Contact"
+    ],
+    "lcp": 1240,
+    "cls": 0,
+    "bytes": 1315,
+    "ttfb": 1140.3999999761581,
+    "failedFontReferences": false,
+    "assets": 41,
+    "forms": 1
+  },
+  {
+    "route": "/publications/",
+    "h1": [
+      "Publications"
+    ],
+    "lcp": 1340,
+    "cls": 0,
+    "bytes": 24282,
+    "ttfb": 1172.8999999761581,
+    "failedFontReferences": false,
+    "assets": 43,
+    "forms": 0
+  },
+  {
+    "route": "/research/",
+    "h1": [
+      "Research"
+    ],
+    "lcp": 2100,
+    "cls": 0,
+    "bytes": 1315,
+    "ttfb": 1886.2000000476837,
+    "failedFontReferences": false,
+    "assets": 41,
+    "forms": 0
+  },
+  {
+    "route": "/training/",
+    "h1": [
+      "Training & Learning"
+    ],
+    "lcp": 1688,
+    "cls": 0.000041472303602430555,
+    "bytes": 4445,
+    "ttfb": 1481.7999999523163,
+    "failedFontReferences": false,
+    "assets": 44,
+    "forms": 0
+  },
+  {
+    "route": "/insights/",
+    "h1": [
+      "Insights"
+    ],
+    "lcp": 1364,
+    "cls": 0,
+    "bytes": 1315,
+    "ttfb": 1232.8999999761581,
+    "failedFontReferences": false,
+    "assets": 42,
+    "forms": 0
+  }
+]

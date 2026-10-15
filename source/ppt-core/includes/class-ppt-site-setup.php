@@ -78,7 +78,7 @@ class PPT_Site_Setup {
    }
   }
   if(class_exists('WC_Install')) WC_Install::create_pages();
-  flush_rewrite_rules(false); update_option('ppt_setup_version','2.3.3');
+  flush_rewrite_rules(false); update_option('ppt_setup_version','2.4.0');
   // Optional artwork must not prevent page, commerce or permalink repair.
   if(function_exists('ppt_install_brand_logo')) {
    $logo=ppt_install_brand_logo();

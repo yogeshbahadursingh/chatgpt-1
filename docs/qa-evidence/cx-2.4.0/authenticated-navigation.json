@@ -1,0 +1,39 @@
+[
+  {
+    "test": "Authenticated administrator sees the real WordPress toolbar",
+    "pass": true
+  },
+  {
+    "test": "Real admin toolbar and sticky header at 1440",
+    "pass": true,
+    "detail": {
+      "top": 32,
+      "overflow": false
+    }
+  },
+  {
+    "test": "Real admin toolbar and sticky header at 683",
+    "pass": true,
+    "detail": {
+      "top": 46,
+      "overflow": false
+    }
+  },
+  {
+    "test": "Real admin toolbar and sticky header at 390",
+    "pass": true,
+    "detail": {
+      "top": 0,
+      "overflow": false
+    }
+  },
+  {
+    "test": "Final stylesheet/script/font/image requests succeed",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "test": "Anonymous response exposes no admin toolbar",
+    "pass": true
+  }
+]

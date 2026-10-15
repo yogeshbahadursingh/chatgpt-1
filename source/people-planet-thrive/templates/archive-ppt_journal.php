@@ -13,7 +13,8 @@ get_header();
 		
 		<h1 style="font-size:var(--wp--preset--font-size--60);font-weight:700"><?php esc_html_e( 'Journals', 'people-planet-thrive' ); ?></h1>
 		
-		<p style="font-size:var(--wp--preset--font-size--20);line-height:1.6;margin-top:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Peer-reviewed scholarly journals advancing research across disciplines.', 'people-planet-thrive' ); ?></p>
+		<p style="font-size:var(--wp--preset--font-size--20);line-height:1.6;margin-top:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Explore journal scopes, available issues and guidance for prospective authors. Review arrangements are stated for each journal.', 'people-planet-thrive' ); ?></p>
+		<p><a href="<?php echo esc_url(home_url('/for-authors/')); ?>">Read author guidance</a> · <a href="<?php echo esc_url(home_url('/editorial-policies/')); ?>">Explore editorial policies</a></p>
 
 		<hr style="margin:var(--wp--preset--spacing--50) 0;border:none;border-top:1px solid var(--wp--preset--color--border)">
 
@@ -30,9 +31,10 @@ get_header();
 							</a>
 						<?php endif; ?>
 
-						<h3 style="font-size:var(--wp--preset--font-size--24);line-height:1.3;font-weight:600;margin-bottom:var(--wp--preset--spacing--10)">
+						<?php if(get_post_meta(get_the_ID(),'_ppt_demo_content',true))echo '<p class="ppt-status-label">Demonstration journal — not an established publication</p>'; ?>
+						<h2 style="font-size:var(--wp--preset--font-size--24);line-height:1.3;font-weight:600;margin-bottom:var(--wp--preset--spacing--10)">
 							<a href="<?php the_permalink(); ?>" style="color:var(--wp--preset--color--heading);text-decoration:none"><?php the_title(); ?></a>
-						</h3>
+						</h2>
 
 						<?php if ( has_excerpt() ) : ?>
 							<div style="font-size:var(--wp--preset--font-size--16);line-height:1.6;margin-bottom:var(--wp--preset--spacing--20)">

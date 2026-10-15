@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "test": "Publishing action preselects the intended pathway",
+      "pass": true
+    },
+    {
+      "test": "Publishing receives a persisted-reference confirmation",
+      "pass": true
+    },
+    {
+      "test": "Research action preselects the intended pathway",
+      "pass": true
+    },
+    {
+      "test": "Research receives a persisted-reference confirmation",
+      "pass": true
+    },
+    {
+      "test": "Partnership action preselects the intended pathway",
+      "pass": true
+    },
+    {
+      "test": "Partnership receives a persisted-reference confirmation",
+      "pass": true
+    },
+    {
+      "test": "Training action preselects the intended pathway",
+      "pass": true
+    },
+    {
+      "test": "Training receives a persisted-reference confirmation",
+      "pass": true
+    },
+    {
+      "test": "Editorial action preselects the intended pathway",
+      "pass": true
+    },
+    {
+      "test": "Editorial receives a persisted-reference confirmation",
+      "pass": true
+    },
+    {
+      "test": "Learning action preselects the intended pathway",
+      "pass": true
+    },
+    {
+      "test": "Learning receives a persisted-reference confirmation",
+      "pass": true
+    },
+    {
+      "test": "Server validation responds 422 and retains pathway, name and message",
+      "pass": true
+    },
+    {
+      "test": "Error summary receives focus and fields identify errors",
+      "pass": true
+    },
+    {
+      "test": "Query-string spoof does not show success",
+      "pass": true
+    },
+    {
+      "test": "Enquiry works without JavaScript",
+      "pass": true
+    },
+    {
+      "test": "Digital-only checkout has no shipping-address fields",
+      "pass": true
+    },
+    {
+      "test": "Native free-resource checkout reaches confirmation",
+      "pass": true
+    },
+    {
+      "test": "Eligible guest downloads the purchased PDF",
+      "pass": true
+    },
+    {
+      "test": "Direct protected file returns 403",
+      "pass": true
+    },
+    {
+      "test": "Invalid download entitlement is denied",
+      "pass": true
+    }
+  ],
+  "editorMovedToSeparateSuite": true
+}

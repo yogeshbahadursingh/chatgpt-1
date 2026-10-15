@@ -3,15 +3,12 @@
 
 <!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"className":"site-main"} -->
 <main class="wp-block-group site-main">
-	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
-		<!-- wp:post-title {"level":1} /-->
-
-		<!-- wp:separator {"style":{"color":{"background":"#C69A45"}}} -->
-		<hr class="wp-block-separator has-text-color has-background" style="background-color:#C69A45;color:#C69A45"/>
-		<!-- /wp:separator -->
-
-		<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+	<!-- wp:group {"align":"wide","className":"ppt-page-shell","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignwide ppt-page-shell">
+		<!-- wp:group {"align":"wide","className":"ppt-page-hero"} --><div class="wp-block-group alignwide ppt-page-hero">
+		<!-- wp:shortcode -->[ppt_page_breadcrumb]<!-- /wp:shortcode -->
+		<!-- wp:post-title {"level":1} /--></div><!-- /wp:group -->
+		<!-- wp:post-content {"align":"wide","className":"ppt-page-content","layout":{"type":"constrained"}} /-->
 	</div>
 	<!-- /wp:group -->
 </main>
