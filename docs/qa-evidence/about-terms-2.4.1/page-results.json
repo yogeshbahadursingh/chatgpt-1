@@ -1,0 +1,293 @@
+{
+  "results": [
+    {
+      "test": "about preview HTTP 200",
+      "pass": true
+    },
+    {
+      "test": "about identity and current address",
+      "pass": true
+    },
+    {
+      "test": "about has one H1",
+      "pass": true
+    },
+    {
+      "test": "about contains no private editorial comments",
+      "pass": true
+    },
+    {
+      "test": "about layout 360",
+      "pass": true
+    },
+    {
+      "test": "about layout 600",
+      "pass": true
+    },
+    {
+      "test": "about layout 768",
+      "pass": true
+    },
+    {
+      "test": "about layout 900",
+      "pass": true
+    },
+    {
+      "test": "about layout 1024",
+      "pass": true
+    },
+    {
+      "test": "about layout 1200",
+      "pass": true
+    },
+    {
+      "test": "about layout 1440",
+      "pass": true
+    },
+    {
+      "test": "about automated accessibility",
+      "pass": true,
+      "detail": {
+        "violations": [],
+        "incomplete": []
+      }
+    },
+    {
+      "test": "about heading hierarchy",
+      "pass": true
+    },
+    {
+      "test": "terms preview HTTP 200",
+      "pass": true
+    },
+    {
+      "test": "terms identity and current address",
+      "pass": true
+    },
+    {
+      "test": "terms has one H1",
+      "pass": true
+    },
+    {
+      "test": "terms contains no private editorial comments",
+      "pass": true
+    },
+    {
+      "test": "terms layout 360",
+      "pass": true
+    },
+    {
+      "test": "terms layout 600",
+      "pass": true
+    },
+    {
+      "test": "terms layout 768",
+      "pass": true
+    },
+    {
+      "test": "terms layout 900",
+      "pass": true
+    },
+    {
+      "test": "terms layout 1024",
+      "pass": true
+    },
+    {
+      "test": "terms layout 1200",
+      "pass": true
+    },
+    {
+      "test": "terms layout 1440",
+      "pass": true
+    },
+    {
+      "test": "terms automated accessibility",
+      "pass": true,
+      "detail": {
+        "violations": [],
+        "incomplete": []
+      }
+    },
+    {
+      "test": "terms heading hierarchy",
+      "pass": true
+    },
+    {
+      "test": "All 17 Terms anchors resolve",
+      "pass": true
+    },
+    {
+      "test": "Keyboard activates Terms contents",
+      "pass": true
+    },
+    {
+      "test": "Print hides header and contents but keeps policy",
+      "pass": true
+    },
+    {
+      "test": "Existing link /work-with-us/",
+      "pass": true
+    },
+    {
+      "test": "Existing link /contact/",
+      "pass": true
+    },
+    {
+      "test": "Contact has actual enquiry form",
+      "pass": true
+    },
+    {
+      "test": "Existing link /privacy-policy/",
+      "pass": true
+    },
+    {
+      "test": "Existing link /terms/",
+      "pass": true
+    },
+    {
+      "test": "Review draft is anonymous 404",
+      "pass": true
+    },
+    {
+      "test": "Review draft is not public REST content",
+      "pass": true
+    },
+    {
+      "test": "about native blocks are valid",
+      "pass": true,
+      "detail": {
+        "count": 28,
+        "invalid": []
+      }
+    },
+    {
+      "test": "about editor save reaches frontend",
+      "pass": true
+    },
+    {
+      "test": "terms native blocks are valid",
+      "pass": true,
+      "detail": {
+        "count": 92,
+        "invalid": []
+      }
+    },
+    {
+      "test": "terms editor save reaches frontend",
+      "pass": true
+    }
+  ],
+  "geometry": [
+    {
+      "name": "about",
+      "width": 360,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 316
+    },
+    {
+      "name": "about",
+      "width": 600,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 552
+    },
+    {
+      "name": "about",
+      "width": 768,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 706.546875
+    },
+    {
+      "name": "about",
+      "width": 900,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 720
+    },
+    {
+      "name": "about",
+      "width": 1024,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 720
+    },
+    {
+      "name": "about",
+      "width": 1200,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 720
+    },
+    {
+      "name": "about",
+      "width": 1440,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 720
+    },
+    {
+      "name": "terms",
+      "width": 360,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 316
+    },
+    {
+      "name": "terms",
+      "width": 600,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 552
+    },
+    {
+      "name": "terms",
+      "width": 768,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 706.546875
+    },
+    {
+      "name": "terms",
+      "width": 900,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 720
+    },
+    {
+      "name": "terms",
+      "width": 1024,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 720
+    },
+    {
+      "name": "terms",
+      "width": 1200,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 720
+    },
+    {
+      "name": "terms",
+      "width": 1440,
+      "overflow": false,
+      "clipped": 0,
+      "readingWidth": 720
+    }
+  ],
+  "a11y": [
+    {
+      "name": "about",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "terms",
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "diagnostics": []
+}

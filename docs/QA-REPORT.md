@@ -1,3 +1,15 @@
+# About / Terms 2.4.1 — local review candidate, 15 October 2026
+
+**Production unchanged; Terms remain draft.** 40 page/editor assertions, 21 block-checkout assertions and 19 server/content checks passed. Page geometry covered 360, 600, 768, 900, 1024, 1200 and 1440px (14 observations); populated checkout covered 360/768/1024/1440px. Both documents passed scoped WCAG-tagged axe scans with zero violations. Native block validation and real editor-save/frontend checks passed for both pages. These are local Chromium results, not legal approval or all-browser/WCAG certification.
+
+Actual Store API requests rejected false, missing and stale acceptance, and a changed approval hash. Physical and digital offline orders reached confirmation with the exact version/hash/UTC acceptance record; both remained on hold, with no paid-download entitlement. Owned test orders/policy/session were removed and prior checkout settings restored. The first positive checkout run exposed WooCommerce checkbox-value normalisation; this was fixed and the checkout suite rerun successfully. The initial diagnostic is retained, not counted as a completed checkout pass.
+
+The full Terms text and all 12 placeholder occurrences are preserved. Anonymous draft access and public REST were denied; publication was forced back to draft while the review marker remained. Existing /terms/, privacy, checkout content, header and navigation were preserved. Print CSS and mobile/desktop screenshots were visually inspected. All 106 source PHP files linted and all 159 installed package files match source.
+
+**Blocked:** missing accessible owner/source notes, ten unresolved fields, owner/legal approval, operational complaints/privacy/fulfilment verification, and any required separate immediate-digital-supply consent. No real gateway, customer email, refund or production test is represented. See [handover and rollback](ABOUT-TERMS-2.4.1.md), [evidence](qa-evidence/about-terms-2.4.1/summary.json) and [remaining tasks](../TASKS.md).
+
+---
+
 # Current 2.4.0 QA — 15 October 2026
 
 **Local review candidate; production is unchanged and blocked from sign-off.** Theme and PPT Core 2.4.0 were installed from the final ZIPs on the isolated WordPress 7.1.2 / WooCommerce 11.1.2 installation. All 105 source PHP files linted; all 157 installed files match source hashes. Backups and private fixture/session files are excluded from delivery.

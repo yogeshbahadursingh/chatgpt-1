@@ -3,11 +3,14 @@
 defined('ABSPATH') || exit;
 add_action('wp_enqueue_scripts',function(){wp_enqueue_style('ppt-experience',PPT_THEME_URI.'/assets/css/customer-experience.css',array('ppt-branding'),PPT_THEME_VERSION);},50);
 add_action('after_setup_theme',function(){add_editor_style('assets/css/customer-experience.css');});
+add_action('wp_enqueue_scripts',function(){if(is_singular('page')&&preg_match('/ppt-(about|terms)-document/',get_post_field('post_content',get_queried_object_id())))wp_enqueue_style('ppt-about-terms',PPT_THEME_URI.'/assets/css/about-terms.css',array('ppt-experience'),PPT_THEME_VERSION);},55);
+add_action('after_setup_theme',function(){add_editor_style('assets/css/about-terms.css');});
 add_action('init',function(){add_shortcode('ppt_page_breadcrumb',function(){return '<nav class="ppt-breadcrumb" aria-label="Breadcrumb"><a href="'.esc_url(home_url('/')).'">Home</a><span aria-hidden="true"> / </span><span aria-current="page">'.esc_html(get_the_title()).'</span></nav>';});});
 add_filter('body_class',function($classes){$classes[]='ppt-experience';return $classes;});
 // Useful next actions on institutional and research pages; no duplicated editorial content.
 add_filter('the_content',function($content){
  if(is_admin()||!in_the_loop()||!is_main_query()||!function_exists('ppt_enquiry_url'))return $content;
+ if(strpos($content,'ppt-about-document')!==false)return $content;
  if(is_page(array('about','mission-vision','our-approach','leadership','for-authors','accessibility'))){$category=is_page('for-authors')?'Publishing':'General';$content.='<aside class="ppt-cx-next"><h2>Take the next step</h2><p><a href="'.esc_url(is_page('for-authors')?ppt_enquiry_url($category):home_url('/work-with-us/')).'">'.(is_page('for-authors')?'Discuss a publication proposal':'Explore ways to work with us').'</a></p></aside>';}
  if(is_singular(array('ppt_research_project','ppt_research_area','ppt_researcher')))$content.='<aside class="ppt-cx-next"><h2>Develop a question together</h2><p><a href="'.esc_url(ppt_enquiry_url('Research',get_the_ID())).'">Discuss a related research project</a></p></aside>';
  return $content;

@@ -1,0 +1,100 @@
+[
+    {
+        "test": "Established About URL preserved",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Public Terms launch notice preserved exactly",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Checkout block content preserved exactly",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Privacy notice preserved; separate operational review still required",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Setting restored: woocommerce_terms_page_id",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Setting restored: wp_page_for_privacy_policy",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Setting restored: woocommerce_checkout_page_id",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Setting restored: woocommerce_currency",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Setting restored: ppt_terms_acceptance",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Approved navigation\/header preserved: 27",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Approved navigation\/header preserved: 28",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Unapproved Terms remain draft",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Accidental publish is forced back to review",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "All 12 occurrences \/ 10 unresolved fields retained",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Every supplied Terms paragraph retained (including safeguards)",
+        "pass": true,
+        "detail": {
+            "paragraphs": 71,
+            "missing": []
+        }
+    },
+    {
+        "test": "No private source comments copied",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Native revisions available",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "No test policy or private browser session left",
+        "pass": true,
+        "detail": null
+    },
+    {
+        "test": "Default acceptance module inactive",
+        "pass": true,
+        "detail": null
+    }
+]

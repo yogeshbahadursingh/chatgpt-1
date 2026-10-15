@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "file": "01-about-us.md",
+      "sha256": "fc2556687b47589f222465016fe11cc942873c684f4d61a7df70a76abdf6ce93"
+    },
+    {
+      "file": "02-terms-and-conditions.md",
+      "sha256": "599c454ed7b22bc2cd039fbb27afb816234e5c939ce72fe346449663910361be"
+    }
+  ],
+  "placeholders": {
+    "{{APPROVED_EFFECTIVE_DATE}}": 1,
+    "{{APPROVED_TERMS_VERSION}}": 1,
+    "{{PUBLIC_SUPPORT_EMAIL}}": 2,
+    "{{PUBLIC_SUPPORT_PHONE}}": 2,
+    "{{VERIFIED_ECOMMERCE_LISTING_NUMBER}}": 1,
+    "{{APPROVED_COMPLAINTS_PERSON_OR_UNIT}}": 1,
+    "{{PUBLIC_COMPLAINTS_EMAIL}}": 1,
+    "{{PUBLIC_COMPLAINTS_PHONE}}": 1,
+    "{{APPROVED_COMPLAINTS_ADDRESS}}": 1,
+    "{{VERIFIED_COMPLAINTS_ROUTE}}": 1
+  },
+  "about": {
+    "title": "About People & Planet Thrive",
+    "sections": 6
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "sections": 17
+  }
+}

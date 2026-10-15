@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Theme constants.
  */
-define( 'PPT_THEME_VERSION', '2.4.0' );
+define( 'PPT_THEME_VERSION', '2.4.1' );
 define( 'PPT_THEME_DIR', get_template_directory() );
 define( 'PPT_THEME_URI', get_template_directory_uri() );
 

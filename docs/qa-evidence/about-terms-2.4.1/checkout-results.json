@@ -1,0 +1,212 @@
+{
+  "results": [
+    {
+      "test": "print separate Terms checkbox starts unchecked",
+      "pass": true
+    },
+    {
+      "test": "print Terms fixture link visible",
+      "pass": true
+    },
+    {
+      "test": "print no invented digital waiver or marketing consent",
+      "pass": true
+    },
+    {
+      "test": "Checkout no overflow 360",
+      "pass": true
+    },
+    {
+      "test": "Checkout no overflow 768",
+      "pass": true
+    },
+    {
+      "test": "Checkout no overflow 1024",
+      "pass": true
+    },
+    {
+      "test": "Checkout no overflow 1440",
+      "pass": true
+    },
+    {
+      "test": "print browser prevents unchecked acceptance",
+      "pass": true
+    },
+    {
+      "test": "print checkbox keyboard acceptance",
+      "pass": true
+    },
+    {
+      "test": "Store API rejects false",
+      "pass": true,
+      "detail": {
+        "status": 400,
+        "body": {
+          "code": "rest_invalid_param",
+          "message": "Invalid parameter(s): additional_fields",
+          "data": {
+            "status": 400,
+            "params": {
+              "additional_fields": "ppt/terms-32b2a61f689b79bd is not 1."
+            },
+            "details": {
+              "additional_fields": {
+                "code": "rest_not_in_enum",
+                "message": "ppt/terms-32b2a61f689b79bd is not 1.",
+                "data": {
+                  "location": "order",
+                  "key": "ppt/terms-32b2a61f689b79bd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "test": "Store API rejects missing",
+      "pass": true,
+      "detail": {
+        "status": 400,
+        "body": {
+          "code": "rest_invalid_param",
+          "message": "Invalid parameter(s): additional_fields",
+          "data": {
+            "status": 400,
+            "params": {
+              "additional_fields": "ppt/terms-32b2a61f689b79bd is not of type boolean."
+            },
+            "details": {
+              "additional_fields": {
+                "code": "rest_invalid_type",
+                "message": "ppt/terms-32b2a61f689b79bd is not of type boolean.",
+                "data": {
+                  "location": "order",
+                  "key": "ppt/terms-32b2a61f689b79bd"
+                },
+                "additional_data": [
+                  {
+                    "param": "ppt/terms-32b2a61f689b79bd"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "test": "Store API rejects stale",
+      "pass": true,
+      "detail": {
+        "status": 400,
+        "body": {
+          "code": "rest_invalid_param",
+          "message": "Invalid parameter(s): additional_fields",
+          "data": {
+            "status": 400,
+            "params": {
+              "additional_fields": "ppt/terms-32b2a61f689b79bd is not of type boolean."
+            },
+            "details": {
+              "additional_fields": {
+                "code": "rest_invalid_type",
+                "message": "ppt/terms-32b2a61f689b79bd is not of type boolean.",
+                "data": {
+                  "location": "order",
+                  "key": "ppt/terms-32b2a61f689b79bd"
+                },
+                "additional_data": [
+                  {
+                    "param": "ppt/terms-32b2a61f689b79bd"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "test": "Store API rejects changed-policy",
+      "pass": true,
+      "detail": {
+        "status": 400,
+        "body": {
+          "code": "ppt_terms_unavailable",
+          "message": "Checkout is unavailable while the purchase terms are reviewed.",
+          "data": {
+            "status": 400
+          }
+        }
+      }
+    },
+    {
+      "test": "print accepted block checkout reaches confirmation",
+      "pass": true
+    },
+    {
+      "test": "digital separate Terms checkbox starts unchecked",
+      "pass": true
+    },
+    {
+      "test": "digital Terms fixture link visible",
+      "pass": true
+    },
+    {
+      "test": "digital no invented digital waiver or marketing consent",
+      "pass": true
+    },
+    {
+      "test": "digital browser prevents unchecked acceptance",
+      "pass": true
+    },
+    {
+      "test": "digital checkbox keyboard acceptance",
+      "pass": true
+    },
+    {
+      "test": "digital accepted block checkout reaches confirmation",
+      "pass": true
+    },
+    {
+      "test": "Both unpaid orders preserve exact acceptance records",
+      "pass": true,
+      "detail": [
+        {
+          "status": "on-hold",
+          "total": "9.00",
+          "acceptance": {
+            "accepted": true,
+            "version": "QA-2026-10-15",
+            "page_id": 344,
+            "url": "http://127.0.0.1:8877/local-terms-acceptance-fixture/",
+            "content_sha256": "27b43deccdf9df2b19d28fae8119035b886a80d8f0d36632af2a0bc124c7a6c6",
+            "accepted_at_utc": "2026-10-15T11:09:02+00:00",
+            "source": "woocommerce-store-api"
+          },
+          "native_value": "1",
+          "downloads_permitted": false
+        },
+        {
+          "status": "on-hold",
+          "total": "28.00",
+          "acceptance": {
+            "accepted": true,
+            "version": "QA-2026-10-15",
+            "page_id": 344,
+            "url": "http://127.0.0.1:8877/local-terms-acceptance-fixture/",
+            "content_sha256": "27b43deccdf9df2b19d28fae8119035b886a80d8f0d36632af2a0bc124c7a6c6",
+            "accepted_at_utc": "2026-10-15T11:08:48+00:00",
+            "source": "woocommerce-store-api"
+          },
+          "native_value": "1",
+          "downloads_permitted": false
+        }
+      ]
+    }
+  ],
+  "geometry": [],
+  "a11y": [],
+  "diagnostics": []
+}

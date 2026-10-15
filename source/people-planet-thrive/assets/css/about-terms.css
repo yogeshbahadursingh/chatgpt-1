@@ -1,0 +1,24 @@
+/* Scoped to the two native-block documents. Shared branding and navigation are unchanged. */
+.ppt-about-document,.ppt-terms-document { max-width:720px; margin-inline:auto; overflow-wrap:anywhere; }
+.ppt-about-document>h2:first-child { color:#0b4a40; font-size:clamp(1.8rem,3vw,2.5rem); }
+.ppt-about-document h3 { margin-top:1.8em; padding-top:1em; border-top:1px solid #d7ded7; font-size:1.35rem; }
+.ppt-company-details,.ppt-terms-contents { padding:clamp(20px,4vw,32px); border-left:3px solid #aa8336; background:#f7f4eb; margin-block:40px; }
+.ppt-company-details>h2:first-child,.ppt-terms-contents>h2:first-child { margin-top:0; }
+.ppt-company-details p { line-height:2; }
+.ppt-terms-contents ul { padding-left:1.3em; }
+.ppt-terms-contents li { margin-bottom:.65em; }
+.ppt-about-document a,.ppt-terms-document a { text-decoration:underline; text-underline-offset:3px; }
+.ppt-policy-review { padding:16px 20px; border:1px solid #aa8336; background:#fff8e7; color:#493811; }
+.ppt-terms-document h2 { scroll-margin-top:160px; }
+.ppt-terms-document :focus-visible,.ppt-about-document :focus-visible { outline:3px solid #755719; outline-offset:4px; }
+@media print {
+ body:has(.ppt-terms-document) { background:#fff!important; color:#000!important; }
+ body:has(.ppt-terms-document) .site-header,body:has(.ppt-terms-document) .site-footer,body:has(.ppt-terms-document) #wpadminbar,body:has(.ppt-terms-document) .ppt-breadcrumb,body:has(.ppt-terms-document) .ppt-terms-contents { display:none!important; }
+ body:has(.ppt-terms-document) .ppt-page-shell,body:has(.ppt-terms-document) .ppt-page-content,.ppt-terms-document { width:auto!important;max-width:none!important; padding:0!important;margin:0!important; }
+ body:has(.ppt-terms-document) .ppt-page-hero { margin-bottom:20pt!important;padding-bottom:12pt!important; }
+ .ppt-terms-document { font-size:10.5pt; }
+ .ppt-terms-document h2 { font-size:15pt!important; break-after:avoid; }
+ .ppt-terms-document p { orphans:3;widows:3; }
+ .ppt-terms-document a { color:#000!important; }
+ @page { margin:18mm; }
+}

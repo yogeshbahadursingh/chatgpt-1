@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-10-15T11:11:13.988Z",
+  "page_assertions": 40,
+  "checkout_assertions": 21,
+  "server_assertions": 19,
+  "page_width_observations": 14,
+  "automated_accessibility_routes": 2,
+  "production_changed": false,
+  "terms_status": "draft",
+  "terms_approval": "blocked",
+  "fixtures_removed": true
+}

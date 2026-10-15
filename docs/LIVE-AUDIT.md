@@ -1,3 +1,9 @@
+# About / Terms scope note — 15 October 2026
+
+This bounded follow-up changes only the local candidate. No production deployment or new live-host health claim was made. About and Terms preparation, approval blockers and actual local tests are recorded in [ABOUT-TERMS-2.4.1.md](ABOUT-TERMS-2.4.1.md). The hosting findings below remain unresolved.
+
+---
+
 # Current 2.4.0 candidate — public observations, 15 October 2026
 
 **Production was not modified. The live site is not verified healthy.** The local candidate and the production observations are separate.

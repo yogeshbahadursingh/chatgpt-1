@@ -1,0 +1,32 @@
+[
+    {
+        "status": "on-hold",
+        "total": "9.00",
+        "acceptance": {
+            "accepted": true,
+            "version": "QA-2026-10-15",
+            "page_id": 344,
+            "url": "http:\/\/127.0.0.1:8877\/local-terms-acceptance-fixture\/",
+            "content_sha256": "27b43deccdf9df2b19d28fae8119035b886a80d8f0d36632af2a0bc124c7a6c6",
+            "accepted_at_utc": "2026-10-15T11:09:02+00:00",
+            "source": "woocommerce-store-api"
+        },
+        "native_value": "1",
+        "downloads_permitted": false
+    },
+    {
+        "status": "on-hold",
+        "total": "28.00",
+        "acceptance": {
+            "accepted": true,
+            "version": "QA-2026-10-15",
+            "page_id": 344,
+            "url": "http:\/\/127.0.0.1:8877\/local-terms-acceptance-fixture\/",
+            "content_sha256": "27b43deccdf9df2b19d28fae8119035b886a80d8f0d36632af2a0bc124c7a6c6",
+            "accepted_at_utc": "2026-10-15T11:08:48+00:00",
+            "source": "woocommerce-store-api"
+        },
+        "native_value": "1",
+        "downloads_permitted": false
+    }
+]
